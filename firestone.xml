@@ -1,5 +1,4 @@
 <targetInstances>
-<version>2.1.0</version>
 <enumerationType>
 	<id>DIRECTION</id>
 		<enumerator>
@@ -1208,17 +1207,17 @@
 	</property>
 </globalSetting>
 <globalSetting>
-	<id>/sys-0/node-0/ponderosa-0/birchconn-2/birch-0/dimmconn-3/dimm-0/dimm_func_sensor</id>
-	<property>
-	<id>IPMI_SENSOR_ID</id>
-	<value>0x29</value>
-	</property>
-</globalSetting>
-<globalSetting>
 	<id>/sys-0/node-0/ponderosa-0/birchconn-2/birch-0/dimmconn-2/dimm-0/dimm_temp_sensor</id>
 	<property>
 	<id>IPMI_SENSOR_ID</id>
 	<value>0x73</value>
+	</property>
+</globalSetting>
+<globalSetting>
+	<id>/sys-0/node-0/ponderosa-0/birchconn-2/birch-0/dimmconn-3/dimm-0/dimm_func_sensor</id>
+	<property>
+	<id>IPMI_SENSOR_ID</id>
+	<value>0x29</value>
 	</property>
 </globalSetting>
 <globalSetting>
@@ -1243,13 +1242,6 @@
 	</property>
 </globalSetting>
 <globalSetting>
-	<id>/sys-0/node-0/ponderosa-0/proc_socket-0/module-0/proc/cpu_temp_sensor</id>
-	<property>
-	<id>IPMI_SENSOR_ID</id>
-	<value>0x0B</value>
-	</property>
-</globalSetting>
-<globalSetting>
 	<id>/sys-0/node-0/ponderosa-0/birchconn-2/birch-0/dimmconn-3/dimm-0</id>
 	<property>
 	<id>IO_CONFIG_SELECT</id>
@@ -1265,7 +1257,21 @@
 	</property>
 </globalSetting>
 <globalSetting>
+	<id>/sys-0/node-0/ponderosa-0/proc_socket-0/module-0/proc/cpu_temp_sensor</id>
+	<property>
+	<id>IPMI_SENSOR_ID</id>
+	<value>0x0B</value>
+	</property>
+</globalSetting>
+<globalSetting>
 	<id>/sys-0/node-0/ponderosa-0/birchconn-5/birch-0/dimmconn-2</id>
+	<property>
+	<id>IO_CONFIG_SELECT</id>
+	<value></value>
+	</property>
+</globalSetting>
+<globalSetting>
+	<id>/sys-0/node-0/ponderosa-0/birchconn-5/birch-0/dimmconn-3</id>
 	<property>
 	<id>IO_CONFIG_SELECT</id>
 	<value></value>
@@ -1279,21 +1285,7 @@
 	</property>
 </globalSetting>
 <globalSetting>
-	<id>/sys-0/node-0/ponderosa-0/birchconn-5/birch-0/dimmconn-3</id>
-	<property>
-	<id>IO_CONFIG_SELECT</id>
-	<value></value>
-	</property>
-</globalSetting>
-<globalSetting>
 	<id>/sys-0/node-0/ponderosa-0/birchconn-5/birch-0/dimmconn-0</id>
-	<property>
-	<id>IO_CONFIG_SELECT</id>
-	<value></value>
-	</property>
-</globalSetting>
-<globalSetting>
-	<id>/sys-0/node-0/ponderosa-0/birchconn-5/birch-0/dimmconn-1</id>
 	<property>
 	<id>IO_CONFIG_SELECT</id>
 	<value></value>
@@ -1311,7 +1303,7 @@
 	</property>
 	<property>
 	<id>FRU_ID</id>
-	<value></value>
+	<value>4</value>
 	</property>
 	<property>
 	<id>IPMI_INSTANCE</id>
@@ -1319,17 +1311,17 @@
 	</property>
 </globalSetting>
 <globalSetting>
+	<id>/sys-0/node-0/ponderosa-0/birchconn-5/birch-0/dimmconn-1</id>
+	<property>
+	<id>IO_CONFIG_SELECT</id>
+	<value></value>
+	</property>
+</globalSetting>
+<globalSetting>
 	<id>/sys-0/system_event_sensor</id>
 	<property>
 	<id>IPMI_SENSOR_ID</id>
 	<value>0x52</value>
-	</property>
-</globalSetting>
-<globalSetting>
-	<id>/sys-0/node-0/pci_clk_sensor</id>
-	<property>
-	<id>IPMI_SENSOR_ID</id>
-	<value>0x55</value>
 	</property>
 </globalSetting>
 <globalSetting>
@@ -1344,10 +1336,10 @@
 	</property>
 </globalSetting>
 <globalSetting>
-	<id>/sys-0/node-0/ponderosa-0/proc_socket-0/module-0/proc/pci_configs</id>
+	<id>/sys-0/node-0/pci_clk_sensor</id>
 	<property>
-	<id>IO_CONFIG_SELECT</id>
-	<value></value>
+	<id>IPMI_SENSOR_ID</id>
+	<value>0x55</value>
 	</property>
 </globalSetting>
 <globalSetting>
@@ -1366,6 +1358,20 @@
 	</property>
 </globalSetting>
 <globalSetting>
+	<id>/sys-0/node-0/ponderosa-0/proc_socket-0/module-0/proc/pci_configs</id>
+	<property>
+	<id>IO_CONFIG_SELECT</id>
+	<value></value>
+	</property>
+</globalSetting>
+<globalSetting>
+	<id>/sys-0/node-0/ponderosa-0/birchconn-0/birch-0/membuf-0/membuf_func_sensor</id>
+	<property>
+	<id>IPMI_SENSOR_ID</id>
+	<value>0x4C</value>
+	</property>
+</globalSetting>
+<globalSetting>
 	<id>/sys-0/node-0/ponderosa-0/proc_socket-0/module-0/proc/ex-3/core-0</id>
 	<property>
 	<id>FRU_NAME</id>
@@ -1377,21 +1383,14 @@
 	</property>
 </globalSetting>
 <globalSetting>
-	<id>/sys-0/node-0/ponderosa-0/birchconn-0/birch-0/membuf-0/membuf_func_sensor</id>
-	<property>
-	<id>IPMI_SENSOR_ID</id>
-	<value>0x4C</value>
-	</property>
-</globalSetting>
-<globalSetting>
-	<id>/sys-0/node-0/ponderosa-0/birchconn-3/birch-0/membuf_vpd-1</id>
+	<id>/sys-0/node-0/ponderosa-0/proc_socket-1/module-1/proc/ex-2</id>
 	<property>
 	<id>IO_CONFIG_SELECT</id>
 	<value></value>
 	</property>
 </globalSetting>
 <globalSetting>
-	<id>/sys-0/node-0/ponderosa-0/proc_socket-1/module-1/proc/ex-2</id>
+	<id>/sys-0/node-0/ponderosa-0/birchconn-3/birch-0/membuf_vpd-1</id>
 	<property>
 	<id>IO_CONFIG_SELECT</id>
 	<value></value>
@@ -1405,13 +1404,6 @@
 	</property>
 </globalSetting>
 <globalSetting>
-	<id>/sys-0/node-0/ponderosa-0/proc_socket-0/module-0/proc/ex-9</id>
-	<property>
-	<id>IO_CONFIG_SELECT</id>
-	<value></value>
-	</property>
-</globalSetting>
-<globalSetting>
 	<id>/sys-0/node-0/ponderosa-0/proc_socket-1/module-1/proc/ex-1</id>
 	<property>
 	<id>IO_CONFIG_SELECT</id>
@@ -1419,7 +1411,7 @@
 	</property>
 </globalSetting>
 <globalSetting>
-	<id>/sys-0/node-0/ponderosa-0/proc_socket-0/module-0/proc/ex-6</id>
+	<id>/sys-0/node-0/ponderosa-0/proc_socket-0/module-0/proc/ex-9</id>
 	<property>
 	<id>IO_CONFIG_SELECT</id>
 	<value></value>
@@ -1441,6 +1433,13 @@
 	</property>
 </globalSetting>
 <globalSetting>
+	<id>/sys-0/node-0/ponderosa-0/proc_socket-0/module-0/proc/ex-6</id>
+	<property>
+	<id>IO_CONFIG_SELECT</id>
+	<value></value>
+	</property>
+</globalSetting>
+<globalSetting>
 	<id>/sys-0/node-0/ponderosa-0/birchconn-2/birch-0/dimmconn-3/dimm-0/spd</id>
 	<property>
 	<id>IO_CONFIG_SELECT</id>
@@ -1455,17 +1454,17 @@
 	</property>
 </globalSetting>
 <globalSetting>
-	<id>/sys-0/node-0/ponderosa-0/birchconn-3/birch-0/dimmconn-1/dimm-0/dimm_func_sensor</id>
-	<property>
-	<id>IPMI_SENSOR_ID</id>
-	<value>0x2B</value>
-	</property>
-</globalSetting>
-<globalSetting>
 	<id>/sys-0/node-0/ponderosa-0/proc_socket-0/module-0/proc/ex-5</id>
 	<property>
 	<id>IO_CONFIG_SELECT</id>
 	<value></value>
+	</property>
+</globalSetting>
+<globalSetting>
+	<id>/sys-0/node-0/ponderosa-0/birchconn-3/birch-0/dimmconn-1/dimm-0/dimm_func_sensor</id>
+	<property>
+	<id>IPMI_SENSOR_ID</id>
+	<value>0x2B</value>
 	</property>
 </globalSetting>
 <globalSetting>
@@ -1491,13 +1490,6 @@
 	</property>
 </globalSetting>
 <globalSetting>
-	<id>/sys-0/node-0/ponderosa-0/birchconn-4/birch-0/dimmconn-0/dimm-0/dimm_func_sensor</id>
-	<property>
-	<id>IPMI_SENSOR_ID</id>
-	<value>0x2E</value>
-	</property>
-</globalSetting>
-<globalSetting>
 	<id>/sys-0/node-0/ponderosa-0/proc_socket-0/module-0/proc/ex-2/core-0/cpucore_temp_sensor</id>
 	<property>
 	<id>IPMI_SENSOR_ID</id>
@@ -1505,10 +1497,10 @@
 	</property>
 </globalSetting>
 <globalSetting>
-	<id>/sys-0/node-0/ponderosa-0/proc_socket-0/module-0/proc/ex-13/core-0/cpucore_func_sensor</id>
+	<id>/sys-0/node-0/ponderosa-0/birchconn-4/birch-0/dimmconn-0/dimm-0/dimm_func_sensor</id>
 	<property>
 	<id>IPMI_SENSOR_ID</id>
-	<value>0x48</value>
+	<value>0x2E</value>
 	</property>
 </globalSetting>
 <globalSetting>
@@ -1519,6 +1511,13 @@
 	</property>
 </globalSetting>
 <globalSetting>
+	<id>/sys-0/node-0/ponderosa-0/proc_socket-0/module-0/proc/ex-13/core-0/cpucore_func_sensor</id>
+	<property>
+	<id>IPMI_SENSOR_ID</id>
+	<value>0x48</value>
+	</property>
+</globalSetting>
+<globalSetting>
 	<id>/sys-0/node-0/ponderosa-0/birchconn-0/birch-0/vddr_gpio-1</id>
 	<property>
 	<id>IO_CONFIG_SELECT</id>
@@ -1526,17 +1525,17 @@
 	</property>
 </globalSetting>
 <globalSetting>
-	<id>/sys-0/node-0/ponderosa-0/proc_socket-0/module-0/proc/ex-12/core-0/cpucore_func_sensor</id>
-	<property>
-	<id>IPMI_SENSOR_ID</id>
-	<value>0x47</value>
-	</property>
-</globalSetting>
-<globalSetting>
 	<id>/sys-0/node-0/ponderosa-0/proc_socket-0/module-0/proc/ex-5/core-0/cpucore_temp_sensor</id>
 	<property>
 	<id>IPMI_SENSOR_ID</id>
 	<value>0x8D</value>
+	</property>
+</globalSetting>
+<globalSetting>
+	<id>/sys-0/node-0/ponderosa-0/proc_socket-0/module-0/proc/ex-12/core-0/cpucore_func_sensor</id>
+	<property>
+	<id>IPMI_SENSOR_ID</id>
+	<value>0x47</value>
 	</property>
 </globalSetting>
 <globalSetting>
@@ -1548,6 +1547,13 @@
 </globalSetting>
 <globalSetting>
 	<id>/sys-0/node-0/ponderosa-0/proc_socket-0/module-0/proc/ex-3</id>
+	<property>
+	<id>IO_CONFIG_SELECT</id>
+	<value></value>
+	</property>
+</globalSetting>
+<globalSetting>
+	<id>/sys-0/node-0/ponderosa-0/proc_socket-0/module-0/proc/ex-2</id>
 	<property>
 	<id>IO_CONFIG_SELECT</id>
 	<value></value>
@@ -1569,14 +1575,7 @@
 	</property>
 </globalSetting>
 <globalSetting>
-	<id>/sys-0/node-0/ponderosa-0/proc_socket-0/module-0/proc/ex-2</id>
-	<property>
-	<id>IO_CONFIG_SELECT</id>
-	<value></value>
-	</property>
-</globalSetting>
-<globalSetting>
-	<id>/sys-0/node-0/ponderosa-0/proc_socket-0/module-0/proc/ex-1</id>
+	<id>/sys-0/node-0/ponderosa-0/birchconn-4/birch-0/membuf_vpd-1</id>
 	<property>
 	<id>IO_CONFIG_SELECT</id>
 	<value></value>
@@ -1590,7 +1589,7 @@
 	</property>
 </globalSetting>
 <globalSetting>
-	<id>/sys-0/node-0/ponderosa-0/birchconn-4/birch-0/membuf_vpd-1</id>
+	<id>/sys-0/node-0/ponderosa-0/proc_socket-0/module-0/proc/ex-1</id>
 	<property>
 	<id>IO_CONFIG_SELECT</id>
 	<value></value>
@@ -1615,17 +1614,17 @@
 	</property>
 </globalSetting>
 <globalSetting>
-	<id>/sys-0/node-0/ponderosa-0/proc_socket-1/module-1/proc/ex-5</id>
-	<property>
-	<id>IO_CONFIG_SELECT</id>
-	<value></value>
-	</property>
-</globalSetting>
-<globalSetting>
 	<id>/sys-0/node-0/ponderosa-0/proc_socket-0/module-0/proc/ex-14/core-0/cpucore_func_sensor</id>
 	<property>
 	<id>IPMI_SENSOR_ID</id>
 	<value>0x49</value>
+	</property>
+</globalSetting>
+<globalSetting>
+	<id>/sys-0/node-0/ponderosa-0/proc_socket-1/module-1/proc/ex-5</id>
+	<property>
+	<id>IO_CONFIG_SELECT</id>
+	<value></value>
 	</property>
 </globalSetting>
 <globalSetting>
@@ -1657,17 +1656,6 @@
 	</property>
 </globalSetting>
 <globalSetting>
-	<id>/sys-0/node-0/ponderosa-0/proc_socket-1/module-1/proc/occ-0</id>
-	<property>
-	<id>FRU_NAME</id>
-	<value>OCC1</value>
-	</property>
-	<property>
-	<id>IPMI_INSTANCE</id>
-	<value>1</value>
-	</property>
-</globalSetting>
-<globalSetting>
 	<id>/sys-0/node-0/ponderosa-0/proc_socket-0/module-0/proc/ex-1/core-0</id>
 	<property>
 	<id>FRU_NAME</id>
@@ -1679,10 +1667,14 @@
 	</property>
 </globalSetting>
 <globalSetting>
-	<id>/sys-0/node-0/ponderosa-0/birchconn-4/birch-0/dimmconn-0/dimm-0/spd</id>
+	<id>/sys-0/node-0/ponderosa-0/proc_socket-1/module-1/proc/occ-0</id>
 	<property>
-	<id>IO_CONFIG_SELECT</id>
-	<value></value>
+	<id>FRU_NAME</id>
+	<value>OCC1</value>
+	</property>
+	<property>
+	<id>IPMI_INSTANCE</id>
+	<value>1</value>
 	</property>
 </globalSetting>
 <globalSetting>
@@ -1690,6 +1682,13 @@
 	<property>
 	<id>IPMI_SENSOR_ID</id>
 	<value>0x5B</value>
+	</property>
+</globalSetting>
+<globalSetting>
+	<id>/sys-0/node-0/ponderosa-0/birchconn-4/birch-0/dimmconn-0/dimm-0/spd</id>
+	<property>
+	<id>IO_CONFIG_SELECT</id>
+	<value></value>
 	</property>
 </globalSetting>
 <globalSetting>
@@ -1714,14 +1713,14 @@
 	</property>
 </globalSetting>
 <globalSetting>
-	<id>/sys-0/node-0/ponderosa-0/birchconn-0/birch-0/dimmconn-0</id>
+	<id>/sys-0/node-0/ponderosa-0/birchconn-1/birch-0/dimmconn-0</id>
 	<property>
 	<id>IO_CONFIG_SELECT</id>
 	<value></value>
 	</property>
 </globalSetting>
 <globalSetting>
-	<id>/sys-0/node-0/ponderosa-0/birchconn-1/birch-0/dimmconn-0</id>
+	<id>/sys-0/node-0/ponderosa-0/birchconn-0/birch-0/dimmconn-0</id>
 	<property>
 	<id>IO_CONFIG_SELECT</id>
 	<value></value>
@@ -1735,7 +1734,7 @@
 	</property>
 </globalSetting>
 <globalSetting>
-	<id>/sys-0/node-0/ponderosa-0/birchconn-4/birch-0</id>
+	<id>/sys-0/node-0/ponderosa-0/birchconn-1/birch-0/dimmconn-2</id>
 	<property>
 	<id>IO_CONFIG_SELECT</id>
 	<value></value>
@@ -1749,14 +1748,7 @@
 	</property>
 </globalSetting>
 <globalSetting>
-	<id>/sys-0/node-0/ponderosa-0/birchconn-1/birch-0/dimmconn-2</id>
-	<property>
-	<id>IO_CONFIG_SELECT</id>
-	<value></value>
-	</property>
-</globalSetting>
-<globalSetting>
-	<id>/sys-0/node-0/ponderosa-0/birchconn-0/birch-0/dimmconn-1</id>
+	<id>/sys-0/node-0/ponderosa-0/birchconn-4/birch-0</id>
 	<property>
 	<id>IO_CONFIG_SELECT</id>
 	<value></value>
@@ -1764,6 +1756,13 @@
 </globalSetting>
 <globalSetting>
 	<id>/sys-0/node-0/ponderosa-0/birchconn-1/birch-0/dimmconn-3</id>
+	<property>
+	<id>IO_CONFIG_SELECT</id>
+	<value></value>
+	</property>
+</globalSetting>
+<globalSetting>
+	<id>/sys-0/node-0/ponderosa-0/birchconn-0/birch-0/dimmconn-1</id>
 	<property>
 	<id>IO_CONFIG_SELECT</id>
 	<value></value>
@@ -1798,13 +1797,6 @@
 	</property>
 </globalSetting>
 <globalSetting>
-	<id>/sys-0/node-0/ponderosa-0/birchconn-6/birch-0/dimmconn-0</id>
-	<property>
-	<id>IO_CONFIG_SELECT</id>
-	<value></value>
-	</property>
-</globalSetting>
-<globalSetting>
 	<id>/sys-0/node-0/ponderosa-0/birchconn-3/birch-0/dimmconn-0</id>
 	<property>
 	<id>IO_CONFIG_SELECT</id>
@@ -1812,14 +1804,7 @@
 	</property>
 </globalSetting>
 <globalSetting>
-	<id>/sys-0/node-0/ponderosa-0/birchconn-0/birch-0/membuf-0/mba-0</id>
-	<property>
-	<id>IO_CONFIG_SELECT</id>
-	<value></value>
-	</property>
-</globalSetting>
-<globalSetting>
-	<id>/sys-0/node-0/ponderosa-0/birchconn-7/birch-0/membuf_vpd-1</id>
+	<id>/sys-0/node-0/ponderosa-0/birchconn-6/birch-0/dimmconn-0</id>
 	<property>
 	<id>IO_CONFIG_SELECT</id>
 	<value></value>
@@ -1837,7 +1822,14 @@
 	</property>
 </globalSetting>
 <globalSetting>
-	<id>/sys-0/node-0/ponderosa-0/birchconn-6/birch-0/dimmconn-0/dimm-0/spd</id>
+	<id>/sys-0/node-0/ponderosa-0/birchconn-7/birch-0/membuf_vpd-1</id>
+	<property>
+	<id>IO_CONFIG_SELECT</id>
+	<value></value>
+	</property>
+</globalSetting>
+<globalSetting>
+	<id>/sys-0/node-0/ponderosa-0/birchconn-0/birch-0/membuf-0/mba-0</id>
 	<property>
 	<id>IO_CONFIG_SELECT</id>
 	<value></value>
@@ -1845,6 +1837,13 @@
 </globalSetting>
 <globalSetting>
 	<id>/sys-0/node-0/ponderosa-0/birchconn-0/birch-0/membuf-0/mba-1</id>
+	<property>
+	<id>IO_CONFIG_SELECT</id>
+	<value></value>
+	</property>
+</globalSetting>
+<globalSetting>
+	<id>/sys-0/node-0/ponderosa-0/birchconn-6/birch-0/dimmconn-0/dimm-0/spd</id>
 	<property>
 	<id>IO_CONFIG_SELECT</id>
 	<value></value>
@@ -1915,17 +1914,17 @@
 	</property>
 </globalSetting>
 <globalSetting>
-	<id>/sys-0/node-0/ponderosa-0/birchconn-6/birch-0/vddr_vreg-0</id>
-	<property>
-	<id>IO_CONFIG_SELECT</id>
-	<value></value>
-	</property>
-</globalSetting>
-<globalSetting>
 	<id>/sys-0/node-0/ponderosa-0/birchconn-5/birch-0/dimmconn-0/dimm-0/dimm_func_sensor</id>
 	<property>
 	<id>IPMI_SENSOR_ID</id>
 	<value>0x32</value>
+	</property>
+</globalSetting>
+<globalSetting>
+	<id>/sys-0/node-0/ponderosa-0/birchconn-6/birch-0/vddr_vreg-0</id>
+	<property>
+	<id>IO_CONFIG_SELECT</id>
+	<value></value>
 	</property>
 </globalSetting>
 <globalSetting>
@@ -1969,14 +1968,14 @@
 	</property>
 </globalSetting>
 <globalSetting>
-	<id>/sys-0/node-0/ponderosa-0/proc_socket-1/module-1</id>
+	<id>/sys-0/node-0/ponderosa-0/birchconn-3/birch-0/dimmconn-1/dimm-0/spd</id>
 	<property>
 	<id>IO_CONFIG_SELECT</id>
 	<value></value>
 	</property>
 </globalSetting>
 <globalSetting>
-	<id>/sys-0/node-0/ponderosa-0/birchconn-3/birch-0/dimmconn-1/dimm-0/spd</id>
+	<id>/sys-0/node-0/ponderosa-0/proc_socket-1/module-1</id>
 	<property>
 	<id>IO_CONFIG_SELECT</id>
 	<value></value>
@@ -2012,14 +2011,14 @@
 	</property>
 </globalSetting>
 <globalSetting>
-	<id>/sys-0/node-0/ponderosa-0/birchconn-2/birch-0/dimmconn-1</id>
+	<id>/sys-0/node-0/ponderosa-0/proc_socket-0/module-0/proc/pci_configs/E0_x16:E1_x16</id>
 	<property>
 	<id>IO_CONFIG_SELECT</id>
 	<value></value>
 	</property>
 </globalSetting>
 <globalSetting>
-	<id>/sys-0/node-0/ponderosa-0/proc_socket-0/module-0/proc/pci_configs/E0_x16:E1_x16</id>
+	<id>/sys-0/node-0/ponderosa-0/birchconn-2/birch-0/dimmconn-1</id>
 	<property>
 	<id>IO_CONFIG_SELECT</id>
 	<value></value>
@@ -2076,10 +2075,10 @@
 	</property>
 </globalSetting>
 <globalSetting>
-	<id>/sys-0/node-0/ponderosa-0/birchconn-4/birch-0/dimmconn-1/dimm-0/dimm_temp_sensor</id>
+	<id>/sys-0/power_cap_sensor</id>
 	<property>
 	<id>IPMI_SENSOR_ID</id>
-	<value>0x7A</value>
+	<value>0x58</value>
 	</property>
 </globalSetting>
 <globalSetting>
@@ -2090,10 +2089,10 @@
 	</property>
 </globalSetting>
 <globalSetting>
-	<id>/sys-0/power_cap_sensor</id>
+	<id>/sys-0/node-0/ponderosa-0/birchconn-4/birch-0/dimmconn-1/dimm-0/dimm_temp_sensor</id>
 	<property>
 	<id>IPMI_SENSOR_ID</id>
-	<value>0x58</value>
+	<value>0x7A</value>
 	</property>
 </globalSetting>
 <globalSetting>
@@ -2125,10 +2124,10 @@
 	</property>
 </globalSetting>
 <globalSetting>
-	<id>/sys-0/node-0/ponderosa-0/proc_socket-0/module-0/proc/ex-5/core-0/cpucore_func_sensor</id>
+	<id>/sys-0/apss-0</id>
 	<property>
-	<id>IPMI_SENSOR_ID</id>
-	<value>0x42</value>
+	<id>IO_CONFIG_SELECT</id>
+	<value></value>
 	</property>
 </globalSetting>
 <globalSetting>
@@ -2136,6 +2135,13 @@
 	<property>
 	<id>IO_CONFIG_SELECT</id>
 	<value></value>
+	</property>
+</globalSetting>
+<globalSetting>
+	<id>/sys-0/node-0/ponderosa-0/proc_socket-0/module-0/proc/ex-5/core-0/cpucore_func_sensor</id>
+	<property>
+	<id>IPMI_SENSOR_ID</id>
+	<value>0x42</value>
 	</property>
 </globalSetting>
 <globalSetting>
@@ -2153,14 +2159,14 @@
 	</property>
 </globalSetting>
 <globalSetting>
-	<id>/sys-0/node-0/ponderosa-0/birchconn-3/birch-0/membuf-0/mba-0</id>
+	<id>/sys-0/node-0/ponderosa-0/birchconn-6/birch-0</id>
 	<property>
 	<id>IO_CONFIG_SELECT</id>
 	<value></value>
 	</property>
 </globalSetting>
 <globalSetting>
-	<id>/sys-0/node-0/ponderosa-0/birchconn-6/birch-0</id>
+	<id>/sys-0/node-0/ponderosa-0/birchconn-3/birch-0/membuf-0/mba-0</id>
 	<property>
 	<id>IO_CONFIG_SELECT</id>
 	<value></value>
@@ -2181,6 +2187,13 @@
 	</property>
 </globalSetting>
 <globalSetting>
+	<id>/sys-0/node-0/ponderosa-0/proc_socket-1/module-1/proc/ex-13</id>
+	<property>
+	<id>IO_CONFIG_SELECT</id>
+	<value></value>
+	</property>
+</globalSetting>
+<globalSetting>
 	<id>/sys-0/power_limit_sensor</id>
 	<property>
 	<id>IPMI_SENSOR_ID</id>
@@ -2188,7 +2201,7 @@
 	</property>
 </globalSetting>
 <globalSetting>
-	<id>/sys-0/node-0/ponderosa-0/proc_socket-1/module-1/proc/ex-13</id>
+	<id>/sys-0/node-0/ponderosa-0/birchconn-5/birch-0/dimmconn-2/dimm-0/spd</id>
 	<property>
 	<id>IO_CONFIG_SELECT</id>
 	<value></value>
@@ -2202,7 +2215,14 @@
 	</property>
 </globalSetting>
 <globalSetting>
-	<id>/sys-0/node-0/ponderosa-0/birchconn-5/birch-0/dimmconn-2/dimm-0/spd</id>
+	<id>/sys-0/node-0/ponderosa-0/proc_socket-1/module-1/proc/ex-11</id>
+	<property>
+	<id>IO_CONFIG_SELECT</id>
+	<value></value>
+	</property>
+</globalSetting>
+<globalSetting>
+	<id>/sys-0/node-0/ponderosa-0/birchconn-0/birch-0/membuf_vpd-1</id>
 	<property>
 	<id>IO_CONFIG_SELECT</id>
 	<value></value>
@@ -2216,14 +2236,7 @@
 	</property>
 </globalSetting>
 <globalSetting>
-	<id>/sys-0/node-0/ponderosa-0/birchconn-0/birch-0/membuf_vpd-1</id>
-	<property>
-	<id>IO_CONFIG_SELECT</id>
-	<value></value>
-	</property>
-</globalSetting>
-<globalSetting>
-	<id>/sys-0/node-0/ponderosa-0/proc_socket-1/module-1/proc/ex-11</id>
+	<id>/sys-0/node-0/ponderosa-0/birchconn-4/birch-0/vddr_gpio-1</id>
 	<property>
 	<id>IO_CONFIG_SELECT</id>
 	<value></value>
@@ -2231,13 +2244,6 @@
 </globalSetting>
 <globalSetting>
 	<id>/sys-0/node-0/ponderosa-0/proc_socket-1/module-1/proc/ex-12</id>
-	<property>
-	<id>IO_CONFIG_SELECT</id>
-	<value></value>
-	</property>
-</globalSetting>
-<globalSetting>
-	<id>/sys-0/node-0/ponderosa-0/birchconn-4/birch-0/vddr_gpio-1</id>
 	<property>
 	<id>IO_CONFIG_SELECT</id>
 	<value></value>
@@ -2277,21 +2283,18 @@
 	</property>
 </globalSetting>
 <globalSetting>
-	<id>/sys-0/node-0/ponderosa-0/birchconn-3/birch-0/dimmconn-2/dimm-0/dimm_func_sensor</id>
+	<id>/sys-0/node-0/ponderosa-0/birchconn-4/birch-0/dimmconn-1/dimm-0</id>
 	<property>
-	<id>IPMI_SENSOR_ID</id>
-	<value>0x2C</value>
+	<id>IO_CONFIG_SELECT</id>
+	<value></value>
 	</property>
-</globalSetting>
-<globalSetting>
-	<id>/sys-0/node-0/ponderosa-0/proc_socket-1/module-1/proc/ex-9/core-0</id>
 	<property>
 	<id>FRU_NAME</id>
-	<value>CORE18</value>
+	<value>DIMM17</value>
 	</property>
 	<property>
 	<id>IPMI_INSTANCE</id>
-	<value>18</value>
+	<value>17</value>
 	</property>
 </globalSetting>
 <globalSetting>
@@ -2310,29 +2313,35 @@
 	</property>
 </globalSetting>
 <globalSetting>
-	<id>/sys-0/node-0/ponderosa-0/birchconn-4/birch-0/dimmconn-1/dimm-0</id>
+	<id>/sys-0/node-0/ponderosa-0/proc_socket-1/module-1/proc/ex-9/core-0</id>
+	<property>
+	<id>FRU_NAME</id>
+	<value>CORE18</value>
+	</property>
+	<property>
+	<id>IPMI_INSTANCE</id>
+	<value>18</value>
+	</property>
+</globalSetting>
+<globalSetting>
+	<id>/sys-0/node-0/ponderosa-0/birchconn-3/birch-0/dimmconn-2/dimm-0/dimm_func_sensor</id>
+	<property>
+	<id>IPMI_SENSOR_ID</id>
+	<value>0x2C</value>
+	</property>
+</globalSetting>
+<globalSetting>
+	<id>/sys-0/node-0/ponderosa-0/proc_socket-0/module-0</id>
 	<property>
 	<id>IO_CONFIG_SELECT</id>
 	<value></value>
 	</property>
-	<property>
-	<id>FRU_NAME</id>
-	<value>DIMM17</value>
-	</property>
-	<property>
-	<id>IPMI_INSTANCE</id>
-	<value>17</value>
-	</property>
 </globalSetting>
 <globalSetting>
-	<id>/sys-0/node-0/ponderosa-0/proc_socket-0/module-0/proc/ex-4/core-0</id>
+	<id>/sys-0/node-0/ponderosa-0/birchconn-7/birch-0/vddr_vreg-0</id>
 	<property>
-	<id>FRU_NAME</id>
-	<value>CORE3</value>
-	</property>
-	<property>
-	<id>IPMI_INSTANCE</id>
-	<value>3</value>
+	<id>IO_CONFIG_SELECT</id>
+	<value></value>
 	</property>
 </globalSetting>
 <globalSetting>
@@ -2347,17 +2356,14 @@
 	</property>
 </globalSetting>
 <globalSetting>
-	<id>/sys-0/node-0/ponderosa-0/birchconn-7/birch-0/vddr_vreg-0</id>
+	<id>/sys-0/node-0/ponderosa-0/proc_socket-0/module-0/proc/ex-4/core-0</id>
 	<property>
-	<id>IO_CONFIG_SELECT</id>
-	<value></value>
+	<id>FRU_NAME</id>
+	<value>CORE3</value>
 	</property>
-</globalSetting>
-<globalSetting>
-	<id>/sys-0/node-0/ponderosa-0/proc_socket-0/module-0</id>
 	<property>
-	<id>IO_CONFIG_SELECT</id>
-	<value></value>
+	<id>IPMI_INSTANCE</id>
+	<value>3</value>
 	</property>
 </globalSetting>
 <globalSetting>
@@ -2463,6 +2469,13 @@
 	</property>
 </globalSetting>
 <globalSetting>
+	<id>/sys-0/node-0/ponderosa-0/proc_socket-0/module-0/proc/ex-10/core-0/cpucore_temp_sensor</id>
+	<property>
+	<id>IPMI_SENSOR_ID</id>
+	<value>0x90</value>
+	</property>
+</globalSetting>
+<globalSetting>
 	<id>/sys-0/node-0/ponderosa-0/proc_socket-1/module-1/proc/ex-14/core-0</id>
 	<property>
 	<id>FRU_NAME</id>
@@ -2471,13 +2484,6 @@
 	<property>
 	<id>IPMI_INSTANCE</id>
 	<value>23</value>
-	</property>
-</globalSetting>
-<globalSetting>
-	<id>/sys-0/node-0/ponderosa-0/proc_socket-0/module-0/proc/ex-10/core-0/cpucore_temp_sensor</id>
-	<property>
-	<id>IPMI_SENSOR_ID</id>
-	<value>0x90</value>
 	</property>
 </globalSetting>
 <globalSetting>
@@ -2516,13 +2522,6 @@
 	</property>
 </globalSetting>
 <globalSetting>
-	<id>/sys-0/node-0/ponderosa-0/birchconn-5/birch-0/dimmconn-2/dimm-0/dimm_temp_sensor</id>
-	<property>
-	<id>IPMI_SENSOR_ID</id>
-	<value>0x7F</value>
-	</property>
-</globalSetting>
-<globalSetting>
 	<id>/sys-0/node-0/ponderosa-0/proc_socket-1/module-1/proc/ex-3/core-0</id>
 	<property>
 	<id>FRU_NAME</id>
@@ -2534,17 +2533,17 @@
 	</property>
 </globalSetting>
 <globalSetting>
+	<id>/sys-0/node-0/ponderosa-0/birchconn-5/birch-0/dimmconn-2/dimm-0/dimm_temp_sensor</id>
+	<property>
+	<id>IPMI_SENSOR_ID</id>
+	<value>0x7F</value>
+	</property>
+</globalSetting>
+<globalSetting>
 	<id>/sys-0/node-0/ponderosa-0/birchconn-6/birch-0/membuf_vpd-1</id>
 	<property>
 	<id>IO_CONFIG_SELECT</id>
 	<value></value>
-	</property>
-</globalSetting>
-<globalSetting>
-	<id>/sys-0/node-0/ponderosa-0/birchconn-5/birch-0/dimmconn-2/dimm-0/dimm_func_sensor</id>
-	<property>
-	<id>IPMI_SENSOR_ID</id>
-	<value>0x34</value>
 	</property>
 </globalSetting>
 <globalSetting>
@@ -2560,6 +2559,13 @@
 	<property>
 	<id>IPMI_INSTANCE</id>
 	<value>28</value>
+	</property>
+</globalSetting>
+<globalSetting>
+	<id>/sys-0/node-0/ponderosa-0/birchconn-5/birch-0/dimmconn-2/dimm-0/dimm_func_sensor</id>
+	<property>
+	<id>IPMI_SENSOR_ID</id>
+	<value>0x34</value>
 	</property>
 </globalSetting>
 <globalSetting>
@@ -2662,6 +2668,10 @@
 	<value>MEMBUF6</value>
 	</property>
 	<property>
+	<id>FRU_ID</id>
+	<value>11</value>
+	</property>
+	<property>
 	<id>IPMI_INSTANCE</id>
 	<value>6</value>
 	</property>
@@ -2696,13 +2706,6 @@
 	</property>
 </globalSetting>
 <globalSetting>
-	<id>/sys-0/node-0/tod_clk_sensor</id>
-	<property>
-	<id>IPMI_SENSOR_ID</id>
-	<value>0x56</value>
-	</property>
-</globalSetting>
-<globalSetting>
 	<id>/sys-0/apss-0/Memory_Proc0_Power</id>
 	<property>
 	<id>INSTANCE_ID</id>
@@ -2714,10 +2717,10 @@
 	</property>
 </globalSetting>
 <globalSetting>
-	<id>/sys-0/node-0/ponderosa-0/birchconn-5/birch-0/dimmconn-1/dimm-0/dimm_temp_sensor</id>
+	<id>/sys-0/node-0/tod_clk_sensor</id>
 	<property>
 	<id>IPMI_SENSOR_ID</id>
-	<value>0x7E</value>
+	<value>0x56</value>
 	</property>
 </globalSetting>
 <globalSetting>
@@ -2731,15 +2734,19 @@
 	<value>MEMBUF1</value>
 	</property>
 	<property>
+	<id>FRU_ID</id>
+	<value>6</value>
+	</property>
+	<property>
 	<id>IPMI_INSTANCE</id>
 	<value>1</value>
 	</property>
 </globalSetting>
 <globalSetting>
-	<id>/sys-0/node-0/ponderosa-0/birchconn-2/birch-0/dimmconn-1/dimm-0/dimm_temp_sensor</id>
+	<id>/sys-0/node-0/ponderosa-0/birchconn-5/birch-0/dimmconn-1/dimm-0/dimm_temp_sensor</id>
 	<property>
 	<id>IPMI_SENSOR_ID</id>
-	<value>0x72</value>
+	<value>0x7E</value>
 	</property>
 </globalSetting>
 <globalSetting>
@@ -2755,6 +2762,13 @@
 	<property>
 	<id>IPMI_INSTANCE</id>
 	<value>8</value>
+	</property>
+</globalSetting>
+<globalSetting>
+	<id>/sys-0/node-0/ponderosa-0/birchconn-2/birch-0/dimmconn-1/dimm-0/dimm_temp_sensor</id>
+	<property>
+	<id>IPMI_SENSOR_ID</id>
+	<value>0x72</value>
 	</property>
 </globalSetting>
 <globalSetting>
@@ -2779,6 +2793,13 @@
 	</property>
 </globalSetting>
 <globalSetting>
+	<id>/sys-0/node-0/ponderosa-0/birchconn-7/birch-0/dimmconn-3</id>
+	<property>
+	<id>IO_CONFIG_SELECT</id>
+	<value></value>
+	</property>
+</globalSetting>
+<globalSetting>
 	<id>/sys-0/node-0/ponderosa-0/birchconn-2/birch-0/dimmconn-0/dimm-0/dimm_func_sensor</id>
 	<property>
 	<id>IPMI_SENSOR_ID</id>
@@ -2786,7 +2807,14 @@
 	</property>
 </globalSetting>
 <globalSetting>
-	<id>/sys-0/node-0/ponderosa-0/birchconn-7/birch-0/dimmconn-3</id>
+	<id>/sys-0/node-0/ponderosa-0/proc_socket-0/module-0/proc/ex-4/core-0/cpucore_func_sensor</id>
+	<property>
+	<id>IPMI_SENSOR_ID</id>
+	<value>0x41</value>
+	</property>
+</globalSetting>
+<globalSetting>
+	<id>/sys-0/node-0/ponderosa-0/birchconn-2/birch-0/membuf-0/mba-0</id>
 	<property>
 	<id>IO_CONFIG_SELECT</id>
 	<value></value>
@@ -2800,17 +2828,10 @@
 	</property>
 </globalSetting>
 <globalSetting>
-	<id>/sys-0/node-0/ponderosa-0/birchconn-2/birch-0/membuf-0/mba-0</id>
+	<id>/sys-0/node-0/ponderosa-0/birchconn-2/birch-0/membuf-0/mba-1</id>
 	<property>
 	<id>IO_CONFIG_SELECT</id>
 	<value></value>
-	</property>
-</globalSetting>
-<globalSetting>
-	<id>/sys-0/node-0/ponderosa-0/proc_socket-0/module-0/proc/ex-4/core-0/cpucore_func_sensor</id>
-	<property>
-	<id>IPMI_SENSOR_ID</id>
-	<value>0x41</value>
 	</property>
 </globalSetting>
 <globalSetting>
@@ -2818,13 +2839,6 @@
 	<property>
 	<id>IPMI_SENSOR_ID</id>
 	<value>0x08</value>
-	</property>
-</globalSetting>
-<globalSetting>
-	<id>/sys-0/node-0/ponderosa-0/birchconn-2/birch-0/membuf-0/mba-1</id>
-	<property>
-	<id>IO_CONFIG_SELECT</id>
-	<value></value>
 	</property>
 </globalSetting>
 <globalSetting>
@@ -2870,13 +2884,6 @@
 	</property>
 </globalSetting>
 <globalSetting>
-	<id>/sys-0/dimm_freq_sensor</id>
-	<property>
-	<id>IPMI_SENSOR_ID</id>
-	<value>0x4F</value>
-	</property>
-</globalSetting>
-<globalSetting>
 	<id>/sys-0/node-0/ponderosa-0/birchconn-4/birch-0/dimmconn-1/dimm-0/dimm_func_sensor</id>
 	<property>
 	<id>IPMI_SENSOR_ID</id>
@@ -2884,10 +2891,24 @@
 	</property>
 </globalSetting>
 <globalSetting>
+	<id>/sys-0/dimm_freq_sensor</id>
+	<property>
+	<id>IPMI_SENSOR_ID</id>
+	<value>0x4F</value>
+	</property>
+</globalSetting>
+<globalSetting>
 	<id>/sys-0/node-0/ponderosa-0/birchconn-0/birch-0/dimmconn-3/dimm-0/dimm_temp_sensor</id>
 	<property>
 	<id>IPMI_SENSOR_ID</id>
 	<value>0x6C</value>
+	</property>
+</globalSetting>
+<globalSetting>
+	<id>/sys-0/node-0/ponderosa-0/birchconn-0/birch-0/dimmconn-2/dimm-0/dimm_func_sensor</id>
+	<property>
+	<id>IPMI_SENSOR_ID</id>
+	<value>0x20</value>
 	</property>
 </globalSetting>
 <globalSetting>
@@ -2906,13 +2927,6 @@
 	</property>
 </globalSetting>
 <globalSetting>
-	<id>/sys-0/node-0/ponderosa-0/birchconn-0/birch-0/dimmconn-2/dimm-0/dimm_func_sensor</id>
-	<property>
-	<id>IPMI_SENSOR_ID</id>
-	<value>0x20</value>
-	</property>
-</globalSetting>
-<globalSetting>
 	<id>/sys-0/node-0/ponderosa-0/birchconn-7/birch-0/dimmconn-3/dimm-0/dimm_temp_sensor</id>
 	<property>
 	<id>IPMI_SENSOR_ID</id>
@@ -2928,6 +2942,10 @@
 	<property>
 	<id>FRU_NAME</id>
 	<value>MEMBUF2</value>
+	</property>
+	<property>
+	<id>FRU_ID</id>
+	<value>7</value>
 	</property>
 	<property>
 	<id>IPMI_INSTANCE</id>
@@ -2949,14 +2967,14 @@
 	</property>
 </globalSetting>
 <globalSetting>
-	<id>/sys-0/node-0/ponderosa-0/birchconn-0/birch-0/dimmconn-2/dimm-0/spd</id>
+	<id>/sys-0/node-0/ponderosa-0/birchconn-1/birch-0</id>
 	<property>
 	<id>IO_CONFIG_SELECT</id>
 	<value></value>
 	</property>
 </globalSetting>
 <globalSetting>
-	<id>/sys-0/node-0/ponderosa-0/birchconn-1/birch-0</id>
+	<id>/sys-0/node-0/ponderosa-0/birchconn-0/birch-0/dimmconn-2/dimm-0/spd</id>
 	<property>
 	<id>IO_CONFIG_SELECT</id>
 	<value></value>
@@ -3013,13 +3031,6 @@
 	</property>
 </globalSetting>
 <globalSetting>
-	<id>/sys-0/node-0/ponderosa-0/birchconn-5/birch-0/membuf_vpd-1</id>
-	<property>
-	<id>IO_CONFIG_SELECT</id>
-	<value></value>
-	</property>
-</globalSetting>
-<globalSetting>
 	<id>/sys-0/node-0/ponderosa-0/proc_socket-0/module-0/proc</id>
 	<property>
 	<id>IO_CONFIG_SELECT</id>
@@ -3031,11 +3042,18 @@
 	</property>
 	<property>
 	<id>FRU_ID</id>
-	<value></value>
+	<value>3</value>
 	</property>
 	<property>
 	<id>IPMI_INSTANCE</id>
 	<value>0</value>
+	</property>
+</globalSetting>
+<globalSetting>
+	<id>/sys-0/node-0/ponderosa-0/birchconn-5/birch-0/membuf_vpd-1</id>
+	<property>
+	<id>IO_CONFIG_SELECT</id>
+	<value></value>
 	</property>
 </globalSetting>
 <globalSetting>
@@ -3053,14 +3071,14 @@
 	</property>
 </globalSetting>
 <globalSetting>
-	<id>/sys-0/node-0/ponderosa-0/birchconn-3/birch-0</id>
+	<id>/sys-0/node-0/ponderosa-0/x16slot-2/x16card-1</id>
 	<property>
 	<id>IO_CONFIG_SELECT</id>
 	<value></value>
 	</property>
 </globalSetting>
 <globalSetting>
-	<id>/sys-0/node-0/ponderosa-0/x16slot-2/x16card-1</id>
+	<id>/sys-0/node-0/ponderosa-0/birchconn-3/birch-0</id>
 	<property>
 	<id>IO_CONFIG_SELECT</id>
 	<value></value>
@@ -3106,13 +3124,6 @@
 	</property>
 </globalSetting>
 <globalSetting>
-	<id>/sys-0/node-0/ponderosa-0/birchconn-7</id>
-	<property>
-	<id>IO_CONFIG_SELECT</id>
-	<value></value>
-	</property>
-</globalSetting>
-<globalSetting>
 	<id>/sys-0/node-0/ponderosa-0/proc_socket-0</id>
 	<property>
 	<id>IO_CONFIG_SELECT</id>
@@ -3120,7 +3131,7 @@
 	</property>
 </globalSetting>
 <globalSetting>
-	<id>/sys-0/node-0/ponderosa-0/birchconn-6</id>
+	<id>/sys-0/node-0/ponderosa-0/birchconn-7</id>
 	<property>
 	<id>IO_CONFIG_SELECT</id>
 	<value></value>
@@ -3128,6 +3139,13 @@
 </globalSetting>
 <globalSetting>
 	<id>/sys-0/node-0/ponderosa-0/proc_socket-1</id>
+	<property>
+	<id>IO_CONFIG_SELECT</id>
+	<value></value>
+	</property>
+</globalSetting>
+<globalSetting>
+	<id>/sys-0/node-0/ponderosa-0/birchconn-6</id>
 	<property>
 	<id>IO_CONFIG_SELECT</id>
 	<value></value>
@@ -3167,6 +3185,13 @@
 	</property>
 </globalSetting>
 <globalSetting>
+	<id>/sys-0/node-0/ponderosa-0/birchconn-2/birch-0/dimmconn-1/dimm-0/dimm_func_sensor</id>
+	<property>
+	<id>IPMI_SENSOR_ID</id>
+	<value>0x27</value>
+	</property>
+</globalSetting>
+<globalSetting>
 	<id>/sys-0/node-0/ponderosa-0/birchconn-1/birch-0/dimmconn-3/dimm-0</id>
 	<property>
 	<id>IO_CONFIG_SELECT</id>
@@ -3182,10 +3207,17 @@
 	</property>
 </globalSetting>
 <globalSetting>
-	<id>/sys-0/node-0/ponderosa-0/birchconn-2/birch-0/dimmconn-1/dimm-0/dimm_func_sensor</id>
+	<id>/sys-0/node-0/ponderosa-0/x8slot-3</id>
 	<property>
-	<id>IPMI_SENSOR_ID</id>
-	<value>0x27</value>
+	<id>IO_CONFIG_SELECT</id>
+	<value></value>
+	</property>
+</globalSetting>
+<globalSetting>
+	<id>/sys-0/node-0/ponderosa-0/birchconn-1</id>
+	<property>
+	<id>IO_CONFIG_SELECT</id>
+	<value></value>
 	</property>
 </globalSetting>
 <globalSetting>
@@ -3199,26 +3231,30 @@
 	<value>MEMBUF4</value>
 	</property>
 	<property>
+	<id>FRU_ID</id>
+	<value>9</value>
+	</property>
+	<property>
 	<id>IPMI_INSTANCE</id>
 	<value>4</value>
 	</property>
 </globalSetting>
 <globalSetting>
-	<id>/sys-0/node-0/ponderosa-0/birchconn-1</id>
-	<property>
-	<id>IO_CONFIG_SELECT</id>
-	<value></value>
-	</property>
-</globalSetting>
-<globalSetting>
-	<id>/sys-0/node-0/ponderosa-0/x8slot-3</id>
-	<property>
-	<id>IO_CONFIG_SELECT</id>
-	<value></value>
-	</property>
-</globalSetting>
-<globalSetting>
 	<id>/sys-0/node-0/ponderosa-0/birchconn-0</id>
+	<property>
+	<id>IO_CONFIG_SELECT</id>
+	<value></value>
+	</property>
+</globalSetting>
+<globalSetting>
+	<id>/sys-0/node-0/ponderosa-0/birchconn-7/birch-0/dimmconn-0/dimm-0/dimm_temp_sensor</id>
+	<property>
+	<id>IPMI_SENSOR_ID</id>
+	<value>0x85</value>
+	</property>
+</globalSetting>
+<globalSetting>
+	<id>/sys-0/node-0/ponderosa-0/birchconn-3</id>
 	<property>
 	<id>IO_CONFIG_SELECT</id>
 	<value></value>
@@ -3240,28 +3276,7 @@
 	</property>
 </globalSetting>
 <globalSetting>
-	<id>/sys-0/node-0/ponderosa-0/birchconn-3</id>
-	<property>
-	<id>IO_CONFIG_SELECT</id>
-	<value></value>
-	</property>
-</globalSetting>
-<globalSetting>
-	<id>/sys-0/node-0/ponderosa-0/birchconn-7/birch-0/dimmconn-0/dimm-0/dimm_temp_sensor</id>
-	<property>
-	<id>IPMI_SENSOR_ID</id>
-	<value>0x85</value>
-	</property>
-</globalSetting>
-<globalSetting>
 	<id>/sys-0/node-0/ponderosa-0/birchconn-2</id>
-	<property>
-	<id>IO_CONFIG_SELECT</id>
-	<value></value>
-	</property>
-</globalSetting>
-<globalSetting>
-	<id>/sys-0/node-0/ponderosa-0/birchconn-5</id>
 	<property>
 	<id>IO_CONFIG_SELECT</id>
 	<value></value>
@@ -3272,6 +3287,13 @@
 	<property>
 	<id>IPMI_SENSOR_ID</id>
 	<value>0x76</value>
+	</property>
+</globalSetting>
+<globalSetting>
+	<id>/sys-0/node-0/ponderosa-0/birchconn-5</id>
+	<property>
+	<id>IO_CONFIG_SELECT</id>
+	<value></value>
 	</property>
 </globalSetting>
 <globalSetting>
@@ -3292,34 +3314,12 @@
 	<value>MEMBUF0</value>
 	</property>
 	<property>
-	<id>IPMI_INSTANCE</id>
-	<value>0</value>
-	</property>
-</globalSetting>
-<globalSetting>
-	<id>/sys-0/node-0</id>
-	<property>
-	<id>IO_CONFIG_SELECT</id>
-	<value></value>
-	</property>
-	<property>
-	<id>FRU_NAME</id>
-	<value>NODE0</value>
-	</property>
-	<property>
 	<id>FRU_ID</id>
-	<value></value>
+	<value>5</value>
 	</property>
 	<property>
 	<id>IPMI_INSTANCE</id>
 	<value>0</value>
-	</property>
-</globalSetting>
-<globalSetting>
-	<id>/sys-0/node-0/ponderosa-0/x16slot-4</id>
-	<property>
-	<id>IO_CONFIG_SELECT</id>
-	<value></value>
 	</property>
 </globalSetting>
 <globalSetting>
@@ -3330,10 +3330,36 @@
 	</property>
 </globalSetting>
 <globalSetting>
-	<id>/sys-0/node-0/ponderosa-0/birchconn-4/birch-0/dimmconn-0</id>
+	<id>/sys-0/node-0/ponderosa-0/x16slot-4</id>
 	<property>
 	<id>IO_CONFIG_SELECT</id>
 	<value></value>
+	</property>
+</globalSetting>
+<globalSetting>
+	<id>/sys-0/node-0</id>
+	<property>
+	<id>IO_CONFIG_SELECT</id>
+	<value></value>
+	</property>
+	<property>
+	<id>FRU_NAME</id>
+	<value>PLANAR</value>
+	</property>
+	<property>
+	<id>FRU_ID</id>
+	<value>2</value>
+	</property>
+	<property>
+	<id>IPMI_INSTANCE</id>
+	<value>0</value>
+	</property>
+</globalSetting>
+<globalSetting>
+	<id>/sys-0/node-0/ponderosa-0/birchconn-6/birch-0/dimmconn-3/dimm-0/dimm_temp_sensor</id>
+	<property>
+	<id>IPMI_SENSOR_ID</id>
+	<value>0x84</value>
 	</property>
 </globalSetting>
 <globalSetting>
@@ -3352,10 +3378,10 @@
 	</property>
 </globalSetting>
 <globalSetting>
-	<id>/sys-0/node-0/ponderosa-0/birchconn-6/birch-0/dimmconn-3/dimm-0/dimm_temp_sensor</id>
+	<id>/sys-0/node-0/ponderosa-0/birchconn-4/birch-0/dimmconn-0</id>
 	<property>
-	<id>IPMI_SENSOR_ID</id>
-	<value>0x84</value>
+	<id>IO_CONFIG_SELECT</id>
+	<value></value>
 	</property>
 </globalSetting>
 <globalSetting>
@@ -3373,13 +3399,6 @@
 	</property>
 </globalSetting>
 <globalSetting>
-	<id>/sys-0/node-0/ponderosa-0/birchconn-4/birch-0/dimmconn-3</id>
-	<property>
-	<id>IO_CONFIG_SELECT</id>
-	<value></value>
-	</property>
-</globalSetting>
-<globalSetting>
 	<id>/sys-0/node-0/ponderosa-0/proc_socket-0/module-0/proc/ex-13/core-0</id>
 	<property>
 	<id>FRU_NAME</id>
@@ -3391,7 +3410,7 @@
 	</property>
 </globalSetting>
 <globalSetting>
-	<id>/sys-0/node-0/ponderosa-0/birchconn-1/birch-0/vddr_gpio-1</id>
+	<id>/sys-0/node-0/ponderosa-0/birchconn-4/birch-0/dimmconn-3</id>
 	<property>
 	<id>IO_CONFIG_SELECT</id>
 	<value></value>
@@ -3399,6 +3418,13 @@
 </globalSetting>
 <globalSetting>
 	<id>/sys-0/node-0/ponderosa-0/x16slot-2</id>
+	<property>
+	<id>IO_CONFIG_SELECT</id>
+	<value></value>
+	</property>
+</globalSetting>
+<globalSetting>
+	<id>/sys-0/node-0/ponderosa-0/birchconn-1/birch-0/vddr_gpio-1</id>
 	<property>
 	<id>IO_CONFIG_SELECT</id>
 	<value></value>
@@ -3455,13 +3481,6 @@
 	</property>
 </globalSetting>
 <globalSetting>
-	<id>/sys-0/node-0/ponderosa-0/birchconn-6/birch-0/dimmconn-2/dimm-0/spd</id>
-	<property>
-	<id>IO_CONFIG_SELECT</id>
-	<value></value>
-	</property>
-</globalSetting>
-<globalSetting>
 	<id>/sys-0/node-0/ponderosa-0/birchconn-1/birch-0/dimmconn-1/dimm-0</id>
 	<property>
 	<id>IO_CONFIG_SELECT</id>
@@ -3474,6 +3493,13 @@
 	<property>
 	<id>IPMI_INSTANCE</id>
 	<value>5</value>
+	</property>
+</globalSetting>
+<globalSetting>
+	<id>/sys-0/node-0/ponderosa-0/birchconn-6/birch-0/dimmconn-2/dimm-0/spd</id>
+	<property>
+	<id>IO_CONFIG_SELECT</id>
+	<value></value>
 	</property>
 </globalSetting>
 <globalSetting>
@@ -3491,14 +3517,14 @@
 	</property>
 </globalSetting>
 <globalSetting>
-	<id>/sys-0/node-0/ponderosa-0/birchconn-7/birch-0/dimmconn-0/dimm-0/spd</id>
+	<id>/sys-0/node-0/ponderosa-0/birchconn-6/birch-0/membuf-0/mba-0</id>
 	<property>
 	<id>IO_CONFIG_SELECT</id>
 	<value></value>
 	</property>
 </globalSetting>
 <globalSetting>
-	<id>/sys-0/node-0/ponderosa-0/birchconn-6/birch-0/membuf-0/mba-0</id>
+	<id>/sys-0/node-0/ponderosa-0/birchconn-7/birch-0/dimmconn-0/dimm-0/spd</id>
 	<property>
 	<id>IO_CONFIG_SELECT</id>
 	<value></value>
@@ -3519,13 +3545,6 @@
 	</property>
 </globalSetting>
 <globalSetting>
-	<id>/sys-0/node-0/ponderosa-0/birchconn-5/birch-0/vddr_gpio-1</id>
-	<property>
-	<id>IO_CONFIG_SELECT</id>
-	<value></value>
-	</property>
-</globalSetting>
-<globalSetting>
 	<id>/sys-0/node-0/ponderosa-0/birchconn-3/birch-0/dimmconn-1/dimm-0</id>
 	<property>
 	<id>IO_CONFIG_SELECT</id>
@@ -3538,6 +3557,13 @@
 	<property>
 	<id>IPMI_INSTANCE</id>
 	<value>13</value>
+	</property>
+</globalSetting>
+<globalSetting>
+	<id>/sys-0/node-0/ponderosa-0/birchconn-5/birch-0/vddr_gpio-1</id>
+	<property>
+	<id>IO_CONFIG_SELECT</id>
+	<value></value>
 	</property>
 </globalSetting>
 <globalSetting>
@@ -3562,13 +3588,6 @@
 	</property>
 </globalSetting>
 <globalSetting>
-	<id>/sys-0/node-0/ponderosa-0/birchconn-5/birch-0/membuf-0/mba-1</id>
-	<property>
-	<id>IO_CONFIG_SELECT</id>
-	<value></value>
-	</property>
-</globalSetting>
-<globalSetting>
 	<id>/sys-0/node-0/ponderosa-0/birchconn-7/birch-0/dimmconn-3/dimm-0/dimm_func_sensor</id>
 	<property>
 	<id>IPMI_SENSOR_ID</id>
@@ -3576,14 +3595,7 @@
 	</property>
 </globalSetting>
 <globalSetting>
-	<id>/sys-0/node-0/ponderosa-0/birchconn-5/birch-0/membuf-0/mba-0</id>
-	<property>
-	<id>IO_CONFIG_SELECT</id>
-	<value></value>
-	</property>
-</globalSetting>
-<globalSetting>
-	<id>/sys-0/node-0/ponderosa-0/PEX8725-0</id>
+	<id>/sys-0/node-0/ponderosa-0/birchconn-5/birch-0/membuf-0/mba-1</id>
 	<property>
 	<id>IO_CONFIG_SELECT</id>
 	<value></value>
@@ -3597,6 +3609,20 @@
 	</property>
 </globalSetting>
 <globalSetting>
+	<id>/sys-0/node-0/ponderosa-0/PEX8725-0</id>
+	<property>
+	<id>IO_CONFIG_SELECT</id>
+	<value></value>
+	</property>
+</globalSetting>
+<globalSetting>
+	<id>/sys-0/node-0/ponderosa-0/birchconn-5/birch-0/membuf-0/mba-0</id>
+	<property>
+	<id>IO_CONFIG_SELECT</id>
+	<value></value>
+	</property>
+</globalSetting>
+<globalSetting>
 	<id>/sys-0/node-0/ponderosa-0/birchconn-7/birch-0/membuf-0</id>
 	<property>
 	<id>IO_CONFIG_SELECT</id>
@@ -3605,6 +3631,10 @@
 	<property>
 	<id>FRU_NAME</id>
 	<value>MEMBUF7</value>
+	</property>
+	<property>
+	<id>FRU_ID</id>
+	<value>12</value>
 	</property>
 	<property>
 	<id>IPMI_INSTANCE</id>
@@ -3620,6 +3650,10 @@
 	<property>
 	<id>FRU_NAME</id>
 	<value>MEMBUF3</value>
+	</property>
+	<property>
+	<id>FRU_ID</id>
+	<value>8</value>
 	</property>
 	<property>
 	<id>IPMI_INSTANCE</id>
@@ -3652,14 +3686,14 @@
 	</property>
 </globalSetting>
 <globalSetting>
-	<id>/sys-0/node-0/ponderosa-0/proc_socket-1/module-1/proc/pci_configs/E0_x16:E1_x8x8</id>
+	<id>/sys-0/node-0/ponderosa-0/proc_socket-0/module-0/proc/ex-10</id>
 	<property>
 	<id>IO_CONFIG_SELECT</id>
 	<value></value>
 	</property>
 </globalSetting>
 <globalSetting>
-	<id>/sys-0/node-0/ponderosa-0/proc_socket-0/module-0/proc/ex-10</id>
+	<id>/sys-0/node-0/ponderosa-0/proc_socket-1/module-1/proc/pci_configs/E0_x16:E1_x8x8</id>
 	<property>
 	<id>IO_CONFIG_SELECT</id>
 	<value></value>
@@ -3688,13 +3722,6 @@
 	</property>
 </globalSetting>
 <globalSetting>
-	<id>/sys-0/node-0/ponderosa-0/proc_socket-0/module-0/proc/ex-14</id>
-	<property>
-	<id>IO_CONFIG_SELECT</id>
-	<value></value>
-	</property>
-</globalSetting>
-<globalSetting>
 	<id>/sys-0/node-0/ponderosa-0/birchconn-2/birch-0/dimmconn-2/dimm-0</id>
 	<property>
 	<id>IO_CONFIG_SELECT</id>
@@ -3707,6 +3734,13 @@
 	<property>
 	<id>IPMI_INSTANCE</id>
 	<value>10</value>
+	</property>
+</globalSetting>
+<globalSetting>
+	<id>/sys-0/node-0/ponderosa-0/proc_socket-0/module-0/proc/ex-14</id>
+	<property>
+	<id>IO_CONFIG_SELECT</id>
+	<value></value>
 	</property>
 </globalSetting>
 <globalSetting>
@@ -3738,17 +3772,17 @@
 	</property>
 </globalSetting>
 <globalSetting>
-	<id>/sys-0/node-0/ponderosa-0/proc_socket-0/module-0/proc/ex-4/core-0/cpucore_temp_sensor</id>
-	<property>
-	<id>IPMI_SENSOR_ID</id>
-	<value>0x8C</value>
-	</property>
-</globalSetting>
-<globalSetting>
 	<id>/sys-0/node-0/ponderosa-0/proc_socket-0/module-0/proc/ex-11/core-0/cpucore_temp_sensor</id>
 	<property>
 	<id>IPMI_SENSOR_ID</id>
 	<value>0x91</value>
+	</property>
+</globalSetting>
+<globalSetting>
+	<id>/sys-0/node-0/ponderosa-0/proc_socket-0/module-0/proc/ex-4/core-0/cpucore_temp_sensor</id>
+	<property>
+	<id>IPMI_SENSOR_ID</id>
+	<value>0x8C</value>
 	</property>
 </globalSetting>
 <globalSetting>
@@ -3762,6 +3796,10 @@
 	<id>/sys-0/node-0/ponderosa-0/birchconn-5/birch-0</id>
 	<property>
 	<id>IO_CONFIG_SELECT</id>
+	<value></value>
+	</property>
+	<property>
+	<id>FRU_ID</id>
 	<value></value>
 	</property>
 </globalSetting>
@@ -3798,6 +3836,13 @@
 	</property>
 </globalSetting>
 <globalSetting>
+	<id>/sys-0/node-0/ponderosa-0/planar_vpd-1</id>
+	<property>
+	<id>IO_CONFIG_SELECT</id>
+	<value></value>
+	</property>
+</globalSetting>
+<globalSetting>
 	<id>/sys-0/node-0/ponderosa-0/birchconn-7/birch-0/dimmconn-2/dimm-0</id>
 	<property>
 	<id>IO_CONFIG_SELECT</id>
@@ -3824,17 +3869,17 @@
 	</property>
 </globalSetting>
 <globalSetting>
-	<id>/sys-0/node-0/ponderosa-0/proc_socket-0/module-0/proc/ex-6/core-0/cpucore_func_sensor</id>
-	<property>
-	<id>IPMI_SENSOR_ID</id>
-	<value>0x43</value>
-	</property>
-</globalSetting>
-<globalSetting>
 	<id>/sys-0/node-0/ponderosa-0/proc_socket-0/module-0/proc/ex-12/core-0/cpucore_temp_sensor</id>
 	<property>
 	<id>IPMI_SENSOR_ID</id>
 	<value>0x92</value>
+	</property>
+</globalSetting>
+<globalSetting>
+	<id>/sys-0/node-0/ponderosa-0/proc_socket-0/module-0/proc/ex-6/core-0/cpucore_func_sensor</id>
+	<property>
+	<id>IPMI_SENSOR_ID</id>
+	<value>0x43</value>
 	</property>
 </globalSetting>
 <globalSetting>
@@ -3949,6 +3994,10 @@
 	<value>MEMBUF5</value>
 	</property>
 	<property>
+	<id>FRU_ID</id>
+	<value>10</value>
+	</property>
+	<property>
 	<id>IPMI_INSTANCE</id>
 	<value>5</value>
 	</property>
@@ -3961,6 +4010,13 @@
 	</property>
 </globalSetting>
 <globalSetting>
+	<id>/sys-0/node-0/ponderosa-0/proc_socket-0/module-0/proc/ex-2/core-0/cpucore_func_sensor</id>
+	<property>
+	<id>IPMI_SENSOR_ID</id>
+	<value>0x3F</value>
+	</property>
+</globalSetting>
+<globalSetting>
 	<id>/sys-0/node-0/ponderosa-0/birchconn-7/birch-0/vddr_gpio-1</id>
 	<property>
 	<id>IO_CONFIG_SELECT</id>
@@ -3968,10 +4024,10 @@
 	</property>
 </globalSetting>
 <globalSetting>
-	<id>/sys-0/node-0/ponderosa-0/proc_socket-0/module-0/proc/ex-2/core-0/cpucore_func_sensor</id>
+	<id>/sys-0/node-0/ponderosa-0/birchconn-6/birch-0/dimmconn-1/dimm-0/dimm_func_sensor</id>
 	<property>
 	<id>IPMI_SENSOR_ID</id>
-	<value>0x3F</value>
+	<value>0x37</value>
 	</property>
 </globalSetting>
 <globalSetting>
@@ -3995,13 +4051,6 @@
 	<property>
 	<id>IPMI_INSTANCE</id>
 	<value>0</value>
-	</property>
-</globalSetting>
-<globalSetting>
-	<id>/sys-0/node-0/ponderosa-0/birchconn-6/birch-0/dimmconn-1/dimm-0/dimm_func_sensor</id>
-	<property>
-	<id>IPMI_SENSOR_ID</id>
-	<value>0x37</value>
 	</property>
 </globalSetting>
 <globalSetting>
@@ -4033,10 +4082,14 @@
 	</property>
 </globalSetting>
 <globalSetting>
-	<id>/sys-0/node-0/ponderosa-0/birchconn-1/birch-0/dimmconn-3/dimm-0/spd</id>
+	<id>/sys-0/node-0/ponderosa-0/proc_socket-1/module-1/proc/ex-4/core-0</id>
 	<property>
-	<id>IO_CONFIG_SELECT</id>
-	<value></value>
+	<id>FRU_NAME</id>
+	<value>CORE15</value>
+	</property>
+	<property>
+	<id>IPMI_INSTANCE</id>
+	<value>15</value>
 	</property>
 </globalSetting>
 <globalSetting>
@@ -4051,14 +4104,21 @@
 	</property>
 </globalSetting>
 <globalSetting>
-	<id>/sys-0/node-0/ponderosa-0/proc_socket-1/module-1/proc/ex-4/core-0</id>
+	<id>/sys-0/node-0/ponderosa-0/birchconn-1/birch-0/dimmconn-3/dimm-0/spd</id>
+	<property>
+	<id>IO_CONFIG_SELECT</id>
+	<value></value>
+	</property>
+</globalSetting>
+<globalSetting>
+	<id>/sys-0/node-0/ponderosa-0/proc_socket-0/module-0/proc/ex-10/core-0</id>
 	<property>
 	<id>FRU_NAME</id>
-	<value>CORE15</value>
+	<value>CORE7</value>
 	</property>
 	<property>
 	<id>IPMI_INSTANCE</id>
-	<value>15</value>
+	<value>7</value>
 	</property>
 </globalSetting>
 <globalSetting>
@@ -4077,17 +4137,6 @@
 	</property>
 </globalSetting>
 <globalSetting>
-	<id>/sys-0/node-0/ponderosa-0/proc_socket-0/module-0/proc/ex-10/core-0</id>
-	<property>
-	<id>FRU_NAME</id>
-	<value>CORE7</value>
-	</property>
-	<property>
-	<id>IPMI_INSTANCE</id>
-	<value>7</value>
-	</property>
-</globalSetting>
-<globalSetting>
 	<id>/sys-0/node-0/ponderosa-0/birchconn-1/birch-0/dimmconn-0/dimm-0/dimm_func_sensor</id>
 	<property>
 	<id>IPMI_SENSOR_ID</id>
@@ -4095,14 +4144,14 @@
 	</property>
 </globalSetting>
 <globalSetting>
-	<id>/sys-0/node-0/ponderosa-0/birchconn-2/birch-0/dimmconn-0/dimm-0/spd</id>
+	<id>/sys-0/node-0/ponderosa-0/birchconn-2/birch-0/dimmconn-1/dimm-0/spd</id>
 	<property>
 	<id>IO_CONFIG_SELECT</id>
 	<value></value>
 	</property>
 </globalSetting>
 <globalSetting>
-	<id>/sys-0/node-0/ponderosa-0/birchconn-2/birch-0/dimmconn-1/dimm-0/spd</id>
+	<id>/sys-0/node-0/ponderosa-0/birchconn-2/birch-0/dimmconn-0/dimm-0/spd</id>
 	<property>
 	<id>IO_CONFIG_SELECT</id>
 	<value></value>
@@ -4568,6 +4617,7 @@
 	<hidden_child_id>ref_clk_sensor</hidden_child_id>
 	<hidden_child_id>pci_clk_sensor</hidden_child_id>
 	<hidden_child_id>tod_clk_sensor</hidden_child_id>
+	<hidden_child_id>apss_fault_sensor</hidden_child_id>
 	<attribute>
 		<id>CLASS</id>
 		<default>ENC</default>
@@ -4596,6 +4646,23 @@
 		<id>TYPE</id>
 		<default>NODE</default>
 	</attribute>
+	<bus>
+		<bus_id>ponderosa-0/planar_vpd-1/vpd_assoc_parent => ponderosa-0/vpd_assoc_child</bus_id>
+		<bus_type>LOGICAL_ASSOCIATION</bus_type>
+		<cable>no</cable>
+		<source_path>ponderosa-0/planar_vpd-1/</source_path>
+		<source_target>vpd_assoc_parent</source_target>
+		<dest_path>ponderosa-0/</dest_path>
+		<dest_target>vpd_assoc_child</dest_target>
+		<bus_attribute>
+			<id>CLASS</id>
+		<default>BUS</default>
+		</bus_attribute>
+		<bus_attribute>
+			<id>ISDIMM_MBVPD_INDEX</id>
+		<default>0</default>
+		</bus_attribute>
+	</bus>
 </targetInstance>
 <targetInstance>
 	<id>ponderosa-0</id>
@@ -4619,6 +4686,8 @@
 	<child_id>PEX8725-0</child_id>
 	<child_id>x16slot-4</child_id>
 	<child_id>bmc-0</child_id>
+	<child_id>vpd_assoc_child</child_id>
+	<child_id>planar_vpd-1</child_id>
 	<attribute>
 		<id>CLASS</id>
 		<default>CARD</default>
@@ -5123,6 +5192,27 @@
 		<bus_attribute>
 			<id>I2C_ADDRESS</id>
 		<default>0xAE</default>
+		</bus_attribute>
+		<bus_attribute>
+			<id>I2C_SPEED</id>
+		<default>400</default>
+		</bus_attribute>
+	</bus>
+	<bus>
+		<bus_id>proc_socket-0/module-0/proc/i2c-master-lightpath => planar_vpd-1/i2c-slave</bus_id>
+		<bus_type>I2C</bus_type>
+		<cable>no</cable>
+		<source_path>proc_socket-0/module-0/proc/</source_path>
+		<source_target>i2c-master-lightpath</source_target>
+		<dest_path>planar_vpd-1/</dest_path>
+		<dest_target>i2c-slave</dest_target>
+		<bus_attribute>
+			<id>CLASS</id>
+		<default>BUS</default>
+		</bus_attribute>
+		<bus_attribute>
+			<id>I2C_ADDRESS</id>
+		<default>0xA0</default>
 		</bus_attribute>
 		<bus_attribute>
 			<id>I2C_SPEED</id>
@@ -5668,6 +5758,30 @@
 	<attribute>
 		<id>PROC_DCM_INSTALLED</id>
 		<default>0</default>
+	</attribute>
+	<attribute>
+		<id>PROC_R_DISTLOSS_VCS</id>
+		<default></default>
+	</attribute>
+	<attribute>
+		<id>PROC_R_DISTLOSS_VDD</id>
+		<default></default>
+	</attribute>
+	<attribute>
+		<id>PROC_R_LOADLINE_VCS</id>
+		<default></default>
+	</attribute>
+	<attribute>
+		<id>PROC_R_LOADLINE_VDD</id>
+		<default></default>
+	</attribute>
+	<attribute>
+		<id>PROC_VRM_VOFFSET_VCS</id>
+		<default></default>
+	</attribute>
+	<attribute>
+		<id>PROC_VRM_VOFFSET_VDD</id>
+		<default></default>
 	</attribute>
 	<attribute>
 		<id>PSI_BRIDGE_BASE_ADDR</id>
@@ -6352,6 +6466,10 @@
 	<attribute>
 		<id>CLASS</id>
 		<default>UNIT</default>
+	</attribute>
+	<attribute>
+		<id>FRU_ID</id>
+		<default></default>
 	</attribute>
 	<attribute>
 		<id>FRU_NAME</id>
@@ -8874,6 +8992,10 @@
 	<attribute>
 		<id>CLASS</id>
 		<default>CHIP</default>
+	</attribute>
+	<attribute>
+		<id>FRU_ID</id>
+		<default></default>
 	</attribute>
 	<attribute>
 		<id>FRU_NAME</id>
@@ -11771,6 +11893,75 @@
 	</attribute>
 </targetInstance>
 <targetInstance>
+	<id>planar_vpd-1</id>
+	<type>chip-planar_vpd-device</type>
+	<library_target>true</library_target>
+	<instance_name>planar_vpd</instance_name>
+	<position>1</position>
+	<child_id>i2c-slave</child_id>
+	<child_id>vpd_assoc_parent</child_id>
+	<attribute>
+		<id>BYTE_ADDRESS_OFFSET</id>
+		<default>2</default>
+	</attribute>
+	<attribute>
+		<id>CHIP_ID</id>
+		<default></default>
+	</attribute>
+	<attribute>
+		<id>CLASS</id>
+		<default>CHIP</default>
+	</attribute>
+	<attribute>
+		<id>I2C_ADDRESS</id>
+		<default></default>
+	</attribute>
+	<attribute>
+		<id>I2C_SPEED</id>
+		<default></default>
+	</attribute>
+	<attribute>
+		<id>LOCATION_CODE</id>
+		<default></default>
+	</attribute>
+	<attribute>
+		<id>MEMORY_SIZE_IN_KB</id>
+		<default>0x40</default>
+	</attribute>
+	<attribute>
+		<id>MODEL</id>
+		<default></default>
+	</attribute>
+	<attribute>
+		<id>MRU_ID</id>
+		<default>0</default>
+	</attribute>
+	<attribute>
+		<id>MRW_TYPE</id>
+		<default>VPD</default>
+	</attribute>
+	<attribute>
+		<id>POSITION</id>
+		<default>1</default>
+	</attribute>
+	<attribute>
+		<id>TYPE</id>
+		<default>NA</default>
+	</attribute>
+	<attribute>
+		<id>VPD_TYPE</id>
+		<default>PVPD</default>
+	</attribute>
+	<attribute>
+		<id>WRITE_CYCLE_TIME</id>
+		<default>20</default>
+	</attribute>
+	<attribute>
+		<id>WRITE_PAGE_SIZE</id>
+		<default>32</default>
+	</attribute>
+</targetInstance>
+<targetInstance>
 	<id>motherboard_fault_sensor</id>
 	<type>unit-ipmi-sensor</type>
 	<library_target>true</library_target>
@@ -11968,6 +12159,61 @@
 	<attribute>
 		<id>IPMI_SENSOR_OFFSETS</id>
 		<default>0x0,0x1</default>
+	</attribute>
+	<attribute>
+		<id>IPMI_SENSOR_READING_TYPE</id>
+		<default>0x03</default>
+	</attribute>
+	<attribute>
+		<id>IPMI_SENSOR_TYPE</id>
+		<default>0xC7</default>
+	</attribute>
+	<attribute>
+		<id>MODEL</id>
+		<default></default>
+	</attribute>
+	<attribute>
+		<id>MRW_TYPE</id>
+		<default>IPMI_SENSOR</default>
+	</attribute>
+	<attribute>
+		<id>TYPE</id>
+		<default>NA</default>
+	</attribute>
+</targetInstance>
+<targetInstance>
+	<id>apss_fault_sensor</id>
+	<type>unit-ipmi-sensor</type>
+	<library_target>true</library_target>
+	<instance_name>apss_fault_sensor</instance_name>
+	<position>-1</position>
+	<attribute>
+		<id>BUS_TYPE</id>
+		<default>NA</default>
+	</attribute>
+	<attribute>
+		<id>CHIP_UNIT</id>
+		<default>0</default>
+	</attribute>
+	<attribute>
+		<id>CLASS</id>
+		<default>UNIT</default>
+	</attribute>
+	<attribute>
+		<id>IPMI_ENTITY_ID</id>
+		<default>0xD7</default>
+	</attribute>
+	<attribute>
+		<id>IPMI_SENSOR_ID</id>
+		<default></default>
+	</attribute>
+	<attribute>
+		<id>IPMI_SENSOR_NAME_SUFFIX</id>
+		<default>APSS_Fault</default>
+	</attribute>
+	<attribute>
+		<id>IPMI_SENSOR_OFFSETS</id>
+		<default>0x01</default>
 	</attribute>
 	<attribute>
 		<id>IPMI_SENSOR_READING_TYPE</id>
