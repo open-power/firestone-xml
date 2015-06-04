@@ -6084,7 +6084,7 @@
 		</bus_attribute>
 		<bus_attribute>
 			<id>PCIE_LANE_EQUALIZATION</id>
-		<default>all,0x33,0x33</default>
+		<default>all,0x65,0x67</default>
 		</bus_attribute>
 		<bus_attribute>
 			<id>PCIE_SWAP_CLKS</id>
@@ -6109,7 +6109,7 @@
 		</bus_attribute>
 		<bus_attribute>
 			<id>PCIE_LANE_EQUALIZATION</id>
-		<default>all,0x33,0x33</default>
+		<default>all,0x55,0x54</default>
 		</bus_attribute>
 		<bus_attribute>
 			<id>PCIE_SWAP_CLKS</id>
@@ -6134,7 +6134,7 @@
 		</bus_attribute>
 		<bus_attribute>
 			<id>PCIE_LANE_EQUALIZATION</id>
-		<default>all,0x33,0x33</default>
+		<default>all,0x65,0x67</default>
 		</bus_attribute>
 		<bus_attribute>
 			<id>PCIE_SWAP_CLKS</id>
@@ -6159,7 +6159,7 @@
 		</bus_attribute>
 		<bus_attribute>
 			<id>PCIE_LANE_EQUALIZATION</id>
-		<default>all,0x33,0x33</default>
+		<default>all,0x55,0x54</default>
 		</bus_attribute>
 		<bus_attribute>
 			<id>PCIE_SWAP_CLKS</id>
@@ -6184,7 +6184,7 @@
 		</bus_attribute>
 		<bus_attribute>
 			<id>PCIE_LANE_EQUALIZATION</id>
-		<default>all,0x33,0x33</default>
+		<default>all,0x55,0x53</default>
 		</bus_attribute>
 		<bus_attribute>
 			<id>PCIE_SWAP_CLKS</id>
@@ -13124,7 +13124,7 @@
 	</attribute>
 	<attribute>
 		<id>ADC_CHANNEL_GAIN</id>
-		<default>34500</default>
+		<default>11595</default>
 	</attribute>
 	<attribute>
 		<id>ADC_CHANNEL_GROUND</id>
@@ -13136,7 +13136,7 @@
 	</attribute>
 	<attribute>
 		<id>ADC_CHANNEL_OFFSET</id>
-		<default>0</default>
+		<default>-15</default>
 	</attribute>
 	<attribute>
 		<id>BUS_TYPE</id>
@@ -13199,7 +13199,7 @@
 	</attribute>
 	<attribute>
 		<id>ADC_CHANNEL_GAIN</id>
-		<default>34500</default>
+		<default>11595</default>
 	</attribute>
 	<attribute>
 		<id>ADC_CHANNEL_GROUND</id>
@@ -13211,7 +13211,7 @@
 	</attribute>
 	<attribute>
 		<id>ADC_CHANNEL_OFFSET</id>
-		<default>0</default>
+		<default>-15</default>
 	</attribute>
 	<attribute>
 		<id>BUS_TYPE</id>
@@ -13424,7 +13424,7 @@
 	</attribute>
 	<attribute>
 		<id>ADC_CHANNEL_GAIN</id>
-		<default>34500</default>
+		<default>23000</default>
 	</attribute>
 	<attribute>
 		<id>ADC_CHANNEL_GROUND</id>
@@ -13436,7 +13436,7 @@
 	</attribute>
 	<attribute>
 		<id>ADC_CHANNEL_OFFSET</id>
-		<default>0</default>
+		<default>-15</default>
 	</attribute>
 	<attribute>
 		<id>BUS_TYPE</id>
@@ -13499,7 +13499,7 @@
 	</attribute>
 	<attribute>
 		<id>ADC_CHANNEL_GAIN</id>
-		<default>34500</default>
+		<default>23000</default>
 	</attribute>
 	<attribute>
 		<id>ADC_CHANNEL_GROUND</id>
@@ -13511,7 +13511,7 @@
 	</attribute>
 	<attribute>
 		<id>ADC_CHANNEL_OFFSET</id>
-		<default>0</default>
+		<default>-15</default>
 	</attribute>
 	<attribute>
 		<id>BUS_TYPE</id>
@@ -13724,7 +13724,7 @@
 	</attribute>
 	<attribute>
 		<id>ADC_CHANNEL_GAIN</id>
-		<default>34500</default>
+		<default>11200</default>
 	</attribute>
 	<attribute>
 		<id>ADC_CHANNEL_GROUND</id>
@@ -13736,7 +13736,7 @@
 	</attribute>
 	<attribute>
 		<id>ADC_CHANNEL_OFFSET</id>
-		<default>0</default>
+		<default>-15</default>
 	</attribute>
 	<attribute>
 		<id>BUS_TYPE</id>
@@ -13799,7 +13799,7 @@
 	</attribute>
 	<attribute>
 		<id>ADC_CHANNEL_GAIN</id>
-		<default>34500</default>
+		<default>11200</default>
 	</attribute>
 	<attribute>
 		<id>ADC_CHANNEL_GROUND</id>
@@ -13811,7 +13811,7 @@
 	</attribute>
 	<attribute>
 		<id>ADC_CHANNEL_OFFSET</id>
-		<default>0</default>
+		<default>-15</default>
 	</attribute>
 	<attribute>
 		<id>BUS_TYPE</id>
@@ -14249,7 +14249,7 @@
 	</attribute>
 	<attribute>
 		<id>ADC_CHANNEL_GAIN</id>
-		<default>34500</default>
+		<default>22700</default>
 	</attribute>
 	<attribute>
 		<id>ADC_CHANNEL_GROUND</id>
@@ -14261,7 +14261,7 @@
 	</attribute>
 	<attribute>
 		<id>ADC_CHANNEL_OFFSET</id>
-		<default>0</default>
+		<default>-15</default>
 	</attribute>
 	<attribute>
 		<id>BUS_TYPE</id>
@@ -14624,7 +14624,7 @@
 	</attribute>
 	<attribute>
 		<id>ADC_CHANNEL_GAIN</id>
-		<default>34500</default>
+		<default>25100</default>
 	</attribute>
 	<attribute>
 		<id>ADC_CHANNEL_GROUND</id>
@@ -14636,7 +14636,7 @@
 	</attribute>
 	<attribute>
 		<id>ADC_CHANNEL_OFFSET</id>
-		<default>0</default>
+		<default>-15</default>
 	</attribute>
 	<attribute>
 		<id>BUS_TYPE</id>
@@ -14924,7 +14924,7 @@
 	</attribute>
 	<attribute>
 		<id>ADC_CHANNEL_GAIN</id>
-		<default>34500</default>
+		<default>6500</default>
 	</attribute>
 	<attribute>
 		<id>ADC_CHANNEL_GROUND</id>
@@ -14936,7 +14936,7 @@
 	</attribute>
 	<attribute>
 		<id>ADC_CHANNEL_OFFSET</id>
-		<default>0</default>
+		<default>-5</default>
 	</attribute>
 	<attribute>
 		<id>BUS_TYPE</id>
@@ -15074,7 +15074,7 @@
 	</attribute>
 	<attribute>
 		<id>ADC_CHANNEL_GAIN</id>
-		<default>34500</default>
+		<default>22000</default>
 	</attribute>
 	<attribute>
 		<id>ADC_CHANNEL_GROUND</id>
@@ -15086,7 +15086,7 @@
 	</attribute>
 	<attribute>
 		<id>ADC_CHANNEL_OFFSET</id>
-		<default>0</default>
+		<default>-15</default>
 	</attribute>
 	<attribute>
 		<id>BUS_TYPE</id>
