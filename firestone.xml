@@ -5018,7 +5018,7 @@
 	<hidden_child_id>dimm_freq_sensor</hidden_child_id>
 	<attribute>
 		<id>ALL_MCS_IN_INTERLEAVING_GROUP</id>
-		<default></default>
+		<default>TRUE</default>
 	</attribute>
 	<attribute>
 		<id>APSS_GPIO_PORT_MODES</id>
@@ -5105,7 +5105,7 @@
 	</attribute>
 	<attribute>
 		<id>BMC_FRU_ID</id>
-		<default>55</default>
+		<default>47</default>
 	</attribute>
 	<attribute>
 		<id>FRU_NAME</id>
@@ -5245,7 +5245,7 @@
 	</attribute>
 	<attribute>
 		<id>MSS_INTERLEAVE_ENABLE</id>
-		<default></default>
+		<default>0xE</default>
 	</attribute>
 	<attribute>
 		<id>MSS_MBA_ADDR_INTERLEAVE_BIT</id>
@@ -6163,7 +6163,7 @@
 		</bus_attribute>
 		<bus_attribute>
 			<id>PCIE_LANE_EQUALIZATION</id>
-		<default>all,0x55,0x54</default>
+		<default>all,0x55,0x53</default>
 		</bus_attribute>
 		<bus_attribute>
 			<id>PCIE_SWAP_CLKS</id>
@@ -6188,7 +6188,7 @@
 		</bus_attribute>
 		<bus_attribute>
 			<id>PCIE_LANE_EQUALIZATION</id>
-		<default>all,0x55,0x53</default>
+		<default>all,0x55,0x54</default>
 		</bus_attribute>
 		<bus_attribute>
 			<id>PCIE_SWAP_CLKS</id>
