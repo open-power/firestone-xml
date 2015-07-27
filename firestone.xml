@@ -5018,7 +5018,7 @@
 	<hidden_child_id>dimm_freq_sensor</hidden_child_id>
 	<attribute>
 		<id>ALL_MCS_IN_INTERLEAVING_GROUP</id>
-		<default>TRUE</default>
+		<default>1</default>
 	</attribute>
 	<attribute>
 		<id>APSS_GPIO_PORT_MODES</id>
