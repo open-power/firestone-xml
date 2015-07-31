@@ -5244,10 +5244,6 @@
 		<default>0</default>
 	</attribute>
 	<attribute>
-		<id>MSS_INTERLEAVE_ENABLE</id>
-		<default>0xE</default>
-	</attribute>
-	<attribute>
 		<id>MSS_MBA_ADDR_INTERLEAVE_BIT</id>
 		<default>24</default>
 	</attribute>
@@ -6231,6 +6227,10 @@
 		<id>POSITION</id>
 		<default>0</default>
 	</attribute>
+	<attribute>
+                <id>MSS_INTERLEAVE_ENABLE</id>
+                <default>0xE</default>
+        </attribute>
 	<attribute>
 		<id>PROC_PCIE_IOP_CONFIG</id>
 		<default>1</default>
@@ -9376,6 +9376,10 @@
 		<id>POSITION</id>
 		<default>1</default>
 	</attribute>
+	<attribute>
+                <id>MSS_INTERLEAVE_ENABLE</id>
+                <default>0xE</default>
+        </attribute>
 	<attribute>
 		<id>PROC_PCIE_IOP_CONFIG</id>
 		<default>1</default>
