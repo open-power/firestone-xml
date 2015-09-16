@@ -1560,7 +1560,7 @@
 	</property>
 </globalSetting>
 <globalSetting>
-	<id>/sys-0/node-0/ponderosa-0/birchconn-0/birch-0/dimmconn-1/dimm-0</id>
+	<id>/sys-0/node-0/ponderosa-0/birchconn-0/birch-0/dimmconn-2/dimm-0</id>
 	<property>
 	<id>IO_CONFIG_SELECT</id>
 	<value></value>
@@ -1604,7 +1604,7 @@
 	</property>
 </globalSetting>
 <globalSetting>
-	<id>/sys-0/node-0/ponderosa-0/birchconn-5/birch-0/dimmconn-0/dimm-0</id>
+	<id>/sys-0/node-0/ponderosa-0/birchconn-5/birch-0/dimmconn-3/dimm-0</id>
 	<property>
 	<id>IO_CONFIG_SELECT</id>
 	<value></value>
@@ -1662,7 +1662,7 @@
 	</property>
 </globalSetting>
 <globalSetting>
-	<id>/sys-0/node-0/ponderosa-0/birchconn-3/birch-0/dimmconn-3/dimm-0</id>
+	<id>/sys-0/node-0/ponderosa-0/birchconn-3/birch-0/dimmconn-0/dimm-0</id>
 	<property>
 	<id>IO_CONFIG_SELECT</id>
 	<value></value>
@@ -1859,7 +1859,7 @@
 	</property>
 </globalSetting>
 <globalSetting>
-	<id>/sys-0/node-0/ponderosa-0/birchconn-4/birch-0/dimmconn-1/dimm-0</id>
+	<id>/sys-0/node-0/ponderosa-0/birchconn-4/birch-0/dimmconn-2/dimm-0</id>
 	<property>
 	<id>IO_CONFIG_SELECT</id>
 	<value></value>
@@ -1943,7 +1943,7 @@
 	</property>
 </globalSetting>
 <globalSetting>
-	<id>/sys-0/node-0/ponderosa-0/birchconn-3/birch-0/dimmconn-2/dimm-0</id>
+	<id>/sys-0/node-0/ponderosa-0/birchconn-3/birch-0/dimmconn-1/dimm-0</id>
 	<property>
 	<id>IO_CONFIG_SELECT</id>
 	<value></value>
@@ -2034,7 +2034,7 @@
 	</property>
 </globalSetting>
 <globalSetting>
-	<id>/sys-0/node-0/ponderosa-0/birchconn-7/birch-0/dimmconn-0/dimm-0</id>
+	<id>/sys-0/node-0/ponderosa-0/birchconn-7/birch-0/dimmconn-3/dimm-0</id>
 	<property>
 	<id>IO_CONFIG_SELECT</id>
 	<value></value>
@@ -2060,7 +2060,7 @@
 	</property>
 </globalSetting>
 <globalSetting>
-	<id>/sys-0/node-0/ponderosa-0/birchconn-7/birch-0/dimmconn-3/dimm-0</id>
+	<id>/sys-0/node-0/ponderosa-0/birchconn-7/birch-0/dimmconn-0/dimm-0</id>
 	<property>
 	<id>IO_CONFIG_SELECT</id>
 	<value></value>
@@ -2121,7 +2121,7 @@
 	</property>
 </globalSetting>
 <globalSetting>
-	<id>/sys-0/node-0/ponderosa-0/birchconn-6/birch-0/dimmconn-2/dimm-0</id>
+	<id>/sys-0/node-0/ponderosa-0/birchconn-6/birch-0/dimmconn-1/dimm-0</id>
 	<property>
 	<id>IO_CONFIG_SELECT</id>
 	<value></value>
@@ -2158,7 +2158,7 @@
 	</property>
 </globalSetting>
 <globalSetting>
-	<id>/sys-0/node-0/ponderosa-0/birchconn-2/birch-0/dimmconn-0/dimm-0</id>
+	<id>/sys-0/node-0/ponderosa-0/birchconn-2/birch-0/dimmconn-3/dimm-0</id>
 	<property>
 	<id>IO_CONFIG_SELECT</id>
 	<value></value>
@@ -2266,7 +2266,7 @@
 	</property>
 </globalSetting>
 <globalSetting>
-	<id>/sys-0/node-0/ponderosa-0/birchconn-6/birch-0/dimmconn-3/dimm-0</id>
+	<id>/sys-0/node-0/ponderosa-0/birchconn-6/birch-0/dimmconn-0/dimm-0</id>
 	<property>
 	<id>IO_CONFIG_SELECT</id>
 	<value></value>
@@ -2425,7 +2425,7 @@
 	</property>
 </globalSetting>
 <globalSetting>
-	<id>/sys-0/node-0/ponderosa-0/birchconn-4/birch-0/dimmconn-3/dimm-0</id>
+	<id>/sys-0/node-0/ponderosa-0/birchconn-4/birch-0/dimmconn-0/dimm-0</id>
 	<property>
 	<id>IO_CONFIG_SELECT</id>
 	<value></value>
@@ -2491,7 +2491,7 @@
 	</property>
 </globalSetting>
 <globalSetting>
-	<id>/sys-0/node-0/ponderosa-0/birchconn-4/birch-0/dimmconn-0/dimm-0</id>
+	<id>/sys-0/node-0/ponderosa-0/birchconn-4/birch-0/dimmconn-3/dimm-0</id>
 	<property>
 	<id>IO_CONFIG_SELECT</id>
 	<value></value>
@@ -2557,7 +2557,7 @@
 	</property>
 </globalSetting>
 <globalSetting>
-	<id>/sys-0/node-0/ponderosa-0/birchconn-0/birch-0/dimmconn-2/dimm-0</id>
+	<id>/sys-0/node-0/ponderosa-0/birchconn-0/birch-0/dimmconn-1/dimm-0</id>
 	<property>
 	<id>IO_CONFIG_SELECT</id>
 	<value></value>
@@ -2630,7 +2630,7 @@
 	</property>
 </globalSetting>
 <globalSetting>
-	<id>/sys-0/node-0/ponderosa-0/birchconn-1/birch-0/dimmconn-1/dimm-0</id>
+	<id>/sys-0/node-0/ponderosa-0/birchconn-1/birch-0/dimmconn-2/dimm-0</id>
 	<property>
 	<id>IO_CONFIG_SELECT</id>
 	<value></value>
@@ -2749,7 +2749,7 @@
 	</property>
 </globalSetting>
 <globalSetting>
-	<id>/sys-0/node-0/ponderosa-0/birchconn-2/birch-0/dimmconn-2/dimm-0</id>
+	<id>/sys-0/node-0/ponderosa-0/birchconn-2/birch-0/dimmconn-1/dimm-0</id>
 	<property>
 	<id>IO_CONFIG_SELECT</id>
 	<value></value>
@@ -2853,7 +2853,7 @@
 	</property>
 </globalSetting>
 <globalSetting>
-	<id>/sys-0/node-0/ponderosa-0/birchconn-6/birch-0/dimmconn-1/dimm-0</id>
+	<id>/sys-0/node-0/ponderosa-0/birchconn-6/birch-0/dimmconn-2/dimm-0</id>
 	<property>
 	<id>IO_CONFIG_SELECT</id>
 	<value></value>
@@ -2879,7 +2879,7 @@
 	</property>
 </globalSetting>
 <globalSetting>
-	<id>/sys-0/node-0/ponderosa-0/birchconn-2/birch-0/dimmconn-1/dimm-0</id>
+	<id>/sys-0/node-0/ponderosa-0/birchconn-2/birch-0/dimmconn-2/dimm-0</id>
 	<property>
 	<id>IO_CONFIG_SELECT</id>
 	<value></value>
@@ -3029,7 +3029,7 @@
 	</property>
 </globalSetting>
 <globalSetting>
-	<id>/sys-0/node-0/ponderosa-0/birchconn-4/birch-0/dimmconn-2/dimm-0</id>
+	<id>/sys-0/node-0/ponderosa-0/birchconn-4/birch-0/dimmconn-1/dimm-0</id>
 	<property>
 	<id>IO_CONFIG_SELECT</id>
 	<value></value>
@@ -3130,7 +3130,7 @@
 	</property>
 </globalSetting>
 <globalSetting>
-	<id>/sys-0/node-0/ponderosa-0/birchconn-2/birch-0/dimmconn-3/dimm-0</id>
+	<id>/sys-0/node-0/ponderosa-0/birchconn-2/birch-0/dimmconn-0/dimm-0</id>
 	<property>
 	<id>IO_CONFIG_SELECT</id>
 	<value></value>
@@ -3193,7 +3193,7 @@
 	</property>
 </globalSetting>
 <globalSetting>
-	<id>/sys-0/node-0/ponderosa-0/birchconn-0/birch-0/dimmconn-3/dimm-0</id>
+	<id>/sys-0/node-0/ponderosa-0/birchconn-0/birch-0/dimmconn-0/dimm-0</id>
 	<property>
 	<id>IO_CONFIG_SELECT</id>
 	<value></value>
@@ -3251,7 +3251,7 @@
 	</property>
 </globalSetting>
 <globalSetting>
-	<id>/sys-0/node-0/ponderosa-0/birchconn-6/birch-0/dimmconn-0/dimm-0</id>
+	<id>/sys-0/node-0/ponderosa-0/birchconn-6/birch-0/dimmconn-3/dimm-0</id>
 	<property>
 	<id>IO_CONFIG_SELECT</id>
 	<value></value>
@@ -3277,7 +3277,7 @@
 	</property>
 </globalSetting>
 <globalSetting>
-	<id>/sys-0/node-0/ponderosa-0/birchconn-5/birch-0/dimmconn-2/dimm-0</id>
+	<id>/sys-0/node-0/ponderosa-0/birchconn-5/birch-0/dimmconn-1/dimm-0</id>
 	<property>
 	<id>IO_CONFIG_SELECT</id>
 	<value></value>
@@ -3354,7 +3354,7 @@
 	</property>
 </globalSetting>
 <globalSetting>
-	<id>/sys-0/node-0/ponderosa-0/birchconn-1/birch-0/dimmconn-0/dimm-0</id>
+	<id>/sys-0/node-0/ponderosa-0/birchconn-1/birch-0/dimmconn-3/dimm-0</id>
 	<property>
 	<id>IO_CONFIG_SELECT</id>
 	<value></value>
@@ -3590,7 +3590,7 @@
 	</property>
 </globalSetting>
 <globalSetting>
-	<id>/sys-0/node-0/ponderosa-0/birchconn-1/birch-0/dimmconn-2/dimm-0</id>
+	<id>/sys-0/node-0/ponderosa-0/birchconn-1/birch-0/dimmconn-1/dimm-0</id>
 	<property>
 	<id>IO_CONFIG_SELECT</id>
 	<value></value>
@@ -3765,7 +3765,7 @@
 	</property>
 </globalSetting>
 <globalSetting>
-	<id>/sys-0/node-0/ponderosa-0/birchconn-5/birch-0/dimmconn-3/dimm-0</id>
+	<id>/sys-0/node-0/ponderosa-0/birchconn-5/birch-0/dimmconn-0/dimm-0</id>
 	<property>
 	<id>IO_CONFIG_SELECT</id>
 	<value></value>
@@ -3824,7 +3824,7 @@
 	</property>
 </globalSetting>
 <globalSetting>
-	<id>/sys-0/node-0/ponderosa-0/birchconn-5/birch-0/dimmconn-1/dimm-0</id>
+	<id>/sys-0/node-0/ponderosa-0/birchconn-5/birch-0/dimmconn-2/dimm-0</id>
 	<property>
 	<id>IO_CONFIG_SELECT</id>
 	<value></value>
@@ -3850,7 +3850,7 @@
 	</property>
 </globalSetting>
 <globalSetting>
-	<id>/sys-0/node-0/ponderosa-0/birchconn-0/birch-0/dimmconn-0/dimm-0</id>
+	<id>/sys-0/node-0/ponderosa-0/birchconn-0/birch-0/dimmconn-3/dimm-0</id>
 	<property>
 	<id>IO_CONFIG_SELECT</id>
 	<value></value>
@@ -4479,7 +4479,7 @@
 	</property>
 </globalSetting>
 <globalSetting>
-	<id>/sys-0/node-0/ponderosa-0/birchconn-1/birch-0/dimmconn-3/dimm-0</id>
+	<id>/sys-0/node-0/ponderosa-0/birchconn-1/birch-0/dimmconn-0/dimm-0</id>
 	<property>
 	<id>IO_CONFIG_SELECT</id>
 	<value></value>
@@ -4630,7 +4630,7 @@
 	</property>
 </globalSetting>
 <globalSetting>
-	<id>/sys-0/node-0/ponderosa-0/birchconn-3/birch-0/dimmconn-1/dimm-0</id>
+	<id>/sys-0/node-0/ponderosa-0/birchconn-3/birch-0/dimmconn-2/dimm-0</id>
 	<property>
 	<id>IO_CONFIG_SELECT</id>
 	<value></value>
@@ -4753,7 +4753,7 @@
 	</property>
 </globalSetting>
 <globalSetting>
-	<id>/sys-0/node-0/ponderosa-0/birchconn-7/birch-0/dimmconn-1/dimm-0</id>
+	<id>/sys-0/node-0/ponderosa-0/birchconn-7/birch-0/dimmconn-2/dimm-0</id>
 	<property>
 	<id>IO_CONFIG_SELECT</id>
 	<value></value>
@@ -4836,7 +4836,7 @@
 	</property>
 </globalSetting>
 <globalSetting>
-	<id>/sys-0/node-0/ponderosa-0/birchconn-7/birch-0/dimmconn-2/dimm-0</id>
+	<id>/sys-0/node-0/ponderosa-0/birchconn-7/birch-0/dimmconn-1/dimm-0</id>
 	<property>
 	<id>IO_CONFIG_SELECT</id>
 	<value></value>
@@ -4876,7 +4876,7 @@
 	</property>
 </globalSetting>
 <globalSetting>
-	<id>/sys-0/node-0/ponderosa-0/birchconn-3/birch-0/dimmconn-0/dimm-0</id>
+	<id>/sys-0/node-0/ponderosa-0/birchconn-3/birch-0/dimmconn-3/dimm-0</id>
 	<property>
 	<id>IO_CONFIG_SELECT</id>
 	<value></value>
@@ -5305,7 +5305,7 @@
 	</attribute>
 	<attribute>
 		<id>OPEN_POWER_N_PLUS_ONE_BULK_POWER_LIMIT_WATTS</id>
-		<default>1650</default>
+		<default>2300</default>
 	</attribute>
 	<attribute>
 		<id>OPEN_POWER_N_PLUS_ONE_MAX_MEM_POWER_WATTS</id>
@@ -5317,7 +5317,7 @@
 	</attribute>
 	<attribute>
 		<id>OPEN_POWER_PROC_ERROR_TEMP_DEG_C</id>
-		<default>95</default>
+		<default>85</default>
 	</attribute>
 	<attribute>
 		<id>OPEN_POWER_PROC_READ_TIMEOUT_SEC</id>
@@ -6180,7 +6180,7 @@
 		</bus_attribute>
 		<bus_attribute>
 			<id>LANE_REVERSAL</id>
-		<default>0</default>
+		<default>1</default>
 		</bus_attribute>
 		<bus_attribute>
 			<id>PCIE_LANE_EQUALIZATION</id>
@@ -6227,6 +6227,10 @@
 		<id>POSITION</id>
 		<default>0</default>
 	</attribute>
+	<attribute>
+                <id>MSS_INTERLEAVE_ENABLE</id>
+                <default>0xE</default>
+        </attribute>
 	<attribute>
 		<id>PROC_PCIE_IOP_CONFIG</id>
 		<default>1</default>
@@ -9377,6 +9381,10 @@
 		<default>1</default>
 	</attribute>
 	<attribute>
+                <id>MSS_INTERLEAVE_ENABLE</id>
+                <default>0xE</default>
+        </attribute>
+	<attribute>
 		<id>PROC_PCIE_IOP_CONFIG</id>
 		<default>1</default>
 	</attribute>
@@ -10876,7 +10884,7 @@
 	</attribute>
 	<attribute>
 		<id>WRITE_PAGE_SIZE</id>
-		<default>0x50</default>
+		<default>0x08</default>
 	</attribute>
 </targetInstance>
 <targetInstance>
