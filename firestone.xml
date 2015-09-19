@@ -1601,7 +1601,7 @@
 	<id>/sys-0/node-0/ponderosa-0/birchconn-3/birch-0/membuf-0/membuf_temp_sensor</id>
 	<property>
 	<id>IPMI_SENSOR_ID</id>
-	<value>0x68</value>
+	<value>0xC3</value>
 	</property>
 </globalSetting>
 <globalSetting>
@@ -1774,7 +1774,7 @@
 	</property>
 	<property>
 	<id>IPMI_SENSOR_ID</id>
-	<value>0x69</value>
+	<value>0xC4</value>
 	</property>
 </globalSetting>
 <globalSetting>
@@ -2139,7 +2139,7 @@
 	</property>
 	<property>
 	<id>IPMI_SENSOR_ID</id>
-	<value>0x6B</value>
+	<value>0xC6</value>
 	</property>
 </globalSetting>
 <globalSetting>
@@ -2378,7 +2378,7 @@
 	</property>
 	<property>
 	<id>IPMI_SENSOR_ID</id>
-	<value>0x6C</value>
+	<value>0xC7</value>
 	</property>
 </globalSetting>
 <globalSetting>
@@ -2444,7 +2444,7 @@
 	<id>/sys-0/node-0/ponderosa-0/birchconn-0/birch-0/membuf-0/membuf_temp_sensor</id>
 	<property>
 	<id>IPMI_SENSOR_ID</id>
-	<value>0x65</value>
+	<value>0xC0</value>
 	</property>
 </globalSetting>
 <globalSetting>
@@ -3538,7 +3538,7 @@
 	<id>/sys-0/node-0/ponderosa-0/birchconn-1/birch-0/membuf-0/membuf_temp_sensor</id>
 	<property>
 	<id>IPMI_SENSOR_ID</id>
-	<value>0x66</value>
+	<value>0xC1</value>
 	</property>
 </globalSetting>
 <globalSetting>
@@ -4356,7 +4356,7 @@
 	</property>
 	<property>
 	<id>IPMI_SENSOR_ID</id>
-	<value>0x6A</value>
+	<value>0xC5</value>
 	</property>
 </globalSetting>
 <globalSetting>
@@ -4650,7 +4650,7 @@
 	<id>/sys-0/node-0/ponderosa-0/birchconn-2/birch-0/membuf-0/membuf_temp_sensor</id>
 	<property>
 	<id>IPMI_SENSOR_ID</id>
-	<value>0x67</value>
+	<value>0xC2</value>
 	</property>
 </globalSetting>
 <globalSetting>
