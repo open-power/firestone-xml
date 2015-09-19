@@ -98,6 +98,10 @@
 		<value>0x00000080</value>
 		</enumerator>
 		<enumerator>
+		<name>UPDATE_BOTH_SIDES_OF_SBE</name>
+		<value>0x00040000</value>
+		</enumerator>
+		<enumerator>
 		<name>AVP_ENABLE</name>
 		<value>0x00000002</value>
 		</enumerator>
@@ -148,6 +152,33 @@
 		<enumerator>
 		<name>DISABLE_FABRIC_eREPAIR</name>
 		<value>0x00000800</value>
+		</enumerator>
+</enumerationType>
+<enumerationType>
+	<id>NPU_MMIO_BAR_SIZE</id>
+		<enumerator>
+		<name>64_KB</name>
+		<value>0x0000000000010000</value>
+		</enumerator>
+		<enumerator>
+		<name>512_KB</name>
+		<value>0x0000000000080000</value>
+		</enumerator>
+		<enumerator>
+		<name>1_MB</name>
+		<value>0x0000000000100000</value>
+		</enumerator>
+		<enumerator>
+		<name>2_MB</name>
+		<value>0x0000000000200000</value>
+		</enumerator>
+		<enumerator>
+		<name>128_KB</name>
+		<value>0x0000000000020000</value>
+		</enumerator>
+		<enumerator>
+		<name>256_KB</name>
+		<value>0x0000000000040000</value>
 		</enumerator>
 </enumerationType>
 <enumerationType>
@@ -270,83 +301,114 @@
 	<id>SENSOR_NAME</id>
 		<enumerator>
 		<name>PCI_ACTIVE</name>
-		<value>0x0c00</value>
+		<value>0xC423</value>
 		</enumerator>
 		<enumerator>
 		<name>STATE</name>
 		<value>0x0500</value>
 		</enumerator>
 		<enumerator>
-		<name>SYSTEM_POWER_CAP</name>
-		<value>0x0b00</value>
+		<name>DIMM_TEMP</name>
+		<value>0x0120</value>
 		</enumerator>
 		<enumerator>
-		<name>VOLTAGE</name>
-		<value>0x0200</value>
-		</enumerator>
-		<enumerator>
-		<name>APSS_CHANNEL</name>
-		<value>0x1100</value>
+		<name>CORE_FREQ</name>
+		<value>0xC1D0</value>
 		</enumerator>
 		<enumerator>
 		<name>FAULT</name>
-		<value>0x1000</value>
-		</enumerator>
-		<enumerator>
-		<name>BOOT_WATCHDOG</name>
-		<value>0x0d00</value>
+		<value>0xC700</value>
 		</enumerator>
 		<enumerator>
 		<name>OCC_ACTIVE</name>
-		<value>0x0A00</value>
+		<value>0x07D2</value>
+		</enumerator>
+		<enumerator>
+		<name>BACKPLANE_FAULT</name>
+		<value>0xC707</value>
 		</enumerator>
 		<enumerator>
 		<name>APSS_FAULT</name>
-		<value>0x1010</value>
+		<value>0xC7D7</value>
 		</enumerator>
 		<enumerator>
 		<name>FW_BOOT_PROGRESS</name>
-		<value>0x0900</value>
+		<value>0x0F22</value>
 		</enumerator>
 		<enumerator>
-		<name>REF_CLOCK_FAULT</name>
-		<value>0x101A</value>
+		<name>CORE_STATE</name>
+		<value>0x07D0</value>
+		</enumerator>
+		<enumerator>
+		<name>PROC_TEMP</name>
+		<value>0x0103</value>
 		</enumerator>
 		<enumerator>
 		<name>REBOOT_COUNT</name>
-		<value>0x0e00</value>
+		<value>0xC322</value>
 		</enumerator>
 		<enumerator>
-		<name>POWER_UNIT</name>
-		<value>0x0600</value>
+		<name>MEMBUF_STATE</name>
+		<value>0x0CD1</value>
 		</enumerator>
 		<enumerator>
 		<name>PCI_CLOCK_FAULT</name>
-		<value>0x101B</value>
+		<value>0xC7D5</value>
 		</enumerator>
 		<enumerator>
-		<name>INTRUSION</name>
-		<value>0x0400</value>
+		<name>MEMBUF_TEMP</name>
+		<value>0x01D1</value>
 		</enumerator>
 		<enumerator>
-		<name>TOD_CLOCK_FAULT</name>
-		<value>0x1017</value>
-		</enumerator>
-		<enumerator>
-		<name>CURRENT</name>
-		<value>0x0300</value>
+		<name>PROC_STATE</name>
+		<value>0x0703</value>
 		</enumerator>
 		<enumerator>
 		<name>HOST_STATUS</name>
-		<value>0x0800</value>
-		</enumerator>
-		<enumerator>
-		<name>TEMPERATURE</name>
-		<value>0x0100</value>
+		<value>0x2223</value>
 		</enumerator>
 		<enumerator>
 		<name>OS_BOOT</name>
-		<value>0x0700</value>
+		<value>0x1F23</value>
+		</enumerator>
+		<enumerator>
+		<name>APSS_CHANNEL</name>
+		<value>0xC2D7</value>
+		</enumerator>
+		<enumerator>
+		<name>CORE_TEMP</name>
+		<value>0x01D0</value>
+		</enumerator>
+		<enumerator>
+		<name>SYSTEM_EVENT</name>
+		<value>0x1201</value>
+		</enumerator>
+		<enumerator>
+		<name>REF_CLOCK_FAULT</name>
+		<value>0xC7D4</value>
+		</enumerator>
+		<enumerator>
+		<name>DIMM_STATE</name>
+		<value>0x0C20</value>
+		</enumerator>
+		<enumerator>
+		<name>DERATING_FACTOR</name>
+		<value>0xC815</value>
+		</enumerator>
+		<enumerator>
+		<name>TOD_CLOCK_FAULT</name>
+		<value>0xC7D6</value>
+		</enumerator>
+</enumerationType>
+<enumerationType>
+	<id>NPU_MMIO_BAR_ENABLE</id>
+		<enumerator>
+		<name>ENABLE</name>
+		<value>1</value>
+		</enumerator>
+		<enumerator>
+		<name>DISABLE</name>
+		<value>0</value>
 		</enumerator>
 </enumerationType>
 <enumerationType>
@@ -790,6 +852,25 @@
 		</enumerator>
 </enumerationType>
 <enumerationType>
+	<id>HIDDEN_ERRLOGS_ENABLE</id>
+		<enumerator>
+		<name>ALLOW_RECOVERED</name>
+		<value>2</value>
+		</enumerator>
+		<enumerator>
+		<name>ALLOW_ALL_LOGS</name>
+		<value>3</value>
+		</enumerator>
+		<enumerator>
+		<name>ALLOW_INFORMATIONAL</name>
+		<value>1</value>
+		</enumerator>
+		<enumerator>
+		<name>NO_HIDDEN_LOGS</name>
+		<value>0</value>
+		</enumerator>
+</enumerationType>
+<enumerationType>
 	<id>PROC_X_BUS_WIDTH</id>
 		<enumerator>
 		<name>W8BYTE</name>
@@ -866,16 +947,16 @@
 		<value>0</value>
 		</enumerator>
 		<enumerator>
+		<name>MEMBUF</name>
+		<value>0xD1</value>
+		</enumerator>
+		<enumerator>
 		<name>POWER_MGMT</name>
 		<value>0x15</value>
 		</enumerator>
 		<enumerator>
 		<name>MEMORY_DEVICE</name>
 		<value>0x20</value>
-		</enumerator>
-		<enumerator>
-		<name>CENTAUR</name>
-		<value>0xD1</value>
 		</enumerator>
 </enumerationType>
 <enumerationType>
@@ -1148,12 +1229,24 @@
 		<value>0x07</value>
 		</enumerator>
 		<enumerator>
-		<name>POWER_UNIT</name>
-		<value>0x09</value>
+		<name>PWR_LIMIT_ACTIVE</name>
+		<value>0xC4</value>
 		</enumerator>
 		<enumerator>
-		<name>VOLTAGE</name>
-		<value>0x02</value>
+		<name>POWER</name>
+		<value>0xC2</value>
+		</enumerator>
+		<enumerator>
+		<name>BOOT_COUNT</name>
+		<value>0xC3</value>
+		</enumerator>
+		<enumerator>
+		<name>PCI_LINK_PRES</name>
+		<value>0xC4</value>
+		</enumerator>
+		<enumerator>
+		<name>FREQ</name>
+		<value>0xC1</value>
 		</enumerator>
 		<enumerator>
 		<name>APCI_POWER_STATE</name>
@@ -1164,24 +1257,20 @@
 		<value>0x0c</value>
 		</enumerator>
 		<enumerator>
-		<name>SYSTEM_FIRMWARE_PROGRESS</name>
-		<value>0x0F</value>
+		<name>FAULT</name>
+		<value>0xC7</value>
 		</enumerator>
 		<enumerator>
-		<name>PHYSICAL_SECURITY</name>
-		<value>0x05</value>
+		<name>SYS_EVENT</name>
+		<value>0x12</value>
 		</enumerator>
 		<enumerator>
 		<name>NA</name>
 		<value>0</value>
 		</enumerator>
 		<enumerator>
-		<name>CURRENT</name>
-		<value>0x03</value>
-		</enumerator>
-		<enumerator>
-		<name>REBOOT_COUNT</name>
-		<value>0xC0</value>
+		<name>SYS_FW_PROGRESS</name>
+		<value>0x0F</value>
 		</enumerator>
 		<enumerator>
 		<name>OS_BOOT</name>
@@ -1189,6 +1278,40 @@
 		</enumerator>
 		<enumerator>
 		<name>TEMPERATURE</name>
+		<value>0x01</value>
+		</enumerator>
+</enumerationType>
+<enumerationType>
+	<id>MRW_NEST_CAPABLE_FREQUENCIES_SYS</id>
+		<enumerator>
+		<name>2000_MHZ</name>
+		<value>1</value>
+		</enumerator>
+		<enumerator>
+		<name>2000_MHZ_OR_2400_MHZ</name>
+		<value>3</value>
+		</enumerator>
+		<enumerator>
+		<name>UNSUPPORTED_FREQ</name>
+		<value>0</value>
+		</enumerator>
+		<enumerator>
+		<name>2400_MHZ</name>
+		<value>2</value>
+		</enumerator>
+</enumerationType>
+<enumerationType>
+	<id>SUPPORTED_HOT_PLUG</id>
+		<enumerator>
+		<name>PCA9551</name>
+		<value>0x02</value>
+		</enumerator>
+		<enumerator>
+		<name>NA</name>
+		<value>0</value>
+		</enumerator>
+		<enumerator>
+		<name>MAX5961</name>
 		<value>0x01</value>
 		</enumerator>
 </enumerationType>
@@ -1560,7 +1683,7 @@
 	</property>
 </globalSetting>
 <globalSetting>
-	<id>/sys-0/node-0/ponderosa-0/birchconn-0/birch-0/dimmconn-1/dimm-0</id>
+	<id>/sys-0/node-0/ponderosa-0/birchconn-0/birch-0/dimmconn-2/dimm-0</id>
 	<property>
 	<id>IO_CONFIG_SELECT</id>
 	<value></value>
@@ -1604,7 +1727,7 @@
 	</property>
 </globalSetting>
 <globalSetting>
-	<id>/sys-0/node-0/ponderosa-0/birchconn-5/birch-0/dimmconn-0/dimm-0</id>
+	<id>/sys-0/node-0/ponderosa-0/birchconn-5/birch-0/dimmconn-3/dimm-0</id>
 	<property>
 	<id>IO_CONFIG_SELECT</id>
 	<value></value>
@@ -1662,7 +1785,7 @@
 	</property>
 </globalSetting>
 <globalSetting>
-	<id>/sys-0/node-0/ponderosa-0/birchconn-3/birch-0/dimmconn-3/dimm-0</id>
+	<id>/sys-0/node-0/ponderosa-0/birchconn-3/birch-0/dimmconn-0/dimm-0</id>
 	<property>
 	<id>IO_CONFIG_SELECT</id>
 	<value></value>
@@ -1859,7 +1982,7 @@
 	</property>
 </globalSetting>
 <globalSetting>
-	<id>/sys-0/node-0/ponderosa-0/birchconn-4/birch-0/dimmconn-1/dimm-0</id>
+	<id>/sys-0/node-0/ponderosa-0/birchconn-4/birch-0/dimmconn-2/dimm-0</id>
 	<property>
 	<id>IO_CONFIG_SELECT</id>
 	<value></value>
@@ -1943,7 +2066,7 @@
 	</property>
 </globalSetting>
 <globalSetting>
-	<id>/sys-0/node-0/ponderosa-0/birchconn-3/birch-0/dimmconn-2/dimm-0</id>
+	<id>/sys-0/node-0/ponderosa-0/birchconn-3/birch-0/dimmconn-1/dimm-0</id>
 	<property>
 	<id>IO_CONFIG_SELECT</id>
 	<value></value>
@@ -2034,7 +2157,7 @@
 	</property>
 </globalSetting>
 <globalSetting>
-	<id>/sys-0/node-0/ponderosa-0/birchconn-7/birch-0/dimmconn-0/dimm-0</id>
+	<id>/sys-0/node-0/ponderosa-0/birchconn-7/birch-0/dimmconn-3/dimm-0</id>
 	<property>
 	<id>IO_CONFIG_SELECT</id>
 	<value></value>
@@ -2060,7 +2183,7 @@
 	</property>
 </globalSetting>
 <globalSetting>
-	<id>/sys-0/node-0/ponderosa-0/birchconn-7/birch-0/dimmconn-3/dimm-0</id>
+	<id>/sys-0/node-0/ponderosa-0/birchconn-7/birch-0/dimmconn-0/dimm-0</id>
 	<property>
 	<id>IO_CONFIG_SELECT</id>
 	<value></value>
@@ -2121,7 +2244,7 @@
 	</property>
 </globalSetting>
 <globalSetting>
-	<id>/sys-0/node-0/ponderosa-0/birchconn-6/birch-0/dimmconn-2/dimm-0</id>
+	<id>/sys-0/node-0/ponderosa-0/birchconn-6/birch-0/dimmconn-1/dimm-0</id>
 	<property>
 	<id>IO_CONFIG_SELECT</id>
 	<value></value>
@@ -2158,7 +2281,7 @@
 	</property>
 </globalSetting>
 <globalSetting>
-	<id>/sys-0/node-0/ponderosa-0/birchconn-2/birch-0/dimmconn-0/dimm-0</id>
+	<id>/sys-0/node-0/ponderosa-0/birchconn-2/birch-0/dimmconn-3/dimm-0</id>
 	<property>
 	<id>IO_CONFIG_SELECT</id>
 	<value></value>
@@ -2266,7 +2389,7 @@
 	</property>
 </globalSetting>
 <globalSetting>
-	<id>/sys-0/node-0/ponderosa-0/birchconn-6/birch-0/dimmconn-3/dimm-0</id>
+	<id>/sys-0/node-0/ponderosa-0/birchconn-6/birch-0/dimmconn-0/dimm-0</id>
 	<property>
 	<id>IO_CONFIG_SELECT</id>
 	<value></value>
@@ -2425,7 +2548,7 @@
 	</property>
 </globalSetting>
 <globalSetting>
-	<id>/sys-0/node-0/ponderosa-0/birchconn-4/birch-0/dimmconn-3/dimm-0</id>
+	<id>/sys-0/node-0/ponderosa-0/birchconn-4/birch-0/dimmconn-0/dimm-0</id>
 	<property>
 	<id>IO_CONFIG_SELECT</id>
 	<value></value>
@@ -2491,7 +2614,7 @@
 	</property>
 </globalSetting>
 <globalSetting>
-	<id>/sys-0/node-0/ponderosa-0/birchconn-4/birch-0/dimmconn-0/dimm-0</id>
+	<id>/sys-0/node-0/ponderosa-0/birchconn-4/birch-0/dimmconn-3/dimm-0</id>
 	<property>
 	<id>IO_CONFIG_SELECT</id>
 	<value></value>
@@ -2557,7 +2680,7 @@
 	</property>
 </globalSetting>
 <globalSetting>
-	<id>/sys-0/node-0/ponderosa-0/birchconn-0/birch-0/dimmconn-2/dimm-0</id>
+	<id>/sys-0/node-0/ponderosa-0/birchconn-0/birch-0/dimmconn-1/dimm-0</id>
 	<property>
 	<id>IO_CONFIG_SELECT</id>
 	<value></value>
@@ -2630,7 +2753,7 @@
 	</property>
 </globalSetting>
 <globalSetting>
-	<id>/sys-0/node-0/ponderosa-0/birchconn-1/birch-0/dimmconn-1/dimm-0</id>
+	<id>/sys-0/node-0/ponderosa-0/birchconn-1/birch-0/dimmconn-2/dimm-0</id>
 	<property>
 	<id>IO_CONFIG_SELECT</id>
 	<value></value>
@@ -2749,7 +2872,7 @@
 	</property>
 </globalSetting>
 <globalSetting>
-	<id>/sys-0/node-0/ponderosa-0/birchconn-2/birch-0/dimmconn-2/dimm-0</id>
+	<id>/sys-0/node-0/ponderosa-0/birchconn-2/birch-0/dimmconn-1/dimm-0</id>
 	<property>
 	<id>IO_CONFIG_SELECT</id>
 	<value></value>
@@ -2853,7 +2976,7 @@
 	</property>
 </globalSetting>
 <globalSetting>
-	<id>/sys-0/node-0/ponderosa-0/birchconn-6/birch-0/dimmconn-1/dimm-0</id>
+	<id>/sys-0/node-0/ponderosa-0/birchconn-6/birch-0/dimmconn-2/dimm-0</id>
 	<property>
 	<id>IO_CONFIG_SELECT</id>
 	<value></value>
@@ -2879,7 +3002,7 @@
 	</property>
 </globalSetting>
 <globalSetting>
-	<id>/sys-0/node-0/ponderosa-0/birchconn-2/birch-0/dimmconn-1/dimm-0</id>
+	<id>/sys-0/node-0/ponderosa-0/birchconn-2/birch-0/dimmconn-2/dimm-0</id>
 	<property>
 	<id>IO_CONFIG_SELECT</id>
 	<value></value>
@@ -2967,7 +3090,7 @@
 	</property>
 	<property>
 	<id>FRU_ID</id>
-	<value>51</value>
+	<value>47</value>
 	</property>
 	<property>
 	<id>IPMI_INSTANCE</id>
@@ -3029,7 +3152,7 @@
 	</property>
 </globalSetting>
 <globalSetting>
-	<id>/sys-0/node-0/ponderosa-0/birchconn-4/birch-0/dimmconn-2/dimm-0</id>
+	<id>/sys-0/node-0/ponderosa-0/birchconn-4/birch-0/dimmconn-1/dimm-0</id>
 	<property>
 	<id>IO_CONFIG_SELECT</id>
 	<value></value>
@@ -3130,7 +3253,7 @@
 	</property>
 </globalSetting>
 <globalSetting>
-	<id>/sys-0/node-0/ponderosa-0/birchconn-2/birch-0/dimmconn-3/dimm-0</id>
+	<id>/sys-0/node-0/ponderosa-0/birchconn-2/birch-0/dimmconn-0/dimm-0</id>
 	<property>
 	<id>IO_CONFIG_SELECT</id>
 	<value></value>
@@ -3193,7 +3316,7 @@
 	</property>
 </globalSetting>
 <globalSetting>
-	<id>/sys-0/node-0/ponderosa-0/birchconn-0/birch-0/dimmconn-3/dimm-0</id>
+	<id>/sys-0/node-0/ponderosa-0/birchconn-0/birch-0/dimmconn-0/dimm-0</id>
 	<property>
 	<id>IO_CONFIG_SELECT</id>
 	<value></value>
@@ -3251,7 +3374,7 @@
 	</property>
 </globalSetting>
 <globalSetting>
-	<id>/sys-0/node-0/ponderosa-0/birchconn-6/birch-0/dimmconn-0/dimm-0</id>
+	<id>/sys-0/node-0/ponderosa-0/birchconn-6/birch-0/dimmconn-3/dimm-0</id>
 	<property>
 	<id>IO_CONFIG_SELECT</id>
 	<value></value>
@@ -3277,7 +3400,7 @@
 	</property>
 </globalSetting>
 <globalSetting>
-	<id>/sys-0/node-0/ponderosa-0/birchconn-5/birch-0/dimmconn-2/dimm-0</id>
+	<id>/sys-0/node-0/ponderosa-0/birchconn-5/birch-0/dimmconn-1/dimm-0</id>
 	<property>
 	<id>IO_CONFIG_SELECT</id>
 	<value></value>
@@ -3354,7 +3477,7 @@
 	</property>
 </globalSetting>
 <globalSetting>
-	<id>/sys-0/node-0/ponderosa-0/birchconn-1/birch-0/dimmconn-0/dimm-0</id>
+	<id>/sys-0/node-0/ponderosa-0/birchconn-1/birch-0/dimmconn-3/dimm-0</id>
 	<property>
 	<id>IO_CONFIG_SELECT</id>
 	<value></value>
@@ -3590,7 +3713,7 @@
 	</property>
 </globalSetting>
 <globalSetting>
-	<id>/sys-0/node-0/ponderosa-0/birchconn-1/birch-0/dimmconn-2/dimm-0</id>
+	<id>/sys-0/node-0/ponderosa-0/birchconn-1/birch-0/dimmconn-1/dimm-0</id>
 	<property>
 	<id>IO_CONFIG_SELECT</id>
 	<value></value>
@@ -3765,7 +3888,7 @@
 	</property>
 </globalSetting>
 <globalSetting>
-	<id>/sys-0/node-0/ponderosa-0/birchconn-5/birch-0/dimmconn-3/dimm-0</id>
+	<id>/sys-0/node-0/ponderosa-0/birchconn-5/birch-0/dimmconn-0/dimm-0</id>
 	<property>
 	<id>IO_CONFIG_SELECT</id>
 	<value></value>
@@ -3824,7 +3947,7 @@
 	</property>
 </globalSetting>
 <globalSetting>
-	<id>/sys-0/node-0/ponderosa-0/birchconn-5/birch-0/dimmconn-1/dimm-0</id>
+	<id>/sys-0/node-0/ponderosa-0/birchconn-5/birch-0/dimmconn-2/dimm-0</id>
 	<property>
 	<id>IO_CONFIG_SELECT</id>
 	<value></value>
@@ -3850,7 +3973,7 @@
 	</property>
 </globalSetting>
 <globalSetting>
-	<id>/sys-0/node-0/ponderosa-0/birchconn-0/birch-0/dimmconn-0/dimm-0</id>
+	<id>/sys-0/node-0/ponderosa-0/birchconn-0/birch-0/dimmconn-3/dimm-0</id>
 	<property>
 	<id>IO_CONFIG_SELECT</id>
 	<value></value>
@@ -4479,7 +4602,7 @@
 	</property>
 </globalSetting>
 <globalSetting>
-	<id>/sys-0/node-0/ponderosa-0/birchconn-1/birch-0/dimmconn-3/dimm-0</id>
+	<id>/sys-0/node-0/ponderosa-0/birchconn-1/birch-0/dimmconn-0/dimm-0</id>
 	<property>
 	<id>IO_CONFIG_SELECT</id>
 	<value></value>
@@ -4630,7 +4753,7 @@
 	</property>
 </globalSetting>
 <globalSetting>
-	<id>/sys-0/node-0/ponderosa-0/birchconn-3/birch-0/dimmconn-1/dimm-0</id>
+	<id>/sys-0/node-0/ponderosa-0/birchconn-3/birch-0/dimmconn-2/dimm-0</id>
 	<property>
 	<id>IO_CONFIG_SELECT</id>
 	<value></value>
@@ -4753,7 +4876,7 @@
 	</property>
 </globalSetting>
 <globalSetting>
-	<id>/sys-0/node-0/ponderosa-0/birchconn-7/birch-0/dimmconn-1/dimm-0</id>
+	<id>/sys-0/node-0/ponderosa-0/birchconn-7/birch-0/dimmconn-2/dimm-0</id>
 	<property>
 	<id>IO_CONFIG_SELECT</id>
 	<value></value>
@@ -4836,7 +4959,7 @@
 	</property>
 </globalSetting>
 <globalSetting>
-	<id>/sys-0/node-0/ponderosa-0/birchconn-7/birch-0/dimmconn-2/dimm-0</id>
+	<id>/sys-0/node-0/ponderosa-0/birchconn-7/birch-0/dimmconn-1/dimm-0</id>
 	<property>
 	<id>IO_CONFIG_SELECT</id>
 	<value></value>
@@ -4876,7 +4999,7 @@
 	</property>
 </globalSetting>
 <globalSetting>
-	<id>/sys-0/node-0/ponderosa-0/birchconn-3/birch-0/dimmconn-0/dimm-0</id>
+	<id>/sys-0/node-0/ponderosa-0/birchconn-3/birch-0/dimmconn-3/dimm-0</id>
 	<property>
 	<id>IO_CONFIG_SELECT</id>
 	<value></value>
@@ -5018,7 +5141,7 @@
 	<hidden_child_id>dimm_freq_sensor</hidden_child_id>
 	<attribute>
 		<id>ALL_MCS_IN_INTERLEAVING_GROUP</id>
-		<default></default>
+		<default>1</default>
 	</attribute>
 	<attribute>
 		<id>APSS_GPIO_PORT_MODES</id>
@@ -5035,6 +5158,10 @@
 	<attribute>
 		<id>A_EREPAIR_THRESHOLD_MNFG</id>
 		<default>0</default>
+	</attribute>
+	<attribute>
+		<id>BMC_FRU_ID</id>
+		<default>47</default>
 	</attribute>
 	<attribute>
 		<id>BOOT_FREQ_MHZ</id>
@@ -5201,7 +5328,7 @@
 	</attribute>
 	<attribute>
 		<id>MRW_MAX_DRAM_DATABUS_UTIL</id>
-		<default>5625</default>
+		<default>7500</default>
 	</attribute>
 	<attribute>
 		<id>MRW_MBA_CACHELINE_INTERLEAVE_MODE_CONTROL</id>
@@ -5240,10 +5367,6 @@
 		<default>0</default>
 	</attribute>
 	<attribute>
-		<id>MSS_INTERLEAVE_ENABLE</id>
-		<default></default>
-	</attribute>
-	<attribute>
 		<id>MSS_MBA_ADDR_INTERLEAVE_BIT</id>
 		<default>24</default>
 	</attribute>
@@ -5265,7 +5388,7 @@
 	</attribute>
 	<attribute>
 		<id>OPEN_POWER_DIMM_ERROR_TEMP_DEG_C</id>
-		<default>96</default>
+		<default>84</default>
 	</attribute>
 	<attribute>
 		<id>OPEN_POWER_DIMM_READ_TIMEOUT_SEC</id>
@@ -5273,11 +5396,11 @@
 	</attribute>
 	<attribute>
 		<id>OPEN_POWER_DIMM_THROTTLE_TEMP_DEG_C</id>
-		<default>79</default>
+		<default>84</default>
 	</attribute>
 	<attribute>
 		<id>OPEN_POWER_MEMCTRL_ERROR_TEMP_DEG_C</id>
-		<default>99</default>
+		<default>89</default>
 	</attribute>
 	<attribute>
 		<id>OPEN_POWER_MEMCTRL_READ_TIMEOUT_SEC</id>
@@ -5305,7 +5428,7 @@
 	</attribute>
 	<attribute>
 		<id>OPEN_POWER_N_PLUS_ONE_BULK_POWER_LIMIT_WATTS</id>
-		<default>2400</default>
+		<default>2300</default>
 	</attribute>
 	<attribute>
 		<id>OPEN_POWER_N_PLUS_ONE_MAX_MEM_POWER_WATTS</id>
@@ -5317,7 +5440,7 @@
 	</attribute>
 	<attribute>
 		<id>OPEN_POWER_PROC_ERROR_TEMP_DEG_C</id>
-		<default>95</default>
+		<default>85</default>
 	</attribute>
 	<attribute>
 		<id>OPEN_POWER_PROC_READ_TIMEOUT_SEC</id>
@@ -5412,6 +5535,10 @@
 		<default></default>
 	</attribute>
 	<attribute>
+		<id>RESOURCE_IS_CRITICAL</id>
+		<default>0</default>
+	</attribute>
+	<attribute>
 		<id>SP_FUNCTIONS</id>
 		<default>
 				<field><id>baseServices</id><value>0</value></field>
@@ -5477,6 +5604,10 @@
 		<default>NA</default>
 	</attribute>
 	<attribute>
+		<id>RESOURCE_IS_CRITICAL</id>
+		<default>0</default>
+	</attribute>
+	<attribute>
 		<id>TYPE</id>
 		<default>NODE</default>
 	</attribute>
@@ -5540,6 +5671,10 @@
 	</attribute>
 	<attribute>
 		<id>POSITION</id>
+		<default>0</default>
+	</attribute>
+	<attribute>
+		<id>RESOURCE_IS_CRITICAL</id>
 		<default>0</default>
 	</attribute>
 	<attribute>
@@ -6084,7 +6219,7 @@
 		</bus_attribute>
 		<bus_attribute>
 			<id>PCIE_LANE_EQUALIZATION</id>
-		<default>all,0x33,0x33</default>
+		<default>all,0x65,0x67</default>
 		</bus_attribute>
 		<bus_attribute>
 			<id>PCIE_SWAP_CLKS</id>
@@ -6109,7 +6244,7 @@
 		</bus_attribute>
 		<bus_attribute>
 			<id>PCIE_LANE_EQUALIZATION</id>
-		<default>all,0x33,0x33</default>
+		<default>all,0x55,0x54</default>
 		</bus_attribute>
 		<bus_attribute>
 			<id>PCIE_SWAP_CLKS</id>
@@ -6134,7 +6269,7 @@
 		</bus_attribute>
 		<bus_attribute>
 			<id>PCIE_LANE_EQUALIZATION</id>
-		<default>all,0x33,0x33</default>
+		<default>all,0x65,0x67</default>
 		</bus_attribute>
 		<bus_attribute>
 			<id>PCIE_SWAP_CLKS</id>
@@ -6159,7 +6294,7 @@
 		</bus_attribute>
 		<bus_attribute>
 			<id>PCIE_LANE_EQUALIZATION</id>
-		<default>all,0x33,0x33</default>
+		<default>all,0x55,0x53</default>
 		</bus_attribute>
 		<bus_attribute>
 			<id>PCIE_SWAP_CLKS</id>
@@ -6180,11 +6315,11 @@
 		</bus_attribute>
 		<bus_attribute>
 			<id>LANE_REVERSAL</id>
-		<default>0</default>
+		<default>1</default>
 		</bus_attribute>
 		<bus_attribute>
 			<id>PCIE_LANE_EQUALIZATION</id>
-		<default>all,0x33,0x33</default>
+		<default>all,0x55,0x54</default>
 		</bus_attribute>
 		<bus_attribute>
 			<id>PCIE_SWAP_CLKS</id>
@@ -6322,6 +6457,10 @@
 			</default>
 	</attribute>
 	<attribute>
+		<id>RESOURCE_IS_CRITICAL</id>
+		<default>0</default>
+	</attribute>
+	<attribute>
 		<id>TYPE</id>
 		<default>NA</default>
 	</attribute>
@@ -6351,6 +6490,10 @@
 	</attribute>
 	<attribute>
 		<id>POSITION</id>
+		<default>0</default>
+	</attribute>
+	<attribute>
+		<id>RESOURCE_IS_CRITICAL</id>
 		<default>0</default>
 	</attribute>
 	<attribute>
@@ -6520,6 +6663,10 @@
 		<default>NA</default>
 	</attribute>
 	<attribute>
+		<id>MSS_INTERLEAVE_ENABLE</id>
+		<default>0xE</default>
+	</attribute>
+	<attribute>
 		<id>PCI_BASE_ADDRS_32</id>
 		<default>4,0x0003FF8000000000,0x800000000,0x200000000,0x80000000
 			</default>
@@ -6595,19 +6742,19 @@
 	</attribute>
 	<attribute>
 		<id>PROC_R_DISTLOSS_VCS</id>
-		<default></default>
+		<default>0x190</default>
 	</attribute>
 	<attribute>
 		<id>PROC_R_DISTLOSS_VDD</id>
-		<default></default>
+		<default>0x032</default>
 	</attribute>
 	<attribute>
 		<id>PROC_R_LOADLINE_VCS</id>
-		<default></default>
+		<default>0x226</default>
 	</attribute>
 	<attribute>
 		<id>PROC_R_LOADLINE_VDD</id>
-		<default></default>
+		<default>0x226</default>
 	</attribute>
 	<attribute>
 		<id>PROC_VRM_VOFFSET_VCS</id>
@@ -6619,7 +6766,11 @@
 	</attribute>
 	<attribute>
 		<id>PSI_BRIDGE_BASE_ADDR</id>
-		<default>0,0x0000000000000000</default>
+		<default>1,0x0003FFFE80000000,0x2000000,0x400000,0x0</default>
+	</attribute>
+	<attribute>
+		<id>RESOURCE_IS_CRITICAL</id>
+		<default>0</default>
 	</attribute>
 	<attribute>
 		<id>RNG_BASE_ADDR</id>
@@ -6656,6 +6807,10 @@
 	<attribute>
 		<id>MRW_TYPE</id>
 		<default>NA</default>
+	</attribute>
+	<attribute>
+		<id>RESOURCE_IS_CRITICAL</id>
+		<default>0</default>
 	</attribute>
 	<attribute>
 		<id>TYPE</id>
@@ -6697,6 +6852,10 @@
 	<attribute>
 		<id>MRW_TYPE</id>
 		<default>NA</default>
+	</attribute>
+	<attribute>
+		<id>RESOURCE_IS_CRITICAL</id>
+		<default>0</default>
 	</attribute>
 	<attribute>
 		<id>TYPE</id>
@@ -6754,6 +6913,10 @@
 		<default>IPMI_SENSOR</default>
 	</attribute>
 	<attribute>
+		<id>RESOURCE_IS_CRITICAL</id>
+		<default>0</default>
+	</attribute>
+	<attribute>
 		<id>TYPE</id>
 		<default>NA</default>
 	</attribute>
@@ -6809,6 +6972,10 @@
 		<default>IPMI_SENSOR</default>
 	</attribute>
 	<attribute>
+		<id>RESOURCE_IS_CRITICAL</id>
+		<default>0</default>
+	</attribute>
+	<attribute>
 		<id>TYPE</id>
 		<default>NA</default>
 	</attribute>
@@ -6839,6 +7006,10 @@
 	<attribute>
 		<id>MRW_TYPE</id>
 		<default>NA</default>
+	</attribute>
+	<attribute>
+		<id>RESOURCE_IS_CRITICAL</id>
+		<default>0</default>
 	</attribute>
 	<attribute>
 		<id>TYPE</id>
@@ -6873,6 +7044,10 @@
 		<default>NA</default>
 	</attribute>
 	<attribute>
+		<id>RESOURCE_IS_CRITICAL</id>
+		<default>0</default>
+	</attribute>
+	<attribute>
 		<id>TYPE</id>
 		<default>EX</default>
 	</attribute>
@@ -6903,6 +7078,10 @@
 	<attribute>
 		<id>MRW_TYPE</id>
 		<default>NA</default>
+	</attribute>
+	<attribute>
+		<id>RESOURCE_IS_CRITICAL</id>
+		<default>0</default>
 	</attribute>
 	<attribute>
 		<id>TYPE</id>
@@ -6937,6 +7116,10 @@
 		<default>NA</default>
 	</attribute>
 	<attribute>
+		<id>RESOURCE_IS_CRITICAL</id>
+		<default>0</default>
+	</attribute>
+	<attribute>
 		<id>TYPE</id>
 		<default>EX</default>
 	</attribute>
@@ -6967,6 +7150,10 @@
 	<attribute>
 		<id>MRW_TYPE</id>
 		<default>NA</default>
+	</attribute>
+	<attribute>
+		<id>RESOURCE_IS_CRITICAL</id>
+		<default>0</default>
 	</attribute>
 	<attribute>
 		<id>TYPE</id>
@@ -7001,6 +7188,10 @@
 		<default>NA</default>
 	</attribute>
 	<attribute>
+		<id>RESOURCE_IS_CRITICAL</id>
+		<default>0</default>
+	</attribute>
+	<attribute>
 		<id>TYPE</id>
 		<default>EX</default>
 	</attribute>
@@ -7031,6 +7222,10 @@
 	<attribute>
 		<id>MRW_TYPE</id>
 		<default>NA</default>
+	</attribute>
+	<attribute>
+		<id>RESOURCE_IS_CRITICAL</id>
+		<default>0</default>
 	</attribute>
 	<attribute>
 		<id>TYPE</id>
@@ -7065,6 +7260,10 @@
 		<default>NA</default>
 	</attribute>
 	<attribute>
+		<id>RESOURCE_IS_CRITICAL</id>
+		<default>0</default>
+	</attribute>
+	<attribute>
 		<id>TYPE</id>
 		<default>EX</default>
 	</attribute>
@@ -7095,6 +7294,10 @@
 	<attribute>
 		<id>MRW_TYPE</id>
 		<default>NA</default>
+	</attribute>
+	<attribute>
+		<id>RESOURCE_IS_CRITICAL</id>
+		<default>0</default>
 	</attribute>
 	<attribute>
 		<id>TYPE</id>
@@ -7129,6 +7332,10 @@
 		<default>NA</default>
 	</attribute>
 	<attribute>
+		<id>RESOURCE_IS_CRITICAL</id>
+		<default>0</default>
+	</attribute>
+	<attribute>
 		<id>TYPE</id>
 		<default>EX</default>
 	</attribute>
@@ -7159,6 +7366,10 @@
 	<attribute>
 		<id>MRW_TYPE</id>
 		<default>NA</default>
+	</attribute>
+	<attribute>
+		<id>RESOURCE_IS_CRITICAL</id>
+		<default>0</default>
 	</attribute>
 	<attribute>
 		<id>TYPE</id>
@@ -7192,6 +7403,10 @@
 		<default>NA</default>
 	</attribute>
 	<attribute>
+		<id>RESOURCE_IS_CRITICAL</id>
+		<default>0</default>
+	</attribute>
+	<attribute>
 		<id>TYPE</id>
 		<default>PORE</default>
 	</attribute>
@@ -7223,6 +7438,10 @@
 		<default>NA</default>
 	</attribute>
 	<attribute>
+		<id>RESOURCE_IS_CRITICAL</id>
+		<default>0</default>
+	</attribute>
+	<attribute>
 		<id>TYPE</id>
 		<default>CAPP</default>
 	</attribute>
@@ -7252,6 +7471,10 @@
 	<attribute>
 		<id>MRW_TYPE</id>
 		<default>NA</default>
+	</attribute>
+	<attribute>
+		<id>RESOURCE_IS_CRITICAL</id>
+		<default>0</default>
 	</attribute>
 	<attribute>
 		<id>TYPE</id>
@@ -7300,6 +7523,10 @@
 	<attribute>
 		<id>OCC_MASTER_CAPABLE</id>
 		<default></default>
+	</attribute>
+	<attribute>
+		<id>RESOURCE_IS_CRITICAL</id>
+		<default>0</default>
 	</attribute>
 	<attribute>
 		<id>TYPE</id>
@@ -7357,6 +7584,10 @@
 		<default>IPMI_SENSOR</default>
 	</attribute>
 	<attribute>
+		<id>RESOURCE_IS_CRITICAL</id>
+		<default>0</default>
+	</attribute>
+	<attribute>
 		<id>TYPE</id>
 		<default>NA</default>
 	</attribute>
@@ -7392,6 +7623,10 @@
 	<attribute>
 		<id>MRW_TYPE</id>
 		<default>PCI_CONFIGS</default>
+	</attribute>
+	<attribute>
+		<id>RESOURCE_IS_CRITICAL</id>
+		<default>0</default>
 	</attribute>
 	<attribute>
 		<id>TYPE</id>
@@ -7440,6 +7675,10 @@
 		000,010,001,011,111,101,110,100,
 		000,010,001,011,110,101,110,100
 		 </default>
+	</attribute>
+	<attribute>
+		<id>RESOURCE_IS_CRITICAL</id>
+		<default>0</default>
 	</attribute>
 	<attribute>
 		<id>TYPE</id>
@@ -7498,6 +7737,10 @@
 	</attribute>
 	<attribute>
 		<id>PHB_NUM</id>
+		<default>0</default>
+	</attribute>
+	<attribute>
+		<id>RESOURCE_IS_CRITICAL</id>
 		<default>0</default>
 	</attribute>
 	<attribute>
@@ -7564,6 +7807,10 @@
 		<default>1</default>
 	</attribute>
 	<attribute>
+		<id>RESOURCE_IS_CRITICAL</id>
+		<default>0</default>
+	</attribute>
+	<attribute>
 		<id>SCHEMATIC_INTERFACE</id>
 		<default></default>
 	</attribute>
@@ -7615,6 +7862,10 @@
 		000,010,001,011,111,101,110,100,
 		000,010,001,011,000,010,001,011
 		 </default>
+	</attribute>
+	<attribute>
+		<id>RESOURCE_IS_CRITICAL</id>
+		<default>0</default>
 	</attribute>
 	<attribute>
 		<id>TYPE</id>
@@ -7674,6 +7925,10 @@
 	<attribute>
 		<id>PHB_NUM</id>
 		<default>1</default>
+	</attribute>
+	<attribute>
+		<id>RESOURCE_IS_CRITICAL</id>
+		<default>0</default>
 	</attribute>
 	<attribute>
 		<id>SCHEMATIC_INTERFACE</id>
@@ -7739,6 +7994,10 @@
 		<default>2</default>
 	</attribute>
 	<attribute>
+		<id>RESOURCE_IS_CRITICAL</id>
+		<default>0</default>
+	</attribute>
+	<attribute>
 		<id>SCHEMATIC_INTERFACE</id>
 		<default></default>
 	</attribute>
@@ -7778,6 +8037,10 @@
 		<default>NA</default>
 	</attribute>
 	<attribute>
+		<id>RESOURCE_IS_CRITICAL</id>
+		<default>0</default>
+	</attribute>
+	<attribute>
 		<id>TYPE</id>
 		<default>ABUS</default>
 	</attribute>
@@ -7813,6 +8076,10 @@
 		<default>NA</default>
 	</attribute>
 	<attribute>
+		<id>RESOURCE_IS_CRITICAL</id>
+		<default>0</default>
+	</attribute>
+	<attribute>
 		<id>TYPE</id>
 		<default>ABUS</default>
 	</attribute>
@@ -7846,6 +8113,10 @@
 	<attribute>
 		<id>MRW_TYPE</id>
 		<default>NA</default>
+	</attribute>
+	<attribute>
+		<id>RESOURCE_IS_CRITICAL</id>
+		<default>0</default>
 	</attribute>
 	<attribute>
 		<id>TYPE</id>
@@ -7890,6 +8161,10 @@
 	<attribute>
 		<id>MRW_TYPE</id>
 		<default>NA</default>
+	</attribute>
+	<attribute>
+		<id>RESOURCE_IS_CRITICAL</id>
+		<default>0</default>
 	</attribute>
 	<attribute>
 		<id>SCHEMATIC_INTERFACE</id>
@@ -7940,6 +8215,10 @@
 		<default>NA</default>
 	</attribute>
 	<attribute>
+		<id>RESOURCE_IS_CRITICAL</id>
+		<default>0</default>
+	</attribute>
+	<attribute>
 		<id>SCHEMATIC_INTERFACE</id>
 		<default>M0 DMI C</default>
 	</attribute>
@@ -7988,6 +8267,10 @@
 		<default>NA</default>
 	</attribute>
 	<attribute>
+		<id>RESOURCE_IS_CRITICAL</id>
+		<default>0</default>
+	</attribute>
+	<attribute>
 		<id>SCHEMATIC_INTERFACE</id>
 		<default>M1 DMI D</default>
 	</attribute>
@@ -8034,6 +8317,10 @@
 	<attribute>
 		<id>MRW_TYPE</id>
 		<default>NA</default>
+	</attribute>
+	<attribute>
+		<id>RESOURCE_IS_CRITICAL</id>
+		<default>0</default>
 	</attribute>
 	<attribute>
 		<id>SCHEMATIC_INTERFACE</id>
@@ -8087,6 +8374,10 @@
 		<default>NA</default>
 	</attribute>
 	<attribute>
+		<id>RESOURCE_IS_CRITICAL</id>
+		<default>0</default>
+	</attribute>
+	<attribute>
 		<id>TYPE</id>
 		<default>FSI</default>
 	</attribute>
@@ -8136,6 +8427,10 @@
 	<attribute>
 		<id>MRW_TYPE</id>
 		<default>FSICM</default>
+	</attribute>
+	<attribute>
+		<id>RESOURCE_IS_CRITICAL</id>
+		<default>0</default>
 	</attribute>
 	<attribute>
 		<id>TYPE</id>
@@ -8189,6 +8484,10 @@
 		<default>FSICM</default>
 	</attribute>
 	<attribute>
+		<id>RESOURCE_IS_CRITICAL</id>
+		<default>0</default>
+	</attribute>
+	<attribute>
 		<id>TYPE</id>
 		<default>FSI</default>
 	</attribute>
@@ -8238,6 +8537,10 @@
 	<attribute>
 		<id>MRW_TYPE</id>
 		<default>FSICM</default>
+	</attribute>
+	<attribute>
+		<id>RESOURCE_IS_CRITICAL</id>
+		<default>0</default>
 	</attribute>
 	<attribute>
 		<id>TYPE</id>
@@ -8291,6 +8594,10 @@
 		<default>FSICM</default>
 	</attribute>
 	<attribute>
+		<id>RESOURCE_IS_CRITICAL</id>
+		<default>0</default>
+	</attribute>
+	<attribute>
 		<id>TYPE</id>
 		<default>FSI</default>
 	</attribute>
@@ -8340,6 +8647,10 @@
 	<attribute>
 		<id>MRW_TYPE</id>
 		<default>FSIM</default>
+	</attribute>
+	<attribute>
+		<id>RESOURCE_IS_CRITICAL</id>
+		<default>0</default>
 	</attribute>
 	<attribute>
 		<id>TYPE</id>
@@ -8393,6 +8704,10 @@
 		<default>FSIM</default>
 	</attribute>
 	<attribute>
+		<id>RESOURCE_IS_CRITICAL</id>
+		<default>0</default>
+	</attribute>
+	<attribute>
 		<id>TYPE</id>
 		<default>FSI</default>
 	</attribute>
@@ -8444,6 +8759,10 @@
 		<default>FSIM</default>
 	</attribute>
 	<attribute>
+		<id>RESOURCE_IS_CRITICAL</id>
+		<default>0</default>
+	</attribute>
+	<attribute>
 		<id>TYPE</id>
 		<default>FSI</default>
 	</attribute>
@@ -8477,6 +8796,10 @@
 	<attribute>
 		<id>MRW_TYPE</id>
 		<default>NA</default>
+	</attribute>
+	<attribute>
+		<id>RESOURCE_IS_CRITICAL</id>
+		<default>0</default>
 	</attribute>
 	<attribute>
 		<id>TYPE</id>
@@ -8522,6 +8845,10 @@
 		<default>NA</default>
 	</attribute>
 	<attribute>
+		<id>RESOURCE_IS_CRITICAL</id>
+		<default>0</default>
+	</attribute>
+	<attribute>
 		<id>TYPE</id>
 		<default>NA</default>
 	</attribute>
@@ -8565,6 +8892,10 @@
 		<default>NA</default>
 	</attribute>
 	<attribute>
+		<id>RESOURCE_IS_CRITICAL</id>
+		<default>0</default>
+	</attribute>
+	<attribute>
 		<id>TYPE</id>
 		<default>NA</default>
 	</attribute>
@@ -8598,6 +8929,10 @@
 	<attribute>
 		<id>MRW_TYPE</id>
 		<default>NA</default>
+	</attribute>
+	<attribute>
+		<id>RESOURCE_IS_CRITICAL</id>
+		<default>0</default>
 	</attribute>
 	<attribute>
 		<id>TYPE</id>
@@ -8637,6 +8972,10 @@
 	<attribute>
 		<id>MRW_TYPE</id>
 		<default>NA</default>
+	</attribute>
+	<attribute>
+		<id>RESOURCE_IS_CRITICAL</id>
+		<default>0</default>
 	</attribute>
 	<attribute>
 		<id>TYPE</id>
@@ -8695,6 +9034,10 @@
 	</attribute>
 	<attribute>
 		<id>PHB_NUM</id>
+		<default>0</default>
+	</attribute>
+	<attribute>
+		<id>RESOURCE_IS_CRITICAL</id>
 		<default>0</default>
 	</attribute>
 	<attribute>
@@ -8761,6 +9104,10 @@
 		<default>0</default>
 	</attribute>
 	<attribute>
+		<id>RESOURCE_IS_CRITICAL</id>
+		<default>0</default>
+	</attribute>
+	<attribute>
 		<id>SCHEMATIC_INTERFACE</id>
 		<default></default>
 	</attribute>
@@ -8821,6 +9168,10 @@
 	</attribute>
 	<attribute>
 		<id>PHB_NUM</id>
+		<default>0</default>
+	</attribute>
+	<attribute>
+		<id>RESOURCE_IS_CRITICAL</id>
 		<default>0</default>
 	</attribute>
 	<attribute>
@@ -8887,6 +9238,10 @@
 		<default>0</default>
 	</attribute>
 	<attribute>
+		<id>RESOURCE_IS_CRITICAL</id>
+		<default>0</default>
+	</attribute>
+	<attribute>
 		<id>SCHEMATIC_INTERFACE</id>
 		<default></default>
 	</attribute>
@@ -8926,6 +9281,10 @@
 		<default>NA</default>
 	</attribute>
 	<attribute>
+		<id>RESOURCE_IS_CRITICAL</id>
+		<default>0</default>
+	</attribute>
+	<attribute>
 		<id>TYPE</id>
 		<default>XBUS</default>
 	</attribute>
@@ -8959,6 +9318,10 @@
 	<attribute>
 		<id>MRW_TYPE</id>
 		<default>NA</default>
+	</attribute>
+	<attribute>
+		<id>RESOURCE_IS_CRITICAL</id>
+		<default>0</default>
 	</attribute>
 	<attribute>
 		<id>TYPE</id>
@@ -8996,6 +9359,10 @@
 		<default>NA</default>
 	</attribute>
 	<attribute>
+		<id>RESOURCE_IS_CRITICAL</id>
+		<default>0</default>
+	</attribute>
+	<attribute>
 		<id>TYPE</id>
 		<default>XBUS</default>
 	</attribute>
@@ -9029,6 +9396,10 @@
 	<attribute>
 		<id>MRW_TYPE</id>
 		<default>NA</default>
+	</attribute>
+	<attribute>
+		<id>RESOURCE_IS_CRITICAL</id>
+		<default>0</default>
 	</attribute>
 	<attribute>
 		<id>TYPE</id>
@@ -9073,6 +9444,10 @@
 	<attribute>
 		<id>MRW_TYPE</id>
 		<default>NA</default>
+	</attribute>
+	<attribute>
+		<id>RESOURCE_IS_CRITICAL</id>
+		<default>0</default>
 	</attribute>
 	<attribute>
 		<id>SCHEMATIC_INTERFACE</id>
@@ -9123,6 +9498,10 @@
 		<default>NA</default>
 	</attribute>
 	<attribute>
+		<id>RESOURCE_IS_CRITICAL</id>
+		<default>0</default>
+	</attribute>
+	<attribute>
 		<id>SCHEMATIC_INTERFACE</id>
 		<default>M1 DMI B</default>
 	</attribute>
@@ -9171,6 +9550,10 @@
 		<default>NA</default>
 	</attribute>
 	<attribute>
+		<id>RESOURCE_IS_CRITICAL</id>
+		<default>0</default>
+	</attribute>
+	<attribute>
 		<id>SCHEMATIC_INTERFACE</id>
 		<default>M0 DMI C</default>
 	</attribute>
@@ -9217,6 +9600,10 @@
 	<attribute>
 		<id>MRW_TYPE</id>
 		<default>NA</default>
+	</attribute>
+	<attribute>
+		<id>RESOURCE_IS_CRITICAL</id>
+		<default>0</default>
 	</attribute>
 	<attribute>
 		<id>SCHEMATIC_INTERFACE</id>
@@ -9278,6 +9665,10 @@
 		<default>IPMI_SENSOR</default>
 	</attribute>
 	<attribute>
+		<id>RESOURCE_IS_CRITICAL</id>
+		<default>0</default>
+	</attribute>
+	<attribute>
 		<id>TYPE</id>
 		<default>NA</default>
 	</attribute>
@@ -9331,6 +9722,10 @@
 	<attribute>
 		<id>MRW_TYPE</id>
 		<default>IPMI_SENSOR</default>
+	</attribute>
+	<attribute>
+		<id>RESOURCE_IS_CRITICAL</id>
+		<default>0</default>
 	</attribute>
 	<attribute>
 		<id>TYPE</id>
@@ -9467,6 +9862,10 @@
 			</default>
 	</attribute>
 	<attribute>
+		<id>RESOURCE_IS_CRITICAL</id>
+		<default>0</default>
+	</attribute>
+	<attribute>
 		<id>TYPE</id>
 		<default>NA</default>
 	</attribute>
@@ -9499,6 +9898,10 @@
 		<default>1</default>
 	</attribute>
 	<attribute>
+		<id>RESOURCE_IS_CRITICAL</id>
+		<default>0</default>
+	</attribute>
+	<attribute>
 		<id>TYPE</id>
 		<default>NA</default>
 	</attribute>
@@ -9528,6 +9931,10 @@
 	</attribute>
 	<attribute>
 		<id>POSITION</id>
+		<default>0</default>
+	</attribute>
+	<attribute>
+		<id>RESOURCE_IS_CRITICAL</id>
 		<default>0</default>
 	</attribute>
 	<attribute>
@@ -9571,6 +9978,10 @@
 	</attribute>
 	<attribute>
 		<id>POSITION</id>
+		<default>0</default>
+	</attribute>
+	<attribute>
+		<id>RESOURCE_IS_CRITICAL</id>
 		<default>0</default>
 	</attribute>
 	<attribute>
@@ -9796,6 +10207,10 @@
 	<hidden_child_id>membuf_temp_sensor</hidden_child_id>
 	<hidden_child_id>membuf_func_sensor</hidden_child_id>
 	<attribute>
+		<id>CENTAUR_ECID_FRU_ID</id>
+		<default>0xFF</default>
+	</attribute>
+	<attribute>
 		<id>CHIP_ID</id>
 		<default></default>
 	</attribute>
@@ -9848,6 +10263,10 @@
 		<default>0</default>
 	</attribute>
 	<attribute>
+		<id>RESOURCE_IS_CRITICAL</id>
+		<default>0</default>
+	</attribute>
+	<attribute>
 		<id>TYPE</id>
 		<default>MEMBUF</default>
 	</attribute>
@@ -9883,6 +10302,10 @@
 		<default>NA</default>
 	</attribute>
 	<attribute>
+		<id>RESOURCE_IS_CRITICAL</id>
+		<default>0</default>
+	</attribute>
+	<attribute>
 		<id>TYPE</id>
 		<default></default>
 	</attribute>
@@ -9912,6 +10335,10 @@
 	<attribute>
 		<id>MRW_TYPE</id>
 		<default>NA</default>
+	</attribute>
+	<attribute>
+		<id>RESOURCE_IS_CRITICAL</id>
+		<default>0</default>
 	</attribute>
 	<attribute>
 		<id>TYPE</id>
@@ -9951,6 +10378,10 @@
 	<attribute>
 		<id>MRW_TYPE</id>
 		<default>NA</default>
+	</attribute>
+	<attribute>
+		<id>RESOURCE_IS_CRITICAL</id>
+		<default>0</default>
 	</attribute>
 	<attribute>
 		<id>TYPE</id>
@@ -9994,6 +10425,10 @@
 	<attribute>
 		<id>MRW_TYPE</id>
 		<default>NA</default>
+	</attribute>
+	<attribute>
+		<id>RESOURCE_IS_CRITICAL</id>
+		<default>0</default>
 	</attribute>
 	<attribute>
 		<id>SCHEMATIC_INTERFACE</id>
@@ -10043,6 +10478,10 @@
 		<default>NA</default>
 	</attribute>
 	<attribute>
+		<id>RESOURCE_IS_CRITICAL</id>
+		<default>0</default>
+	</attribute>
+	<attribute>
 		<id>SCHEMATIC_INTERFACE</id>
 		<default></default>
 	</attribute>
@@ -10088,6 +10527,10 @@
 	<attribute>
 		<id>MRW_TYPE</id>
 		<default>NA</default>
+	</attribute>
+	<attribute>
+		<id>RESOURCE_IS_CRITICAL</id>
+		<default>0</default>
 	</attribute>
 	<attribute>
 		<id>SCHEMATIC_INTERFACE</id>
@@ -10137,6 +10580,10 @@
 		<default>NA</default>
 	</attribute>
 	<attribute>
+		<id>RESOURCE_IS_CRITICAL</id>
+		<default>0</default>
+	</attribute>
+	<attribute>
 		<id>SCHEMATIC_INTERFACE</id>
 		<default></default>
 	</attribute>
@@ -10180,6 +10627,10 @@
 		<default>NA</default>
 	</attribute>
 	<attribute>
+		<id>RESOURCE_IS_CRITICAL</id>
+		<default>0</default>
+	</attribute>
+	<attribute>
 		<id>TYPE</id>
 		<default>MBA</default>
 	</attribute>
@@ -10221,6 +10672,10 @@
 	<attribute>
 		<id>MRW_TYPE</id>
 		<default>NA</default>
+	</attribute>
+	<attribute>
+		<id>RESOURCE_IS_CRITICAL</id>
+		<default>0</default>
 	</attribute>
 	<attribute>
 		<id>SCHEMATIC_INTERFACE</id>
@@ -10270,6 +10725,10 @@
 		<default>NA</default>
 	</attribute>
 	<attribute>
+		<id>RESOURCE_IS_CRITICAL</id>
+		<default>0</default>
+	</attribute>
+	<attribute>
 		<id>SCHEMATIC_INTERFACE</id>
 		<default></default>
 	</attribute>
@@ -10315,6 +10774,10 @@
 	<attribute>
 		<id>MRW_TYPE</id>
 		<default>NA</default>
+	</attribute>
+	<attribute>
+		<id>RESOURCE_IS_CRITICAL</id>
+		<default>0</default>
 	</attribute>
 	<attribute>
 		<id>SCHEMATIC_INTERFACE</id>
@@ -10364,6 +10827,10 @@
 		<default>NA</default>
 	</attribute>
 	<attribute>
+		<id>RESOURCE_IS_CRITICAL</id>
+		<default>0</default>
+	</attribute>
+	<attribute>
 		<id>SCHEMATIC_INTERFACE</id>
 		<default></default>
 	</attribute>
@@ -10411,6 +10878,10 @@
 		<default>NA</default>
 	</attribute>
 	<attribute>
+		<id>RESOURCE_IS_CRITICAL</id>
+		<default>0</default>
+	</attribute>
+	<attribute>
 		<id>TYPE</id>
 		<default>NA</default>
 	</attribute>
@@ -10452,6 +10923,10 @@
 	<attribute>
 		<id>MRW_TYPE</id>
 		<default>NA</default>
+	</attribute>
+	<attribute>
+		<id>RESOURCE_IS_CRITICAL</id>
+		<default>0</default>
 	</attribute>
 	<attribute>
 		<id>TYPE</id>
@@ -10501,6 +10976,10 @@
 		<default>NA</default>
 	</attribute>
 	<attribute>
+		<id>RESOURCE_IS_CRITICAL</id>
+		<default>0</default>
+	</attribute>
+	<attribute>
 		<id>TYPE</id>
 		<default>FSI</default>
 	</attribute>
@@ -10540,6 +11019,10 @@
 		<default>VDDR</default>
 	</attribute>
 	<attribute>
+		<id>RESOURCE_IS_CRITICAL</id>
+		<default>0</default>
+	</attribute>
+	<attribute>
 		<id>TYPE</id>
 		<default>NA</default>
 	</attribute>
@@ -10577,6 +11060,10 @@
 	<attribute>
 		<id>MRW_TYPE</id>
 		<default>NA</default>
+	</attribute>
+	<attribute>
+		<id>RESOURCE_IS_CRITICAL</id>
+		<default>0</default>
 	</attribute>
 	<attribute>
 		<id>TYPE</id>
@@ -10634,6 +11121,10 @@
 		<default>IPMI_SENSOR</default>
 	</attribute>
 	<attribute>
+		<id>RESOURCE_IS_CRITICAL</id>
+		<default>0</default>
+	</attribute>
+	<attribute>
 		<id>TYPE</id>
 		<default>NA</default>
 	</attribute>
@@ -10689,6 +11180,10 @@
 		<default>IPMI_SENSOR</default>
 	</attribute>
 	<attribute>
+		<id>RESOURCE_IS_CRITICAL</id>
+		<default>0</default>
+	</attribute>
+	<attribute>
 		<id>TYPE</id>
 		<default>NA</default>
 	</attribute>
@@ -10718,6 +11213,10 @@
 	</attribute>
 	<attribute>
 		<id>POSITION</id>
+		<default>0</default>
+	</attribute>
+	<attribute>
+		<id>RESOURCE_IS_CRITICAL</id>
 		<default>0</default>
 	</attribute>
 	<attribute>
@@ -10768,6 +11267,10 @@
 		<default>0</default>
 	</attribute>
 	<attribute>
+		<id>RESOURCE_IS_CRITICAL</id>
+		<default>0</default>
+	</attribute>
+	<attribute>
 		<id>TYPE</id>
 		<default>DIMM</default>
 	</attribute>
@@ -10801,6 +11304,10 @@
 	<attribute>
 		<id>MRW_TYPE</id>
 		<default>NA</default>
+	</attribute>
+	<attribute>
+		<id>RESOURCE_IS_CRITICAL</id>
+		<default>0</default>
 	</attribute>
 	<attribute>
 		<id>TYPE</id>
@@ -10859,6 +11366,10 @@
 		<default></default>
 	</attribute>
 	<attribute>
+		<id>RESOURCE_IS_CRITICAL</id>
+		<default>0</default>
+	</attribute>
+	<attribute>
 		<id>TYPE</id>
 		<default>NA</default>
 	</attribute>
@@ -10872,7 +11383,7 @@
 	</attribute>
 	<attribute>
 		<id>WRITE_PAGE_SIZE</id>
-		<default>0x50</default>
+		<default>0x08</default>
 	</attribute>
 </targetInstance>
 <targetInstance>
@@ -10924,6 +11435,10 @@
 	<attribute>
 		<id>MRW_TYPE</id>
 		<default>IPMI_SENSOR</default>
+	</attribute>
+	<attribute>
+		<id>RESOURCE_IS_CRITICAL</id>
+		<default>0</default>
 	</attribute>
 	<attribute>
 		<id>TYPE</id>
@@ -10981,6 +11496,10 @@
 		<default>IPMI_SENSOR</default>
 	</attribute>
 	<attribute>
+		<id>RESOURCE_IS_CRITICAL</id>
+		<default>0</default>
+	</attribute>
+	<attribute>
 		<id>TYPE</id>
 		<default>NA</default>
 	</attribute>
@@ -11011,6 +11530,10 @@
 	<attribute>
 		<id>POSITION</id>
 		<default>1</default>
+	</attribute>
+	<attribute>
+		<id>RESOURCE_IS_CRITICAL</id>
+		<default>0</default>
 	</attribute>
 	<attribute>
 		<id>TYPE</id>
@@ -11045,6 +11568,10 @@
 		<default>2</default>
 	</attribute>
 	<attribute>
+		<id>RESOURCE_IS_CRITICAL</id>
+		<default>0</default>
+	</attribute>
+	<attribute>
 		<id>TYPE</id>
 		<default>NA</default>
 	</attribute>
@@ -11075,6 +11602,10 @@
 	<attribute>
 		<id>POSITION</id>
 		<default>3</default>
+	</attribute>
+	<attribute>
+		<id>RESOURCE_IS_CRITICAL</id>
+		<default>0</default>
 	</attribute>
 	<attribute>
 		<id>TYPE</id>
@@ -11119,6 +11650,10 @@
 		<default>0</default>
 	</attribute>
 	<attribute>
+		<id>RESOURCE_IS_CRITICAL</id>
+		<default>0</default>
+	</attribute>
+	<attribute>
 		<id>TYPE</id>
 		<default>NA</default>
 	</attribute>
@@ -11156,6 +11691,10 @@
 	<attribute>
 		<id>MRW_TYPE</id>
 		<default>NA</default>
+	</attribute>
+	<attribute>
+		<id>RESOURCE_IS_CRITICAL</id>
+		<default>0</default>
 	</attribute>
 	<attribute>
 		<id>TYPE</id>
@@ -11197,6 +11736,10 @@
 		<default>NA</default>
 	</attribute>
 	<attribute>
+		<id>RESOURCE_IS_CRITICAL</id>
+		<default>0</default>
+	</attribute>
+	<attribute>
 		<id>TYPE</id>
 		<default>NA</default>
 	</attribute>
@@ -11234,6 +11777,10 @@
 	<attribute>
 		<id>RAIL_NAME</id>
 		<default>UNKNOWN</default>
+	</attribute>
+	<attribute>
+		<id>RESOURCE_IS_CRITICAL</id>
+		<default>0</default>
 	</attribute>
 	<attribute>
 		<id>TYPE</id>
@@ -11293,6 +11840,10 @@
 		<default>1</default>
 	</attribute>
 	<attribute>
+		<id>RESOURCE_IS_CRITICAL</id>
+		<default>0</default>
+	</attribute>
+	<attribute>
 		<id>TYPE</id>
 		<default>NA</default>
 	</attribute>
@@ -11342,6 +11893,10 @@
 	<attribute>
 		<id>MRW_TYPE</id>
 		<default>NA</default>
+	</attribute>
+	<attribute>
+		<id>RESOURCE_IS_CRITICAL</id>
+		<default>0</default>
 	</attribute>
 	<attribute>
 		<id>TYPE</id>
@@ -11400,6 +11955,10 @@
 		<default>1</default>
 	</attribute>
 	<attribute>
+		<id>RESOURCE_IS_CRITICAL</id>
+		<default>0</default>
+	</attribute>
+	<attribute>
 		<id>TYPE</id>
 		<default>NA</default>
 	</attribute>
@@ -11437,6 +11996,10 @@
 	<attribute>
 		<id>MRW_TYPE</id>
 		<default>NA</default>
+	</attribute>
+	<attribute>
+		<id>RESOURCE_IS_CRITICAL</id>
+		<default>0</default>
 	</attribute>
 	<attribute>
 		<id>SCHEMATIC_INTERFACE</id>
@@ -11482,6 +12045,10 @@
 		<default>NA</default>
 	</attribute>
 	<attribute>
+		<id>RESOURCE_IS_CRITICAL</id>
+		<default>0</default>
+	</attribute>
+	<attribute>
 		<id>SCHEMATIC_INTERFACE</id>
 		<default>IO1</default>
 	</attribute>
@@ -11523,6 +12090,10 @@
 	<attribute>
 		<id>MRW_TYPE</id>
 		<default>NA</default>
+	</attribute>
+	<attribute>
+		<id>RESOURCE_IS_CRITICAL</id>
+		<default>0</default>
 	</attribute>
 	<attribute>
 		<id>SCHEMATIC_INTERFACE</id>
@@ -11568,6 +12139,10 @@
 		<default>NA</default>
 	</attribute>
 	<attribute>
+		<id>RESOURCE_IS_CRITICAL</id>
+		<default>0</default>
+	</attribute>
+	<attribute>
 		<id>SCHEMATIC_INTERFACE</id>
 		<default>IO3</default>
 	</attribute>
@@ -11609,6 +12184,10 @@
 	<attribute>
 		<id>MRW_TYPE</id>
 		<default>NA</default>
+	</attribute>
+	<attribute>
+		<id>RESOURCE_IS_CRITICAL</id>
+		<default>0</default>
 	</attribute>
 	<attribute>
 		<id>SCHEMATIC_INTERFACE</id>
@@ -11654,6 +12233,10 @@
 		<default>NA</default>
 	</attribute>
 	<attribute>
+		<id>RESOURCE_IS_CRITICAL</id>
+		<default>0</default>
+	</attribute>
+	<attribute>
 		<id>SCHEMATIC_INTERFACE</id>
 		<default>IO5</default>
 	</attribute>
@@ -11695,6 +12278,10 @@
 	<attribute>
 		<id>MRW_TYPE</id>
 		<default>NA</default>
+	</attribute>
+	<attribute>
+		<id>RESOURCE_IS_CRITICAL</id>
+		<default>0</default>
 	</attribute>
 	<attribute>
 		<id>SCHEMATIC_INTERFACE</id>
@@ -11740,6 +12327,10 @@
 		<default>NA</default>
 	</attribute>
 	<attribute>
+		<id>RESOURCE_IS_CRITICAL</id>
+		<default>0</default>
+	</attribute>
+	<attribute>
 		<id>SCHEMATIC_INTERFACE</id>
 		<default>IO7</default>
 	</attribute>
@@ -11781,6 +12372,10 @@
 	<attribute>
 		<id>MRW_TYPE</id>
 		<default>NA</default>
+	</attribute>
+	<attribute>
+		<id>RESOURCE_IS_CRITICAL</id>
+		<default>0</default>
 	</attribute>
 	<attribute>
 		<id>SCHEMATIC_INTERFACE</id>
@@ -11826,6 +12421,10 @@
 		<default>NA</default>
 	</attribute>
 	<attribute>
+		<id>RESOURCE_IS_CRITICAL</id>
+		<default>0</default>
+	</attribute>
+	<attribute>
 		<id>SCHEMATIC_INTERFACE</id>
 		<default>IO1.1</default>
 	</attribute>
@@ -11867,6 +12466,10 @@
 	<attribute>
 		<id>MRW_TYPE</id>
 		<default>NA</default>
+	</attribute>
+	<attribute>
+		<id>RESOURCE_IS_CRITICAL</id>
+		<default>0</default>
 	</attribute>
 	<attribute>
 		<id>SCHEMATIC_INTERFACE</id>
@@ -11912,6 +12515,10 @@
 		<default>NA</default>
 	</attribute>
 	<attribute>
+		<id>RESOURCE_IS_CRITICAL</id>
+		<default>0</default>
+	</attribute>
+	<attribute>
 		<id>SCHEMATIC_INTERFACE</id>
 		<default>IO1.3</default>
 	</attribute>
@@ -11953,6 +12560,10 @@
 	<attribute>
 		<id>MRW_TYPE</id>
 		<default>NA</default>
+	</attribute>
+	<attribute>
+		<id>RESOURCE_IS_CRITICAL</id>
+		<default>0</default>
 	</attribute>
 	<attribute>
 		<id>SCHEMATIC_INTERFACE</id>
@@ -11998,6 +12609,10 @@
 		<default>NA</default>
 	</attribute>
 	<attribute>
+		<id>RESOURCE_IS_CRITICAL</id>
+		<default>0</default>
+	</attribute>
+	<attribute>
 		<id>SCHEMATIC_INTERFACE</id>
 		<default>IO1.5</default>
 	</attribute>
@@ -12039,6 +12654,10 @@
 	<attribute>
 		<id>MRW_TYPE</id>
 		<default>NA</default>
+	</attribute>
+	<attribute>
+		<id>RESOURCE_IS_CRITICAL</id>
+		<default>0</default>
 	</attribute>
 	<attribute>
 		<id>SCHEMATIC_INTERFACE</id>
@@ -12084,6 +12703,10 @@
 		<default>NA</default>
 	</attribute>
 	<attribute>
+		<id>RESOURCE_IS_CRITICAL</id>
+		<default>0</default>
+	</attribute>
+	<attribute>
 		<id>SCHEMATIC_INTERFACE</id>
 		<default>IO1.7</default>
 	</attribute>
@@ -12120,6 +12743,10 @@
 		<default>1</default>
 	</attribute>
 	<attribute>
+		<id>RESOURCE_IS_CRITICAL</id>
+		<default>0</default>
+	</attribute>
+	<attribute>
 		<id>TYPE</id>
 		<default>NA</default>
 	</attribute>
@@ -12150,6 +12777,10 @@
 	<attribute>
 		<id>POSITION</id>
 		<default>2</default>
+	</attribute>
+	<attribute>
+		<id>RESOURCE_IS_CRITICAL</id>
+		<default>0</default>
 	</attribute>
 	<attribute>
 		<id>TYPE</id>
@@ -12184,6 +12815,10 @@
 		<default>3</default>
 	</attribute>
 	<attribute>
+		<id>RESOURCE_IS_CRITICAL</id>
+		<default>0</default>
+	</attribute>
+	<attribute>
 		<id>TYPE</id>
 		<default>NA</default>
 	</attribute>
@@ -12214,6 +12849,10 @@
 	<attribute>
 		<id>POSITION</id>
 		<default>4</default>
+	</attribute>
+	<attribute>
+		<id>RESOURCE_IS_CRITICAL</id>
+		<default>0</default>
 	</attribute>
 	<attribute>
 		<id>TYPE</id>
@@ -12248,6 +12887,10 @@
 		<default>5</default>
 	</attribute>
 	<attribute>
+		<id>RESOURCE_IS_CRITICAL</id>
+		<default>0</default>
+	</attribute>
+	<attribute>
 		<id>TYPE</id>
 		<default>NA</default>
 	</attribute>
@@ -12278,6 +12921,10 @@
 	<attribute>
 		<id>POSITION</id>
 		<default>6</default>
+	</attribute>
+	<attribute>
+		<id>RESOURCE_IS_CRITICAL</id>
+		<default>0</default>
 	</attribute>
 	<attribute>
 		<id>TYPE</id>
@@ -12312,6 +12959,10 @@
 		<default>7</default>
 	</attribute>
 	<attribute>
+		<id>RESOURCE_IS_CRITICAL</id>
+		<default>0</default>
+	</attribute>
+	<attribute>
 		<id>TYPE</id>
 		<default>NA</default>
 	</attribute>
@@ -12336,6 +12987,10 @@
 		<default>NA</default>
 	</attribute>
 	<attribute>
+		<id>RESOURCE_IS_CRITICAL</id>
+		<default>0</default>
+	</attribute>
+	<attribute>
 		<id>TYPE</id>
 		<default>NA</default>
 	</attribute>
@@ -12358,6 +13013,10 @@
 	<attribute>
 		<id>MRW_TYPE</id>
 		<default>NA</default>
+	</attribute>
+	<attribute>
+		<id>RESOURCE_IS_CRITICAL</id>
+		<default>0</default>
 	</attribute>
 	<attribute>
 		<id>TYPE</id>
@@ -12395,6 +13054,10 @@
 		<default>NA</default>
 	</attribute>
 	<attribute>
+		<id>RESOURCE_IS_CRITICAL</id>
+		<default>0</default>
+	</attribute>
+	<attribute>
 		<id>TYPE</id>
 		<default></default>
 	</attribute>
@@ -12417,6 +13080,10 @@
 	<attribute>
 		<id>MRW_TYPE</id>
 		<default>NA</default>
+	</attribute>
+	<attribute>
+		<id>RESOURCE_IS_CRITICAL</id>
+		<default>0</default>
 	</attribute>
 	<attribute>
 		<id>TYPE</id>
@@ -12443,6 +13110,10 @@
 		<default>NA</default>
 	</attribute>
 	<attribute>
+		<id>RESOURCE_IS_CRITICAL</id>
+		<default>0</default>
+	</attribute>
+	<attribute>
 		<id>TYPE</id>
 		<default></default>
 	</attribute>
@@ -12467,6 +13138,10 @@
 		<default>NA</default>
 	</attribute>
 	<attribute>
+		<id>RESOURCE_IS_CRITICAL</id>
+		<default>0</default>
+	</attribute>
+	<attribute>
 		<id>TYPE</id>
 		<default>NA</default>
 	</attribute>
@@ -12489,6 +13164,10 @@
 	<attribute>
 		<id>MRW_TYPE</id>
 		<default>NA</default>
+	</attribute>
+	<attribute>
+		<id>RESOURCE_IS_CRITICAL</id>
+		<default>0</default>
 	</attribute>
 	<attribute>
 		<id>TYPE</id>
@@ -12531,6 +13210,10 @@
 		<default>0</default>
 	</attribute>
 	<attribute>
+		<id>RESOURCE_IS_CRITICAL</id>
+		<default>0</default>
+	</attribute>
+	<attribute>
 		<id>TYPE</id>
 		<default></default>
 	</attribute>
@@ -12555,6 +13238,10 @@
 		<default>NA</default>
 	</attribute>
 	<attribute>
+		<id>RESOURCE_IS_CRITICAL</id>
+		<default>0</default>
+	</attribute>
+	<attribute>
 		<id>TYPE</id>
 		<default>NA</default>
 	</attribute>
@@ -12577,6 +13264,10 @@
 	<attribute>
 		<id>MRW_TYPE</id>
 		<default>NA</default>
+	</attribute>
+	<attribute>
+		<id>RESOURCE_IS_CRITICAL</id>
+		<default>0</default>
 	</attribute>
 	<attribute>
 		<id>TYPE</id>
@@ -12620,6 +13311,10 @@
 		<default>0</default>
 	</attribute>
 	<attribute>
+		<id>RESOURCE_IS_CRITICAL</id>
+		<default>0</default>
+	</attribute>
+	<attribute>
 		<id>TYPE</id>
 		<default>FSP</default>
 	</attribute>
@@ -12653,6 +13348,10 @@
 	<attribute>
 		<id>MRW_TYPE</id>
 		<default>NA</default>
+	</attribute>
+	<attribute>
+		<id>RESOURCE_IS_CRITICAL</id>
+		<default>0</default>
 	</attribute>
 	<attribute>
 		<id>TYPE</id>
@@ -12696,6 +13395,10 @@
 	<attribute>
 		<id>MRW_TYPE</id>
 		<default>NA</default>
+	</attribute>
+	<attribute>
+		<id>RESOURCE_IS_CRITICAL</id>
+		<default>0</default>
 	</attribute>
 	<attribute>
 		<id>TYPE</id>
@@ -12753,6 +13456,10 @@
 	<attribute>
 		<id>POSITION</id>
 		<default>1</default>
+	</attribute>
+	<attribute>
+		<id>RESOURCE_IS_CRITICAL</id>
+		<default>0</default>
 	</attribute>
 	<attribute>
 		<id>TYPE</id>
@@ -12822,6 +13529,10 @@
 		<default>IPMI_SENSOR</default>
 	</attribute>
 	<attribute>
+		<id>RESOURCE_IS_CRITICAL</id>
+		<default>0</default>
+	</attribute>
+	<attribute>
 		<id>TYPE</id>
 		<default>NA</default>
 	</attribute>
@@ -12875,6 +13586,10 @@
 	<attribute>
 		<id>MRW_TYPE</id>
 		<default>IPMI_SENSOR</default>
+	</attribute>
+	<attribute>
+		<id>RESOURCE_IS_CRITICAL</id>
+		<default>0</default>
 	</attribute>
 	<attribute>
 		<id>TYPE</id>
@@ -12932,6 +13647,10 @@
 		<default>IPMI_SENSOR</default>
 	</attribute>
 	<attribute>
+		<id>RESOURCE_IS_CRITICAL</id>
+		<default>0</default>
+	</attribute>
+	<attribute>
 		<id>TYPE</id>
 		<default>NA</default>
 	</attribute>
@@ -12987,6 +13706,10 @@
 		<default>IPMI_SENSOR</default>
 	</attribute>
 	<attribute>
+		<id>RESOURCE_IS_CRITICAL</id>
+		<default>0</default>
+	</attribute>
+	<attribute>
 		<id>TYPE</id>
 		<default>NA</default>
 	</attribute>
@@ -13040,6 +13763,10 @@
 	<attribute>
 		<id>MRW_TYPE</id>
 		<default>IPMI_SENSOR</default>
+	</attribute>
+	<attribute>
+		<id>RESOURCE_IS_CRITICAL</id>
+		<default>0</default>
 	</attribute>
 	<attribute>
 		<id>TYPE</id>
@@ -13108,6 +13835,10 @@
 		<default>0</default>
 	</attribute>
 	<attribute>
+		<id>RESOURCE_IS_CRITICAL</id>
+		<default>0</default>
+	</attribute>
+	<attribute>
 		<id>TYPE</id>
 		<default>APSS</default>
 	</attribute>
@@ -13124,7 +13855,7 @@
 	</attribute>
 	<attribute>
 		<id>ADC_CHANNEL_GAIN</id>
-		<default>34500</default>
+		<default>11600</default>
 	</attribute>
 	<attribute>
 		<id>ADC_CHANNEL_GROUND</id>
@@ -13136,7 +13867,7 @@
 	</attribute>
 	<attribute>
 		<id>ADC_CHANNEL_OFFSET</id>
-		<default>0</default>
+		<default>-10</default>
 	</attribute>
 	<attribute>
 		<id>BUS_TYPE</id>
@@ -13183,6 +13914,10 @@
 		<default>APSS_SENSOR</default>
 	</attribute>
 	<attribute>
+		<id>RESOURCE_IS_CRITICAL</id>
+		<default>0</default>
+	</attribute>
+	<attribute>
 		<id>TYPE</id>
 		<default>NA</default>
 	</attribute>
@@ -13199,7 +13934,7 @@
 	</attribute>
 	<attribute>
 		<id>ADC_CHANNEL_GAIN</id>
-		<default>34500</default>
+		<default>11600</default>
 	</attribute>
 	<attribute>
 		<id>ADC_CHANNEL_GROUND</id>
@@ -13211,7 +13946,7 @@
 	</attribute>
 	<attribute>
 		<id>ADC_CHANNEL_OFFSET</id>
-		<default>0</default>
+		<default>-10</default>
 	</attribute>
 	<attribute>
 		<id>BUS_TYPE</id>
@@ -13256,6 +13991,10 @@
 	<attribute>
 		<id>MRW_TYPE</id>
 		<default>APSS_SENSOR</default>
+	</attribute>
+	<attribute>
+		<id>RESOURCE_IS_CRITICAL</id>
+		<default>0</default>
 	</attribute>
 	<attribute>
 		<id>TYPE</id>
@@ -13333,6 +14072,10 @@
 		<default>APSS_SENSOR</default>
 	</attribute>
 	<attribute>
+		<id>RESOURCE_IS_CRITICAL</id>
+		<default>0</default>
+	</attribute>
+	<attribute>
 		<id>TYPE</id>
 		<default>NA</default>
 	</attribute>
@@ -13408,6 +14151,10 @@
 		<default>APSS_SENSOR</default>
 	</attribute>
 	<attribute>
+		<id>RESOURCE_IS_CRITICAL</id>
+		<default>0</default>
+	</attribute>
+	<attribute>
 		<id>TYPE</id>
 		<default>NA</default>
 	</attribute>
@@ -13424,7 +14171,7 @@
 	</attribute>
 	<attribute>
 		<id>ADC_CHANNEL_GAIN</id>
-		<default>34500</default>
+		<default>22700</default>
 	</attribute>
 	<attribute>
 		<id>ADC_CHANNEL_GROUND</id>
@@ -13436,7 +14183,7 @@
 	</attribute>
 	<attribute>
 		<id>ADC_CHANNEL_OFFSET</id>
-		<default>0</default>
+		<default>-16</default>
 	</attribute>
 	<attribute>
 		<id>BUS_TYPE</id>
@@ -13483,6 +14230,10 @@
 		<default>APSS_SENSOR</default>
 	</attribute>
 	<attribute>
+		<id>RESOURCE_IS_CRITICAL</id>
+		<default>0</default>
+	</attribute>
+	<attribute>
 		<id>TYPE</id>
 		<default>NA</default>
 	</attribute>
@@ -13499,7 +14250,7 @@
 	</attribute>
 	<attribute>
 		<id>ADC_CHANNEL_GAIN</id>
-		<default>34500</default>
+		<default>22600</default>
 	</attribute>
 	<attribute>
 		<id>ADC_CHANNEL_GROUND</id>
@@ -13511,7 +14262,7 @@
 	</attribute>
 	<attribute>
 		<id>ADC_CHANNEL_OFFSET</id>
-		<default>0</default>
+		<default>-16</default>
 	</attribute>
 	<attribute>
 		<id>BUS_TYPE</id>
@@ -13556,6 +14307,10 @@
 	<attribute>
 		<id>MRW_TYPE</id>
 		<default>APSS_SENSOR</default>
+	</attribute>
+	<attribute>
+		<id>RESOURCE_IS_CRITICAL</id>
+		<default>0</default>
 	</attribute>
 	<attribute>
 		<id>TYPE</id>
@@ -13633,6 +14388,10 @@
 		<default>APSS_SENSOR</default>
 	</attribute>
 	<attribute>
+		<id>RESOURCE_IS_CRITICAL</id>
+		<default>0</default>
+	</attribute>
+	<attribute>
 		<id>TYPE</id>
 		<default>NA</default>
 	</attribute>
@@ -13708,6 +14467,10 @@
 		<default>APSS_SENSOR</default>
 	</attribute>
 	<attribute>
+		<id>RESOURCE_IS_CRITICAL</id>
+		<default>0</default>
+	</attribute>
+	<attribute>
 		<id>TYPE</id>
 		<default>NA</default>
 	</attribute>
@@ -13724,7 +14487,7 @@
 	</attribute>
 	<attribute>
 		<id>ADC_CHANNEL_GAIN</id>
-		<default>34500</default>
+		<default>11000</default>
 	</attribute>
 	<attribute>
 		<id>ADC_CHANNEL_GROUND</id>
@@ -13736,7 +14499,7 @@
 	</attribute>
 	<attribute>
 		<id>ADC_CHANNEL_OFFSET</id>
-		<default>0</default>
+		<default>-17</default>
 	</attribute>
 	<attribute>
 		<id>BUS_TYPE</id>
@@ -13783,6 +14546,10 @@
 		<default>APSS_SENSOR</default>
 	</attribute>
 	<attribute>
+		<id>RESOURCE_IS_CRITICAL</id>
+		<default>0</default>
+	</attribute>
+	<attribute>
 		<id>TYPE</id>
 		<default>NA</default>
 	</attribute>
@@ -13799,7 +14566,7 @@
 	</attribute>
 	<attribute>
 		<id>ADC_CHANNEL_GAIN</id>
-		<default>34500</default>
+		<default>11000</default>
 	</attribute>
 	<attribute>
 		<id>ADC_CHANNEL_GROUND</id>
@@ -13811,7 +14578,7 @@
 	</attribute>
 	<attribute>
 		<id>ADC_CHANNEL_OFFSET</id>
-		<default>0</default>
+		<default>-17</default>
 	</attribute>
 	<attribute>
 		<id>BUS_TYPE</id>
@@ -13856,6 +14623,10 @@
 	<attribute>
 		<id>MRW_TYPE</id>
 		<default>APSS_SENSOR</default>
+	</attribute>
+	<attribute>
+		<id>RESOURCE_IS_CRITICAL</id>
+		<default>0</default>
 	</attribute>
 	<attribute>
 		<id>TYPE</id>
@@ -13933,6 +14704,10 @@
 		<default>APSS_SENSOR</default>
 	</attribute>
 	<attribute>
+		<id>RESOURCE_IS_CRITICAL</id>
+		<default>0</default>
+	</attribute>
+	<attribute>
 		<id>TYPE</id>
 		<default>NA</default>
 	</attribute>
@@ -14006,6 +14781,10 @@
 	<attribute>
 		<id>MRW_TYPE</id>
 		<default>APSS_SENSOR</default>
+	</attribute>
+	<attribute>
+		<id>RESOURCE_IS_CRITICAL</id>
+		<default>0</default>
 	</attribute>
 	<attribute>
 		<id>TYPE</id>
@@ -14083,6 +14862,10 @@
 		<default>APSS_SENSOR</default>
 	</attribute>
 	<attribute>
+		<id>RESOURCE_IS_CRITICAL</id>
+		<default>0</default>
+	</attribute>
+	<attribute>
 		<id>TYPE</id>
 		<default>NA</default>
 	</attribute>
@@ -14156,6 +14939,10 @@
 	<attribute>
 		<id>MRW_TYPE</id>
 		<default>APSS_SENSOR</default>
+	</attribute>
+	<attribute>
+		<id>RESOURCE_IS_CRITICAL</id>
+		<default>0</default>
 	</attribute>
 	<attribute>
 		<id>TYPE</id>
@@ -14233,6 +15020,10 @@
 		<default>APSS_SENSOR</default>
 	</attribute>
 	<attribute>
+		<id>RESOURCE_IS_CRITICAL</id>
+		<default>0</default>
+	</attribute>
+	<attribute>
 		<id>TYPE</id>
 		<default>NA</default>
 	</attribute>
@@ -14249,7 +15040,7 @@
 	</attribute>
 	<attribute>
 		<id>ADC_CHANNEL_GAIN</id>
-		<default>34500</default>
+		<default>23000</default>
 	</attribute>
 	<attribute>
 		<id>ADC_CHANNEL_GROUND</id>
@@ -14261,7 +15052,7 @@
 	</attribute>
 	<attribute>
 		<id>ADC_CHANNEL_OFFSET</id>
-		<default>0</default>
+		<default>-11</default>
 	</attribute>
 	<attribute>
 		<id>BUS_TYPE</id>
@@ -14306,6 +15097,10 @@
 	<attribute>
 		<id>MRW_TYPE</id>
 		<default>APSS_SENSOR</default>
+	</attribute>
+	<attribute>
+		<id>RESOURCE_IS_CRITICAL</id>
+		<default>0</default>
 	</attribute>
 	<attribute>
 		<id>TYPE</id>
@@ -14383,6 +15178,10 @@
 		<default>APSS_SENSOR</default>
 	</attribute>
 	<attribute>
+		<id>RESOURCE_IS_CRITICAL</id>
+		<default>0</default>
+	</attribute>
+	<attribute>
 		<id>TYPE</id>
 		<default>NA</default>
 	</attribute>
@@ -14456,6 +15255,10 @@
 	<attribute>
 		<id>MRW_TYPE</id>
 		<default>APSS_SENSOR</default>
+	</attribute>
+	<attribute>
+		<id>RESOURCE_IS_CRITICAL</id>
+		<default>0</default>
 	</attribute>
 	<attribute>
 		<id>TYPE</id>
@@ -14533,6 +15336,10 @@
 		<default>APSS_SENSOR</default>
 	</attribute>
 	<attribute>
+		<id>RESOURCE_IS_CRITICAL</id>
+		<default>0</default>
+	</attribute>
+	<attribute>
 		<id>TYPE</id>
 		<default>NA</default>
 	</attribute>
@@ -14608,6 +15415,10 @@
 		<default>APSS_SENSOR</default>
 	</attribute>
 	<attribute>
+		<id>RESOURCE_IS_CRITICAL</id>
+		<default>0</default>
+	</attribute>
+	<attribute>
 		<id>TYPE</id>
 		<default>NA</default>
 	</attribute>
@@ -14624,7 +15435,7 @@
 	</attribute>
 	<attribute>
 		<id>ADC_CHANNEL_GAIN</id>
-		<default>34500</default>
+		<default>26040</default>
 	</attribute>
 	<attribute>
 		<id>ADC_CHANNEL_GROUND</id>
@@ -14636,7 +15447,7 @@
 	</attribute>
 	<attribute>
 		<id>ADC_CHANNEL_OFFSET</id>
-		<default>0</default>
+		<default>-10</default>
 	</attribute>
 	<attribute>
 		<id>BUS_TYPE</id>
@@ -14681,6 +15492,10 @@
 	<attribute>
 		<id>MRW_TYPE</id>
 		<default>APSS_SENSOR</default>
+	</attribute>
+	<attribute>
+		<id>RESOURCE_IS_CRITICAL</id>
+		<default>0</default>
 	</attribute>
 	<attribute>
 		<id>TYPE</id>
@@ -14758,6 +15573,10 @@
 		<default>APSS_SENSOR</default>
 	</attribute>
 	<attribute>
+		<id>RESOURCE_IS_CRITICAL</id>
+		<default>0</default>
+	</attribute>
+	<attribute>
 		<id>TYPE</id>
 		<default>NA</default>
 	</attribute>
@@ -14831,6 +15650,10 @@
 	<attribute>
 		<id>MRW_TYPE</id>
 		<default>APSS_SENSOR</default>
+	</attribute>
+	<attribute>
+		<id>RESOURCE_IS_CRITICAL</id>
+		<default>0</default>
 	</attribute>
 	<attribute>
 		<id>TYPE</id>
@@ -14908,6 +15731,10 @@
 		<default>APSS_SENSOR</default>
 	</attribute>
 	<attribute>
+		<id>RESOURCE_IS_CRITICAL</id>
+		<default>0</default>
+	</attribute>
+	<attribute>
 		<id>TYPE</id>
 		<default>NA</default>
 	</attribute>
@@ -14924,7 +15751,7 @@
 	</attribute>
 	<attribute>
 		<id>ADC_CHANNEL_GAIN</id>
-		<default>34500</default>
+		<default>6495</default>
 	</attribute>
 	<attribute>
 		<id>ADC_CHANNEL_GROUND</id>
@@ -14936,7 +15763,7 @@
 	</attribute>
 	<attribute>
 		<id>ADC_CHANNEL_OFFSET</id>
-		<default>0</default>
+		<default>7</default>
 	</attribute>
 	<attribute>
 		<id>BUS_TYPE</id>
@@ -14981,6 +15808,10 @@
 	<attribute>
 		<id>MRW_TYPE</id>
 		<default>APSS_SENSOR</default>
+	</attribute>
+	<attribute>
+		<id>RESOURCE_IS_CRITICAL</id>
+		<default>0</default>
 	</attribute>
 	<attribute>
 		<id>TYPE</id>
@@ -15058,6 +15889,10 @@
 		<default>APSS_SENSOR</default>
 	</attribute>
 	<attribute>
+		<id>RESOURCE_IS_CRITICAL</id>
+		<default>0</default>
+	</attribute>
+	<attribute>
 		<id>TYPE</id>
 		<default>NA</default>
 	</attribute>
@@ -15074,7 +15909,7 @@
 	</attribute>
 	<attribute>
 		<id>ADC_CHANNEL_GAIN</id>
-		<default>34500</default>
+		<default>44650</default>
 	</attribute>
 	<attribute>
 		<id>ADC_CHANNEL_GROUND</id>
@@ -15086,7 +15921,7 @@
 	</attribute>
 	<attribute>
 		<id>ADC_CHANNEL_OFFSET</id>
-		<default>0</default>
+		<default>-11</default>
 	</attribute>
 	<attribute>
 		<id>BUS_TYPE</id>
@@ -15131,6 +15966,10 @@
 	<attribute>
 		<id>MRW_TYPE</id>
 		<default>APSS_SENSOR</default>
+	</attribute>
+	<attribute>
+		<id>RESOURCE_IS_CRITICAL</id>
+		<default>0</default>
 	</attribute>
 	<attribute>
 		<id>TYPE</id>
@@ -15188,6 +16027,10 @@
 		<default>IPMI_SENSOR</default>
 	</attribute>
 	<attribute>
+		<id>RESOURCE_IS_CRITICAL</id>
+		<default>0</default>
+	</attribute>
+	<attribute>
 		<id>TYPE</id>
 		<default>NA</default>
 	</attribute>
@@ -15241,6 +16084,10 @@
 	<attribute>
 		<id>MRW_TYPE</id>
 		<default>IPMI_SENSOR</default>
+	</attribute>
+	<attribute>
+		<id>RESOURCE_IS_CRITICAL</id>
+		<default>0</default>
 	</attribute>
 	<attribute>
 		<id>TYPE</id>
@@ -15298,6 +16145,10 @@
 		<default>IPMI_SENSOR</default>
 	</attribute>
 	<attribute>
+		<id>RESOURCE_IS_CRITICAL</id>
+		<default>0</default>
+	</attribute>
+	<attribute>
 		<id>TYPE</id>
 		<default>NA</default>
 	</attribute>
@@ -15351,6 +16202,10 @@
 	<attribute>
 		<id>MRW_TYPE</id>
 		<default>IPMI_SENSOR</default>
+	</attribute>
+	<attribute>
+		<id>RESOURCE_IS_CRITICAL</id>
+		<default>0</default>
 	</attribute>
 	<attribute>
 		<id>TYPE</id>
@@ -15408,6 +16263,10 @@
 		<default>IPMI_SENSOR</default>
 	</attribute>
 	<attribute>
+		<id>RESOURCE_IS_CRITICAL</id>
+		<default>0</default>
+	</attribute>
+	<attribute>
 		<id>TYPE</id>
 		<default>NA</default>
 	</attribute>
@@ -15461,6 +16320,10 @@
 	<attribute>
 		<id>MRW_TYPE</id>
 		<default>IPMI_SENSOR</default>
+	</attribute>
+	<attribute>
+		<id>RESOURCE_IS_CRITICAL</id>
+		<default>0</default>
 	</attribute>
 	<attribute>
 		<id>TYPE</id>
@@ -15518,6 +16381,10 @@
 		<default>IPMI_SENSOR</default>
 	</attribute>
 	<attribute>
+		<id>RESOURCE_IS_CRITICAL</id>
+		<default>0</default>
+	</attribute>
+	<attribute>
 		<id>TYPE</id>
 		<default>NA</default>
 	</attribute>
@@ -15571,6 +16438,10 @@
 	<attribute>
 		<id>MRW_TYPE</id>
 		<default>IPMI_SENSOR</default>
+	</attribute>
+	<attribute>
+		<id>RESOURCE_IS_CRITICAL</id>
+		<default>0</default>
 	</attribute>
 	<attribute>
 		<id>TYPE</id>
@@ -15628,6 +16499,10 @@
 		<default>IPMI_SENSOR</default>
 	</attribute>
 	<attribute>
+		<id>RESOURCE_IS_CRITICAL</id>
+		<default>0</default>
+	</attribute>
+	<attribute>
 		<id>TYPE</id>
 		<default>NA</default>
 	</attribute>
@@ -15683,6 +16558,10 @@
 		<default>IPMI_SENSOR</default>
 	</attribute>
 	<attribute>
+		<id>RESOURCE_IS_CRITICAL</id>
+		<default>0</default>
+	</attribute>
+	<attribute>
 		<id>TYPE</id>
 		<default>NA</default>
 	</attribute>
@@ -15736,6 +16615,10 @@
 	</attribute>
 	<attribute>
 		<id>POSITION</id>
+		<default>0</default>
+	</attribute>
+	<attribute>
+		<id>RESOURCE_IS_CRITICAL</id>
 		<default>0</default>
 	</attribute>
 	<attribute>
@@ -15796,6 +16679,10 @@
 		<default></default>
 	</attribute>
 	<attribute>
+		<id>RESOURCE_IS_CRITICAL</id>
+		<default>0</default>
+	</attribute>
+	<attribute>
 		<id>TYPE</id>
 		<default>NA</default>
 	</attribute>
@@ -15831,6 +16718,10 @@
 		<default>NA</default>
 	</attribute>
 	<attribute>
+		<id>RESOURCE_IS_CRITICAL</id>
+		<default>0</default>
+	</attribute>
+	<attribute>
 		<id>TYPE</id>
 		<default>NA</default>
 	</attribute>
@@ -15853,6 +16744,10 @@
 	<attribute>
 		<id>MRW_TYPE</id>
 		<default>NA</default>
+	</attribute>
+	<attribute>
+		<id>RESOURCE_IS_CRITICAL</id>
+		<default>0</default>
 	</attribute>
 	<attribute>
 		<id>TYPE</id>
@@ -15909,6 +16804,10 @@
 	</attribute>
 	<attribute>
 		<id>POSITION</id>
+		<default>0</default>
+	</attribute>
+	<attribute>
+		<id>RESOURCE_IS_CRITICAL</id>
 		<default>0</default>
 	</attribute>
 	<attribute>
@@ -15978,6 +16877,10 @@
 	</attribute>
 	<attribute>
 		<id>POSITION</id>
+		<default>0</default>
+	</attribute>
+	<attribute>
+		<id>RESOURCE_IS_CRITICAL</id>
 		<default>0</default>
 	</attribute>
 	<attribute>
