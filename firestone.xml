@@ -8043,8 +8043,7 @@
 	</attribute>
 	<attribute>
 		<id>IBSCOM_MCS_BASE_ADDR</id>
-		<default>0x0003E00000000000,0x40000000000,0x10000000000,0x2000000000
-			</default>
+		<default>0x0003E00000000000,0x40000000000,0x10000000000,0x2000000000</default>
 	</attribute>
 	<attribute>
 		<id>MODEL</id>
@@ -8091,8 +8090,7 @@
 	</attribute>
 	<attribute>
 		<id>IBSCOM_MCS_BASE_ADDR</id>
-		<default>0x0003E00000000000,0x40000000000,0x10000000000,0x2000000000
-			</default>
+		<default>0x0003E00000000000,0x40000000000,0x10000000000,0x2000000000</default>
 	</attribute>
 	<attribute>
 		<id>MODEL</id>
@@ -8139,8 +8137,7 @@
 	</attribute>
 	<attribute>
 		<id>IBSCOM_MCS_BASE_ADDR</id>
-		<default>0x0003E00000000000,0x40000000000,0x10000000000,0x2000000000
-			</default>
+		<default>0x0003E00000000000,0x40000000000,0x10000000000,0x2000000000</default>
 	</attribute>
 	<attribute>
 		<id>MODEL</id>
@@ -8187,8 +8184,7 @@
 	</attribute>
 	<attribute>
 		<id>IBSCOM_MCS_BASE_ADDR</id>
-		<default>0x0003E00000000000,0x40000000000,0x10000000000,0x2000000000
-			</default>
+		<default>0x0003E00000000000,0x40000000000,0x10000000000,0x2000000000</default>
 	</attribute>
 	<attribute>
 		<id>MODEL</id>
@@ -9226,8 +9222,7 @@
 	</attribute>
 	<attribute>
 		<id>IBSCOM_MCS_BASE_ADDR</id>
-		<default>0x0003E00000000000,0x40000000000,0x10000000000,0x2000000000
-			</default>
+		<default>0x0003E00000000000,0x40000000000,0x10000000000,0x2000000000</default>
 	</attribute>
 	<attribute>
 		<id>MODEL</id>
@@ -9274,8 +9269,7 @@
 	</attribute>
 	<attribute>
 		<id>IBSCOM_MCS_BASE_ADDR</id>
-		<default>0x0003E00000000000,0x40000000000,0x10000000000,0x2000000000
-			</default>
+		<default>0x0003E00000000000,0x40000000000,0x10000000000,0x2000000000</default>
 	</attribute>
 	<attribute>
 		<id>MODEL</id>
@@ -9322,8 +9316,7 @@
 	</attribute>
 	<attribute>
 		<id>IBSCOM_MCS_BASE_ADDR</id>
-		<default>0x0003E00000000000,0x40000000000,0x10000000000,0x2000000000
-			</default>
+		<default>0x0003E00000000000,0x40000000000,0x10000000000,0x2000000000</default>
 	</attribute>
 	<attribute>
 		<id>MODEL</id>
@@ -9370,8 +9363,7 @@
 	</attribute>
 	<attribute>
 		<id>IBSCOM_MCS_BASE_ADDR</id>
-		<default>0x0003E00000000000,0x40000000000,0x10000000000,0x2000000000
-			</default>
+		<default>0x0003E00000000000,0x40000000000,0x10000000000,0x2000000000</default>
 	</attribute>
 	<attribute>
 		<id>MODEL</id>
